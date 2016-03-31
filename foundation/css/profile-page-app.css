@@ -8,6 +8,13 @@
 .adlink-green {    color: #b4cb34; }
 .adlink-green-bg {    background-color: #b4cb34; }
 
+.adlink-grey {    color: #404041; }
+.adlink-grey-bg {    background-color: #404041; }
+
+.adlink-black {    color: #0f0e0e; }
+.adlink-black-bg {    background-color: #0f0e0e; }
+
+
 
 /*====================================================================*/
 #wrapper {
@@ -234,8 +241,6 @@
     padding: 20px;
 }
 
-
-
 .profile-title {
     width: 100%;
     height: 30px;
@@ -257,10 +262,11 @@
 }
 
 .profile-title div hr {
-    color: #df2726;
     height: 1px;
-    position: absolute;
-    top
+    width: 200px;
+    margin: 0;
+    border-top: .5px solid #df2726;
+    border-bottom: none;
 
 }
 
@@ -350,6 +356,7 @@
     color: #fff;
 }
 
+/*-------------------------------*/
 /*top right */
 .top-right {
 
@@ -412,17 +419,107 @@ form input placeholder {
 
 }
 
+.top {}
+/*-------------------------------*/
+
+.bottom {
+    height: calc(100% - 230px);
+    padding: 20px;
+}
 
 
+.bottom-left, .bottom-right {
+    height: 100%;
+/*    width: 100%;*/
+    position: relative;
+}
+
+.bottom-left .title, .bottom-right .title {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
 
 
+.bottom-left .title div p, .bottom-right .title div p {
+    width: 80px;
+    text-transform: uppercase;
+/*    color: #df2726;*/
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: 1.5rem;
 
+    border-bottom: 3px solid ;
+}
 
+.bottom-left .title div hr, .bottom-right .title div hr {
+    margin: 0;
+    width: 200px;
+    height: .1px;
+}
 
+/*bottom-left*/
+.status-table, .price-table {
+    width: 100%;
+    height: 80%;
+    border: 1px solid;
 
+}
 
+.view-more {
+    width:100%;
+    height: 40px;;
+    position: relative;
+}
 
+.view-more-flex {
+    display: inline-flex;
 
+    top: 50%;
+    transform: translate(0%, -50%);
+    position: absolute;
+
+}
+.view-more-flex div {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+}
+
+.view-more-flex p {
+    width: auto;
+    height: 100%;
+    font-size: .8rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.view-more-flex div img {
+    width: 30px;
+}
+
+/*--------------------------*/
+/*bottom-right*/
+.bottom-right {}
+
+.bottom-right .book-ad {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.bottom-right .book-ad button {
+    width: 230px;
+    height: 40px;
+    color: #fff;
+    font-size: .8rem;
+
+    border: 3px solid #404041;
+    border-radius: 100px;
+    background-color: #404041;
+
+    float: right;
+}
 
 /*====================================================================*/
 /*---------- Media Queries -------------*/
