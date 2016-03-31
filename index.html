@@ -23,9 +23,10 @@
 
     <!--- PAGE 1 --->
     <!------------------------------------------------->
+
+    <div class="page1">
     <!-- Header -->
     <div class="top-bar Header_bg">
-
         <div class="top-bar-left">
             <ul class="menu">
                 <li class="Navicon_bg">
@@ -56,11 +57,81 @@
                 </li>
             </ul>
         </div>
+    </div> <!-- top bar end -->
+
+    <!------------------------------------------------->
+    <!-- Banner -->
+    <div id="banner" class="expanded row columns">
+
+        <!--Bg-Photo-->
+        <div id="banner-photo" class="expanded row columns bg-photo"></div>
+
+        <!--icon-bg-->
+        <div id="icon-bg" class="expanded row columns"></div>
+
+        <!--banner content -->
+        <div id="banner-content" class="expanded row columns center-h">
+
+            <div class="notice-ad"> Noticeboard Advertisement </div>
+
+            <div class="hiw"> How It Works </div>
+
+            <div class="play">
+                <img src="assets/play_button.png">
+            </div>
+
+            <div class="post-ad">
+                <button> POST YOUR AD </button>
+            </div>
+            <div class="prof-pic">
+                <img src="assets/profile_image.png">
+            </div>
+
+            <div class="prof-name"> jay query </div>
+
+            <div class="prof-descr"> - individual - </div>
+
+            <!--the menu tabs -->
+            <div class="prof-menu">
+                <div class="prof-menu-tab">profile</div>
+                <div class="prof-menu-tab mid">ad cabinet</div>
+                <div class="prof-menu-tab">transactions</div>
+
+            </div>
+
+        </div> <!-- end banner content -->
+
     </div>
 
+    </div> <!-- end page 1 -->
 <!------------------------------------------------->
-</div> <!-- wrapper end
+</div> <!-- wrapper end -->
 
+<!---------------------------------------------------------------------->
+    <!--- Scripts ----->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="foundation/js/foundation.min.js"></script>
 
+    <!--Vegas-->
+    <script src="slider/vegas.min.js"></script>
+
+    <script>
+    $("#banner-photo").vegas({
+        overlay: true,
+//        transition: 'fade',
+        transitionDuration: 4000,
+        delay: 10000,
+//        animation: 'random',
+//        animationDuration: 20000,
+        slides: [
+            { src: "/assets/Profile-bg.jpg" },
+        ],
+        overlay: '/slider/overlays/06.png'
+    });
+
+    </script>
+
+<!---------------------------------------------------------------------->
 
 </body>
+</html>
