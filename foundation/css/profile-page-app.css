@@ -521,6 +521,49 @@ form input placeholder {
     float: right;
 }
 
+
+/*====================================================================*/
+/*FOOTER*/
+#footer {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: #101010;
+    font-size: .7rem;
+}
+
+.footer-content {
+    height: auto;
+    width: 500px;
+    text-align: center;
+/*    padding: 30px;*/
+}
+
+.footer-content .social-flex {
+    padding: 0;
+}
+
+.adlink-info {
+    text-align: center;
+    padding: 20px 5px;
+    font-weight: bold
+}
+
+.adlink-info span {
+    color: aliceblue;
+    font-weight:normal;
+}
+
+.logo-grey {
+    margin: 20px 10px 30px 10px;
+}
+
+.copy p {
+    width: auto;
+    font-weight: bold
+}
+
+
 /*====================================================================*/
 /*---------- Media Queries -------------*/
 /*====================================================================*/
