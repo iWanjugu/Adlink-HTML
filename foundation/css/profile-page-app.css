@@ -10,12 +10,12 @@
     height: auto;
 }
 
+/*====================================================================*/
+/*Page 1*/
 .page1 {
     height: 100vh;
     min-height: 700px;
 }
-
-/* ----------- Page 1--------- */
 /*HEADER*/
 
 .top-bar {
@@ -141,7 +141,7 @@
 }
 
 
-.post-ad, .prof-name, .prof-descr, .prof-menu div{
+.post-ad, .prof-name, .prof-descr, .prof-menu a{
     text-transform: uppercase;
 }
 
@@ -204,10 +204,15 @@
     border-right: 1px solid #df2726;
 }
 
-.prof-menu div:hover, .prof-menu div:active {
+
+.prof-menu a:hover, .prof-menu a:active {
     background-color: #df2726;
+    color: #fff
 }
 
+
+/*====================================================================*/
+/*Page 2*/
 
 /*====================================================================*/
 /*---------- Media Queries -------------*/
