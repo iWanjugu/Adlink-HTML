@@ -22,6 +22,8 @@ html, body {
     line-height: 1;
     margin: 0;
     font-family: Roboto-Regular; !important;
+    font-size: .9rem;
+
     -webkit-background-size: cover;
     background-size: cover;
     color: #555;
@@ -205,7 +207,10 @@ a {
     height: 100%;
 }
 
-/**-----------------------------------------------------**/
+
+/*DEVSHOP WEBSITE*/
+/*====================================================================*/
+
 /*Menu Text Colors*/
 /*Home*/
 .H {color: teal !important;}
@@ -222,3 +227,19 @@ a {
 /*Contact*/
 .C {color: #E87A4A !important;
     color:  #F0414C !important}
+
+/*ADLINK*/
+/*====================================================================*/
+
+.adlink-red {    color: #df2726; }
+.adlink-red-bg {    background-color: #df2726; }
+
+.adlink-green {    color: #b4cb34; }
+.adlink-green-bg {    background-color: #b4cb34; }
+
+
+button {
+    text-transform: uppercase;
+}
+
+/*====================================================================*/

@@ -2,7 +2,14 @@
 /*---------- General Styles -------------*/
 /*====================================================================*/
 
+.adlink-red {    color: #df2726; }
+.adlink-red-bg {    background-color: #df2726; }
 
+.adlink-green {    color: #b4cb34; }
+.adlink-green-bg {    background-color: #b4cb34; }
+
+
+/*====================================================================*/
 #wrapper {
     margin: 0 auto;
     padding: 0;
@@ -13,7 +20,7 @@
 /*====================================================================*/
 /*Page 1*/
 .page1 {
-    height: 100vh;
+    height: auto;
     min-height: 700px;
 }
 /*HEADER*/
@@ -21,7 +28,7 @@
 .top-bar {
     background: #252525;
     width: 100%;
-    height: 60px;
+    height: 50px;
     padding: 0;
     margin: 0 auto;
 }
@@ -43,7 +50,7 @@
 .menu li {
     padding: 0;
     margin: 0;
-    height: 60px;
+    height: 50px;
 }
 
 .Navicon_bg {
@@ -97,13 +104,13 @@
 #banner {
     position: relative;
     color: #fff;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*background photo*/
 #banner-photo {
     height: calc(100% - 200px);
-    min-height: 650px;
+    min-height: 590px;
 }
 
 #icon-bg {
@@ -115,15 +122,15 @@
 #banner-content {
     position: absolute;
     top: 0px;
-    width: 700px;
-    height: 100vh;
+    width: 70%;
+    min-height: 100vh;
     text-align: center;
 }
 
 .notice-ad {
 /*    font-size: 18px;*/
     padding: 10px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .hiw {
@@ -137,7 +144,7 @@
 
 .play {
     margin: 30px;
-    margin-bottom: 230px;
+    margin-bottom: 200px;
 }
 
 
@@ -146,45 +153,44 @@
 }
 
 .post-ad {
-    margin: 20px 20px 40px 20px;
+    margin: 20px 20px 30px 20px;
 }
 .post-ad button {
     background-color: #b4cb34;
-    width: 200px;
+    width: 180px;
     height: 35px;
 
     border: 1px solid #b4cb34;
     border-radius: 100px;
-    font-size: .8rem;
-
+    font-size: .7rem;
+    font-weight: bold;
 }
-
 
 .prof-pic {
 
 }
 
 .prof-pic img {
-    width: 120px;
+    width: 100px;
 }
 
 .prof-name {
     margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 .prof-descr {
     color: #b4cb34;
-    font-size:.7rem;
+    font-size:.6rem;
     margin-top: 5px;
     font-weight: bold;
 }
 
 .prof-menu {
-    margin-top: 40px;
+    margin-top: 35px;
     display: inline-flex;
     width: auto;
-    height: 35px;
+    height: 32px;
 
     border: 1px solid #df2726;
     border-radius: 5px;
@@ -193,7 +199,7 @@
 .prof-menu-tab {
     width: 150px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 9px;
 
 /*    border-radius: 5px;*/
     font-size: .7rem;
@@ -213,6 +219,210 @@
 
 /*====================================================================*/
 /*Page 2*/
+
+#page2 {
+    height: 100vh;
+    min-height: 650px;
+
+}
+
+/*--------------------------------------*/
+/*PROFILE*/
+#profile {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+.profile-title {
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.profile-title div{
+    width: 150px;
+}
+
+.profile-title div p {
+    width: 80px;
+    text-transform: uppercase;
+    color: #df2726;
+    font-size: .8rem;
+    font-weight: bold;
+
+    border-bottom: 2px solid #df2726;
+}
+
+.profile-title div hr {
+    color: #df2726;
+    height: 1px;
+    position: absolute;
+    top
+
+}
+
+/*------------------------------*/
+/*top*/
+
+/*-----------------*/
+/*top-left*/
+.top {
+    width: 100%;
+    height: 230px;
+}
+
+.top-left, .top-right {
+    padding: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.top-left .pic, .top-left .c-info {
+    height: 100%;
+    margin: 0 auto;
+    padding:
+
+}
+
+.top-left .pic {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.top-left .pic img {
+    width: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.top-left .pic img:hover {
+    background: url(/assets/photo-edit.png) cover center no-repeat;
+}
+
+
+/*Customer information*/
+.top-left .c-info {
+    padding: 20px 10px;
+    font-size: .8rem
+}
+
+.c_name {
+    line-height: 1.5;
+    font-size: 1.3rem
+}
+
+.c_details {
+    margin: 30px 0px 10px 0px;
+}
+
+.c_details .row .small-4 {
+    font-weight: bold
+}
+
+.c_details .row .small-8 {
+    margin: 0;
+    padding: 0;
+
+}
+.c_details .row {
+    padding: 5px 0;
+}
+
+.edit-info {
+    margin-top: 30px;
+}
+
+.edit-info button {
+    width: 100px;
+    height: 22px;
+    text-transform: uppercase;
+    font-size: .7rem;
+    border: 3px solid #df2726;
+    border-radius: 5px;
+    background-color: #df2726;
+    color: #fff;
+}
+
+/*top right */
+.top-right {
+
+}
+.edit-c-details-form {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+
+}
+
+form input {
+    border: 1px solid #555 !important;
+    border-radius: 100px !important;
+    box-shadow: none !important;
+    font-size: .9rem !important;
+
+}
+
+form input:hover, form input:active {
+    border: 1px solid #df2726;
+    border-radius: 00px;
+}
+
+form input placeholder {
+
+}
+
+.social-flex {
+    width: auto;
+    display: inline-flex;
+    padding-right: 76px;
+}
+
+.social-flex div {
+    margin-right: 10px
+}
+
+.social-flex div img {
+    width: 30px;
+}
+
+.save-changes {
+    margin-top: 10px;
+
+}
+
+.save-changes button {
+    height: 30px;
+    width: 215px;
+
+    text-transform: uppercase;
+    font-size: .8rem;
+    border: 3px solid #df2726;
+    border-radius: 100px;
+    background-color: #df2726;
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*====================================================================*/
 /*---------- Media Queries -------------*/
