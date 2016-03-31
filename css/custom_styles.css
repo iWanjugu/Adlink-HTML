@@ -21,7 +21,7 @@ html, body {
     border: 0;
     line-height: 1;
     margin: 0;
-    font-family: Raleway-Regular !important;
+    font-family: Roboto-Regular; !important;
     -webkit-background-size: cover;
     background-size: cover;
     color: #555;
@@ -32,7 +32,9 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
-a {}
+a {
+    margin: 0 auto;
+}
 
 .container {
     height: 100%;
