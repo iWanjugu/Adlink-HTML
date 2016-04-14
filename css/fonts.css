@@ -206,6 +206,15 @@
 }
 .roboto {font-family: Roboto-Regular;}
 
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../font/Simple/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../font/Simple/roboto/Roboto-Thin.ttf);
+}
 
 /*Valencia*/
 @font-face {
