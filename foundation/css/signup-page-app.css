@@ -15,7 +15,7 @@
 .adlink-black-bg {    background-color: #0f0e0e; }
 
 div, p {
-    color: #515151 !important;
+    color: #515151;
 }
 
 
@@ -412,4 +412,62 @@ form input:hover, form input:active {
 /*-----------------*/
 #print .row, #book .row, #track .row,{}
 
+/*====================================================================*/
+
+/*PAGE #*/
+
+#page3 {
+    width: 100%;
+    height: 100vh;
+}
+
+#c-fact {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.c-fact-div {
+    height: 100%;
+    width: 700px;
+    padding: 10px;
+
+}
+
+.c-fact-div .head {
+    margin-top: 30px;
+}
+
+/*--------------------*/
+/*Image*/
+.c-fact-img {
+    position: relative;
+    height: 80px;
+    margin: 0px 0px;
+}
+
+.c-fact-img img {
+    width: 80px;
+}
+
+
+
+
+
+
+/*--------------------*/
+/*Text*/
+.c-fact-text p, .c-fact-text-big p {
+    color: #fff !important;
+    text-align: center;
+}
+
+.c-fact-text-big {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.c-fact-text {
+    font-size: .6rem
+}
 /*====================================================================*/
