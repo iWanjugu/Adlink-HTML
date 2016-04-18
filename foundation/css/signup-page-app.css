@@ -260,5 +260,120 @@ form input:hover, form input:active {
     margin-left: 20px;
     margin-right: -30%;
     height: 40%
+}
+
+/*====================================================================*/
+/*Page 2*/
+
+#page2 {
+    height: 100vh;
+    width: 100%
+}
+
+/*---------------------------*/
+/*Locations*/
+.locations {
+    height: 200px;
+    width: 100%;
+}
+
+.head {
+    margin: 20px;
+}
+.dash {}
+.head p {
+    margin: 0 20px;
+    font-size: 0.6rem;
+}
+
+/*---------------------------*/
+/*How it works*/
+.workings {
+    height: calc(100vh - 200px);
+    background-color: #dddddd;
+}
+
+.w-tabs {
+   position: relative;
+    height: 135px;
+    margin-top: 20px
+}
+
+#workings-tabs {
+    width: auto;
+    border: 0 !important;
+}
+
+#workings-tabs li {
+    position: relative;
+    width: 140px;
+}
+
+#workings-tabs .tabs-title>a {
+    display: block;
+    padding: 1.5rem 1rem;
+    line-height: 1;
+}
+
+.tab-img {
+    position: relative;
+    height: 50px;
+    margin-bottom: 10px
+}
+
+.tab-img img {
+    width: 50px;
+}
+
+.tab-txt {
+    position: relative;
+    height: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tab-txt p {
+    font-size: .8rem;
+}
+
+
+/*Edit tabs*/
+#workings-tabs .tabs-title p {
+    color: #fff !important;
+}
+
+#workings-tabs .tabs-title, #workings-tabs .tabs-title>a[aria-selected=true] {
+    background: #dddddd !important;
 
 }
+
+#workings-tabs .tabs-title>a[aria-selected=true] p {
+     color: #555 !important;
+    font-weight: bold;
+}
+
+
+
+#workings-tabs .tabs-title>a:hover {
+    background: #dddddd !important;
+}
+
+#workings-tabs .tabs-title>a p:hover {
+    color: #555 !important;
+}
+
+
+/*---------------------------*/
+/*the description*/
+
+.tabs-content {
+    height: calc(100% - 120px);
+}
+
+.tabs-panel
+a2b924
+
+
+
+
+/*====================================================================*/

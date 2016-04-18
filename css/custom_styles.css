@@ -243,3 +243,25 @@ button {
 }
 
 /*====================================================================*/
+
+/*Flex*/
+
+.Flex {
+    display: inline-flex;
+    position: relative;
+    width: auto;
+    align-items: center;
+}
+
+.Flex-Div {
+    width: auto;
+}
+
+
+
+/*Break wowd wrap*/
+.br-word {
+    height: auto;
+    word-wrap: break-word;
+    white-space: normal;
+}
