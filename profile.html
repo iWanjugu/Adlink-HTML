@@ -157,27 +157,112 @@
 
             <!-- right side -->
             <div class="small-12 medium-6 columns top-right">
+
+                <!--- Edit details Form ------>
                 <div class="row columns edit-c-details-form">
                 <form>
+                    <!-- row 1-->
                     <div class="row">
                         <div class="medium-6 columns">
-                            <label><input type="text" placeholder="name">
+                            <label><input type="text" name="username" placeholder="username" >
                             </label>
                         </div>
                         <div class="medium-6 columns">
-                            <label><input type="text" placeholder="email">
+                            <label><input type="text" name="password" placeholder="password">
                             </label>
                         </div>
                     </div>
 
+                    <!-- row 2-->
+                     <div class="row">
+                        <div class="medium-6 columns">
+                            <label><input type="text" name="first_name" placeholder="first_name" >
+                            </label>
+                        </div>
+                        <div class="medium-6 columns">
+                            <label><input type="text" name="last_name" placeholder="last_name">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- row 3-->
+                    <div class="row">
+                        <div class="medium-6 columns">
+                            <label><input type="text" name="email" placeholder="email">
+                            </label>
+                        </div>
+                        <div class="medium-6 columns">
+                            <label><input type="text" name="company" placeholder="company">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- row 4 -->
                     <div class="row">
                         <div class=" medium-6 columns">
-                            <label><input type="text" placeholder="phone">
+                            <label><input type="text" name="phone" placeholder="phone">
+                            </label>
+                        </div>
+                        <div class="medium-6 columns">
+                            <label><input type="text" name="gender" placeholder="gender">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- row 5 -->
+                    <div class="row">
+                        <div class=" medium-6 columns">
+                            <label><input type="text" name="dob" placeholder="date of birth">
+                            </label>
+                        </div>
+                        <div class="medium-6 columns">
+                            <label><input type="text" name="alt_phone" placeholder="alternative phone number">
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- upload image -->
+                    <div class="row">
+                        <div class=" medium-6 columns">
+                            <p>Upload Profile Picture:</p>
+                        </div>
+                        <div class=" medium-6 columns">
+                            <label><input type="file" name="profile-pic" placeholder="upload profile pic">
+                            </label>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <!-- row 6 -->
+                    <div class="row">
+
+                        <div class="medium-6 columns">
+                            <label><input type="text" name="rep_name" placeholder="representative's name">
                             </label>
                         </div>
 
+                         <div class="medium-6 columns">
+                            <label><input type="text" name="rep_number" placeholder="representative's phone number">
+                            </label>
+                        </div>
+                    </div>
 
-                        <div class="medium-6 columns social-flex">
+                    <!-- row 7 -->
+                    <div class="row">
+                        <div class="medium-6 columns end">
+                            <label><input type="text" name="rep_email" placeholder="representative's email">
+                            </label>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- row 8-->
+                    <div class="row">
+                        <div class="medium-6 columns end social-flex">
                             <a href="#">
                                 <div><img src="http://bit.ly/1VDpeCz" alt="fb-grey"></div>
                             </a>
@@ -195,7 +280,7 @@
 
                     <div class="row">
                         <div class="medium-6 columns end save-changes">
-                            <button> save profile changes </button>
+                            <button> <input type="submit" value="save profile changes" name="submit"> </button>
                         </div>
                     </div>
                 </form>
@@ -209,61 +294,7 @@
 
 
 
-        <!----------------------------------->
-        <!-- bottom row -->
-        <!----------------------------------->
-        <div class="row bottom">
 
-            <!--- bottom left --->
-            <div class="small-12 medium-6 columns bottom-left">
-                <!--  ad status -->
-                <div class="row columns title">
-                    <div>
-                        <p>AD STATUS</p>
-                        <hr>
-                    </div>
-                </div>
-
-                <div class="row columns status-table">
-
-
-                </div>
-
-                <div class="row columns view-more">
-                    <div class="view-more-flex">
-                    <a href="#">
-                        <div><img src="https://www.dropbox.com/s/k2gqa2ajxun8ahq/plus-grey.png?raw=1" alt="plus-grey"></div>
-                    </a>
-                    <p> VIEW ALL</p>
-                    </div>
-                </div>
-
-            </div> <!-- end bottom-left -->
-
-
-            <!--- bottom right --->
-            <div class="small-12 medium-6 columns bottom-right">
-
-                <!--  rates weekly -->
-                <div class="row columns title">
-                    <div>
-                        <p>RATES WEEKLY </p>
-                        <hr>
-                    </div>
-                </div>
-
-                <div class="row columns price-table">
-
-                </div>
-
-                <div class="row columns book-ad">
-                    <button> book ad</button>
-                </div>
-
-
-            </div> <!-- end bottom-right -->
-
-        </div> <!-- end bottom -->
 
     </div> <!-- end profile -->
 
