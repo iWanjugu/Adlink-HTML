@@ -123,7 +123,7 @@
 
 /*background photo*/
 #banner-photo {
-    background-image: url(/assets/Profile-bg.jpg);
+    background-image: url(https://www.dropbox.com/s/q9979mexavtq2pu/Profile-bg.jpg?raw=1);
     background: center cover no-repeat;
 /*    height: calc(100% - 200px);*/
     height: 530px;
@@ -322,7 +322,7 @@
 }
 
 .top-left .pic img:hover {
-    background: url(/assets/photo-edit.png) cover center no-repeat;
+    background: url(https://www.dropbox.com/s/0ep9ujaavvld7fw/photo-edit.png?raw=1) cover center no-repeat;
 }
 
 

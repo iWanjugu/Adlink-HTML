@@ -341,56 +341,56 @@ form input:hover, form input:active {
 /*Images on tabs*/
 /*design*/
 .design.tab-img {
-    background-image: url(/assets/home/design.png);
+    background-image: url(https://www.dropbox.com/s/o3qd4h16crrmvs5/design-black.png?raw=1);
 }
 
 .design.tab-img:hover {
-    background-image: url(/assets/home/design-black.png);
+    background-image: url(https://www.dropbox.com/s/o3qd4h16crrmvs5/design-black.png?raw=1);
 }
 
 .tabs-title>a[aria-selected=true] .design {
-    background-image: url(/assets/home/design-black.png);
+    background-image: url(https://www.dropbox.com/s/o3qd4h16crrmvs5/design-black.png?raw=1);
 }
 
 /*book*/
 .book.tab-img {
-    background-image: url(/assets/home/book-and-pay.png);
+    background-image: url(https://www.dropbox.com/s/xfm1lhsetqg6ae6/book-and-pay.png?raw=1);
 }
 
 .book.tab-img:hover {
-    background-image: url(/assets/home/book-and-pay-black.png);
+    background-image: url(https://www.dropbox.com/s/66dxl0vt9xpxemp/book-and-pay-black.png?raw=1);
 }
 
 .tabs-title>a[aria-selected=true] .book {
-    background-image: url(/assets/home/book-and-pay-black.png);
+    background-image: url(https://www.dropbox.com/s/66dxl0vt9xpxemp/book-and-pay-black.png?raw=1);
 }
 
 
 /*print*/
 .print.tab-img {
-    background-image: url(/assets/home/print.png);
+    background-image: url(https://www.dropbox.com/s/h5z46yzhvak6eq9/print.png?raw=1);
 }
 
 .print.tab-img:hover {
-    background-image: url(/assets/home/print-black.png);
+    background-image: url(https://www.dropbox.com/s/hysdmxo97r5lqfh/print-black.png?raw=1);
 }
 
 .tabs-title>a[aria-selected=true] .print {
-    background-image: url(/assets/home/print-black.png);
+    background-image: url(https://www.dropbox.com/s/hysdmxo97r5lqfh/print-black.png?raw=1);
 }
 
 
 /*track*/
 .track.tab-img {
-    background-image: url(/assets/home/track.png);
+    background-image: url(https://www.dropbox.com/s/4rslxyj8rv3dv9i/track.png?raw=1);
 }
 
 .track.tab-img:hover {
-    background-image: url(/assets/home/track-black.png);
+    background-image: url(https://www.dropbox.com/s/aghwtxk8x6t0wvk/track-black.png?raw=1);
 }
 
 .tabs-title>a[aria-selected=true] .track {
-    background-image: url(/assets/home/print-black.png);
+    background-image: url(https://www.dropbox.com/s/aghwtxk8x6t0wvk/track-black.png?raw=1);
 }
 
 /*Edit tabs*/
