@@ -21,6 +21,7 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    min-width: 1200px;
     height: auto;
 }
 
@@ -89,7 +90,7 @@
 }
 
 .Logo_bg img {
-    width: 70%;
+    width: 50%;
 }
 
 .menu-tabs {
@@ -186,6 +187,19 @@
 }
 
 .prof-pic {
+    height: 100px;
+    position: relative;
+
+}
+
+.prof-pic>div {
+    width: 100px;
+    height: 100px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 
 }
 
@@ -313,12 +327,20 @@
     padding: 0;
 }
 
-.top-left .pic img {
+.top-left .pic div{
+    height: 120px;
     width: 120px;
+
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+}
+
+.top-left .pic img {
+    width: 120px;
+
 }
 
 .top-left .pic img:hover {
@@ -329,8 +351,14 @@
 /*Customer information*/
 .top-left .c-info {
     padding: 20px 10px;
-    font-size: .8rem
+    font-size: .8rem;
+    position: relative;
 }
+
+.top-left .c-info>div{
+    width: 100%;
+}
+
 
 .c_name {
     line-height: 1.5;
