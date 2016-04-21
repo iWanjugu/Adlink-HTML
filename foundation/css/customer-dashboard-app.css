@@ -2,6 +2,7 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    min-width: 1400px;
     height: auto;
 }
 
@@ -11,6 +12,8 @@
     width: 200px;
     margin: 0 auto;
     padding: 0;
+    height: 300vh;
+    background-color: #000;
 }
 
 #right-body {
@@ -402,4 +405,129 @@
 
 .get-free-ad-div .text3 {
     height: 40px;
+}
+
+
+/*--------------------------------*/
+/*Complete Steps*/
+
+.complete-steps {
+    width: 100%;
+    height: 500px;
+}
+
+.complete-steps .row .medium-2 {
+    height: 100%;
+
+}
+
+
+/*heading*/
+.complete-steps .cs-heading, .cs-heading div {
+    height: 40px;
+/*    width: 100%;*/
+    padding: 0;
+    margin: 0 auto;
+}
+
+.cs-heading .columns {
+    padding: 0 0 0 30px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.cs-heading .columns p {
+
+}
+
+.cs-heading .medium-2, .cs-heading .medium-6 {
+    background-color: #51d2b7;
+}
+
+
+.cs-heading .medium-4 {
+    background-color: #24b899;
+}
+
+.cs-heading .columns p {
+    font-size: ;
+    color: #fff;
+    font-weight: 500;
+    width:
+}
+
+/*----------------------------------------------*/
+/*complete steps*/
+
+.complete-steps .cs, .cs div {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.row {
+    padding: 0;
+    ;
+}
+
+/*Complete profile*/
+.cs {
+    height: 70px;
+    position: relative;
+
+}
+
+.cs .columns.medium-6, .cs .columns.medium-4 {
+    height: 70px;
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+.cs .columns .row  {
+    height: 100%;
+    position: relative;
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+.Flex {
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+.Flex-Div.pic img {
+    width: 35px;
+    margin: 20px 25px;
+}
+
+.Flex-Div.txt p {
+    font-weight: 300;
+    font-size: .95rem
+}
+
+.btn {
+    position: relative;
+    height: 70px;
+}
+.btn button {
+    border: 1px solid #d2d2d2;
+    border-radius: 100px;
+    padding: 4px 4px;
+    width: 120px;
+    font-size: .7rem;
+    text-transform: none;
+}
+
+
+.Flex-Div.txt2 p {
+    font-weight: 600;
+    font-size: .7rem;
+    color: #9db519;
+}
+
+.Flex-Div.txt2.pending p {
+    color: #de4f42;
+}
+.cs-tour {
+    background-color: #eaeaea;
 }
