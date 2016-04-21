@@ -330,7 +330,76 @@
     width: 100%;
 }
 
+/*--------------------------------*/
+/*Get free ad*/
 #page2 .get-free-ad {
-    height: calc(100% - 550px);
-    min-height: 250px;
+    height: 270px;
+    background: #9db519;
+    text-align: center;
+    position: relative;
+}
+
+#page2 .get-free-ad .get-free-ad-div {
+    width: 400px;
+    height: 100%;
+    color: #fff;
+}
+
+.get-free-ad-div .free-ad {
+    width: 100px;
+    padding: 20px 10px 10px 10px;
+    margin: 0 auto;
+}
+
+.get-free-ad-div .text1 {
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.get-free-ad-div .buttons{
+    height: 50px;
+}
+
+.get-free-ad-div .buttons button{
+    border: thin solid #fff ;
+    border-radius: 100px;
+    color: #fff;
+    padding: 5px 10px;
+
+    width: 115px;
+    font-size: .6rem;
+    font-weight: 400;
+}
+
+.get-free-ad-div .buttons .And {
+    margin: 0px 10px;
+    font-size: .7rem;
+}
+.get-free-ad-div .text2 {
+    height: 20px;
+    font-size: .7rem;
+}
+
+.get-free-ad-div .progress-bar {
+    height: 10px;
+}
+
+.get-free-ad-div .progress-bar div {
+    height: 100%;
+    text-align: left;
+}
+.get-free-ad-div .progress-bar img{
+    position: absolute;
+    height: 10px;
+}
+
+.get-free-ad-div .progress-bar .progress-bar2 {
+    height: 10px;
+    left: 40px;
+
+}
+
+
+.get-free-ad-div .text3 {
+    height: 40px;
 }
