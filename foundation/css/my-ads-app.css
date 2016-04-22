@@ -32,10 +32,8 @@
     height: 300px;
 }
 
-#customer-dashboard-banner {
-/*    background-image: url(https://www.dropbox.com/s/gv5txqgkui2u2t8/banner-bg.jpg?raw=1);*/
-
-/*    background-image: url(https://www.dropbox.com/s/kw72fst3y4bv0bz/banner-bg-278.jpg?raw=1);*/
+#my-ads-banner {
+    background-image: url(https://www.dropbox.com/s/1zizd7a6q7oji90/my-ads-banner.jpg?raw=1);
 
     background: center cover no-repeat;
 
