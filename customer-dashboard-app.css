@@ -1,0 +1,438 @@
+#wrapper, #Body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 1400px;
+    height: auto;
+}
+
+/*BODY*/
+#Body {}
+
+
+#right-body {
+    width: calc(100% - 200px);
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/*--------------------------------------------------------------*/
+/*PAGE 1*/
+/*--------------------------------------------------------------*/
+#page1 {
+/*    height: calc(100vh - 50px);*/
+    height: 800px;
+    width: 100%;
+}
+
+/*banner*/
+#page1 .banner {
+    height: 300px;
+}
+
+#customer-dashboard-banner {
+/*    background-image: url(https://www.dropbox.com/s/gv5txqgkui2u2t8/banner-bg.jpg?raw=1);*/
+
+/*    background-image: url(https://www.dropbox.com/s/kw72fst3y4bv0bz/banner-bg-278.jpg?raw=1);*/
+
+    background: center cover no-repeat;
+
+}
+
+/*How to place ad*/
+#page1 .how-to-place-ad {
+    height: 500px;
+
+}
+
+.how-to-place-ad .how-to-title {
+    width: 100%;
+/*    height: 50px;*/
+    padding: 20px 0px;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.how-to-place-ad .ht-place-ad {
+    height: 375px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ht-place-ad .columns {
+    position: relative;
+    height: 100%
+}
+
+.ht-steps {
+    height: 100%;
+/*    width: 80%;*/
+    min-width: 300px;
+    border-radius: 0px;
+    border: .5px solid #cccccc;
+    text-decoration: none;
+}
+
+/*box title*/
+.ht-steps .ht-title {
+    height: 120px;
+    width: 100%;
+    position: relative;
+}
+
+.ht-steps .ht-title .top {
+    height: 80%;
+}
+
+.ht-steps .ht-title .bottom {
+    height: 20%;
+    position: absolute;
+    bottom: 15px;
+    font-size: 1.2rem;
+    color: #fff
+}
+
+/*Step1*/
+.step1 .ht-title {
+    background: #b4cb34;
+}
+.ht-steps .ht-title div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.ht-steps .ht-title div .step-num-c{
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: #fff
+}
+
+/*box contnent*/
+.ht-steps .ht-content {
+    height: calc(100% - 120px);
+    width: 100%;
+    position: relative;
+}
+
+.ht-steps .ht-content .ht-content-div {
+    width: 70%;
+    height: 90%;
+    text-align: center;
+}
+
+.ad-details-img  {
+    width: auto;
+    height: 80%;
+    padding-top: 10px;
+}
+
+.ad-details-img img {
+    width: 90px;
+/*    height: 80px;*/
+}
+
+.ht-content-div div button {
+    background-color: #252525;
+    border: 3px solid #404041;
+    border-radius: 100px;
+    text-transform: none;
+    font-size: .8rem;
+/*    font-weight: 700;*/
+    color: #fff;
+
+    width: 150px;
+    height: 27px;
+}
+
+/*-------------*/
+/*step2*/
+.step2 .ht-title {
+    background: #51d2b7;
+}
+
+.row.ad-details-img .row .location {
+    border: 1px solid #404041;
+    color: #898989;
+    padding: 7px 10px;
+    margin: 5px;
+    width: 45%;
+}
+
+.row.ad-details-img .row .location p {
+    font-size: .7rem;
+}
+
+.step2 .ht-content-div .ad-details-img {
+    height: 40%;
+}
+
+.step2 .ht-content-div .plus-sign {
+    height: 50px;
+    width: 50%;
+}
+
+.step2 .ht-content-div .plus-sign img {
+    margin-right: 10px;
+}
+
+.step2 .ht-content-div .plus-sign p {
+    font-size: .7rem;
+    font-weight: 500;
+    color: #555;
+
+}
+
+.step2 .ht-content-div div button {
+    margin-top: 43px;
+}
+
+/*-------------*/
+/*step3*/
+.step3 .ht-title {
+    background: #252525;
+}
+
+.step3 .ht-content-div {}
+.step3 .ht-content-div img {
+    width: 150px;
+    margin: 35px 0px 0px 0px;
+}
+
+/*--------------------------------------------------------------*/
+/*PAGE 2*/
+/*--------------------------------------------------------------*/
+#page2 {
+    height: 620px;
+/*    min-height: 800px;*/
+    width: 100%;
+}
+
+/*--------------------------------*/
+/*Get free ad*/
+#page2 .get-free-ad {
+    height: 300px;
+    background: #9db519;
+    text-align: center;
+    position: relative;
+}
+
+#page2 .get-free-ad .get-free-ad-div {
+    width: 400px;
+    height: 100%;
+    color: #fff;
+}
+
+.get-free-ad-div .free-ad {
+    width: 100px;
+    padding: 30px 10px 10px 10px;
+    margin: 0 auto;
+}
+
+.get-free-ad-div .text1 {
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.get-free-ad-div .buttons{
+    height: 50px;
+}
+
+.get-free-ad-div .buttons button{
+    border: thin solid #fff ;
+    border-radius: 100px;
+    color: #fff;
+    padding: 5px 10px;
+
+    width: 115px;
+    font-size: .6rem;
+    font-weight: 400;
+}
+
+.get-free-ad-div .buttons .And {
+    margin: 0px 10px;
+    font-size: .7rem;
+}
+.get-free-ad-div .text2 {
+    height: 20px;
+    font-size: .7rem;
+}
+
+.get-free-ad-div .progress-bar {
+    height: 10px;
+}
+
+.get-free-ad-div .progress-bar div {
+    height: 100%;
+    text-align: left;
+}
+.get-free-ad-div .progress-bar img{
+    position: absolute;
+    height: 10px;
+}
+
+.get-free-ad-div .progress-bar .progress-bar2 {
+    height: 10px;
+    left: 40px;
+
+}
+
+
+.get-free-ad-div .text3 {
+    height: 40px;
+}
+
+
+/*--------------------------------*/
+/*Complete Steps*/
+
+.complete-steps {
+    width: 100%;
+    height: 320px;
+}
+
+.complete-steps .row .medium-2 {
+    height: 100%;
+
+}
+
+
+/*heading*/
+.complete-steps .cs-heading, .cs-heading div {
+    height: 40px;
+/*    width: 100%;*/
+    padding: 0;
+    margin: 0 auto;
+}
+
+.cs-heading .columns {
+    padding: 0 0 0 30px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.cs-heading .columns p {
+
+}
+
+.cs-heading .medium-2, .cs-heading .medium-6 {
+    background-color: #51d2b7;
+}
+
+
+.cs-heading .medium-4 {
+    background-color: #24b899;
+}
+
+.cs-heading .columns p {
+    font-size: ;
+    color: #fff;
+    font-weight: 500;
+    width:
+}
+
+/*----------------------------------------------*/
+/*complete steps*/
+
+.complete-steps .cs, .cs div {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.row {
+    padding: 0;
+}
+
+/*Complete profile*/
+.cs {
+    height: 70px;
+    position: relative;
+
+}
+
+.cs .columns.medium-6, .cs .columns.medium-4 {
+    height: 70px;
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+.cs .columns .row  {
+    height: 100%;
+    position: relative;
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+.Flex {
+    margin: 0 auto !important;
+    padding: 0;
+}
+
+.Flex-Div.pic img {
+    width: 35px;
+    margin: 20px 25px;
+}
+
+.Flex-Div.txt p {
+    font-weight: 300;
+    font-size: .95rem
+}
+
+.btn {
+    position: relative;
+    height: 70px;
+}
+
+.btn button {
+    border: 1px solid #d2d2d2;
+    border-radius: 100px;
+    padding: 4px 4px;
+    width: 120px;
+    font-size: .65rem;
+    text-transform: none;
+}
+
+
+.Flex-Div.txt2 p {
+    font-weight: 600;
+    font-size: .7rem;
+    color: #9db519;
+}
+
+.Flex-Div.txt2.pending p {
+    color: #de4f42;
+}
+
+.cs-tour {
+    background-color: #eaeaea;
+}
+
+
+/*--- claim ad --*/
+.cs-claim-btn {
+    position: relative;
+    background-color: #eaeaea;
+}
+
+.cs-claim-btn .btn {
+/*    height: auto;*/
+    width: 200px;
+}
+
+.cs-claim-btn .btn button {
+    background-color: #9db519;
+    width: 200px;
+    color: #fff;
+    height: 27px;
+    font-weight: 500;
+    font-size: .7rem
+}
+
+

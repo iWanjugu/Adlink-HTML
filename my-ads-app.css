@@ -1,0 +1,528 @@
+link {
+    display:block;
+}
+
+#left-nav {
+    }
+
+
+#right-body {
+    width: calc(100% - 200px);
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/*--------------------------------------------------------------*/
+/*PAGE 1*/
+/*--------------------------------------------------------------*/
+#page1 {
+/*    height: calc(100vh - 50px);*/
+    height: 800px;
+    width: 100%;
+}
+
+/*banner*/
+#page1 .banner {
+    height: 300px;
+}
+
+#my-ads-banner {
+    background-image: url(https://www.dropbox.com/s/1zizd7a6q7oji90/my-ads-banner.jpg?raw=1);
+
+    background: center cover no-repeat;
+
+}
+
+
+/*The Ads*/
+#page1 .the-ads {
+    height: 500px;
+    padding: 40px 0px 20px 0px;
+
+}
+
+.the-ads .ht-place-ad {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ht-place-ad .columns {
+    position: relative;
+    height: 100%
+}
+
+.ht-steps {
+    height: 100%;
+/*    width: 80%;*/
+    width: 300px;
+    border-radius: 0px;
+    border: .5px solid #cccccc;
+    text-decoration: none;
+}
+
+.step-num {}
+
+/*box title*/
+.ht-steps .ht-title {
+    height: 120px;
+    width: 100%;
+    position: relative;
+}
+
+.ht-steps .ht-title .top {
+    height: 80%;
+}
+
+.ht-steps .ht-title .bottom, .ht-steps .ht-content .bottom {
+    height: 20%;
+    position: absolute;
+    bottom: 15px;
+    font-size: 1.2rem;
+    color: #fff
+}
+
+/*Step1*/
+
+.step1 {
+    background-color: #252525;
+}
+
+.step1 .ht-title>div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.step1 .ht-title>div .step-txt {
+    position: relative;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.step1 .ht-title>div .step-num {
+    position: relative;
+    font-size: 2.6rem;
+    width: 100px;
+    margin-top: 10px;
+    color: #b4cb34;
+    font-weight: 300;
+}
+
+.ht-steps .ht-title div .step-num-c, .ht-steps .ht-content div .step-num-c{
+    width: 150px;
+    height: 50px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+/*box contnent*/
+.ht-steps .ht-content {
+    height: calc(100% - 120px);
+    width: 100%;
+    position: relative;
+}
+
+.ht-steps .ht-content .ht-content-div {
+    width: 70%;
+    height: 90%;
+    text-align: center;
+}
+
+.ad-details-img  {
+    width: auto;
+    height: 80%;
+    padding-top: 10px;
+}
+
+.ad-details-img img {
+    width: 130px;
+    margin-top: 0px;
+/*    height: 80px;*/
+}
+
+.ht-title div button, .ht-content div button {
+    border: 0.5px solid #eae6e6;
+    border-radius: 5px;
+    font-size: .6rem;
+/*    font-weight: 700;*/
+    color: #fff;
+
+    width: 100px;
+    height: 22px;
+}
+
+/*-------------*/
+/*step2 */
+.step2 {
+    position: relative;
+}
+
+.step2 .ht-title {
+    background: #00aef0;
+    height: 50%;
+}
+
+.step2 .ht-content {
+    height: 50%;
+    background: #252525;
+    position: relative;
+}
+
+.step2 .ht-title .top, .step2 .ht-content .top {
+    height: 55%;
+    position: relative;
+/*    padding-top: 5px;*/
+}
+
+.step2 .ht-title .bottom, .step2 .ht-content .bottom {
+    height: 40%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 0;
+}
+
+.step2 .step-num-c {
+    top: 60%;
+}
+.step2 .step-num-c, .step3 .step-num-c {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.step2 .step-num-c img, step3 .step-num-c img {
+    width: 80px !important;
+    max-width: 170px;
+}
+
+.step2 .ht-content .step-num-c p {
+    color: #de4f42;
+}
+
+.step2 .ht-content .ht-content-div {}
+
+
+
+.step2 .ht-title .bottom>p, .step2 .ht-content .bottom>p {
+    height: 30px;
+}
+
+
+
+/*-------------*/
+/*step3 */
+.step3 {
+    position: relative;
+    background: #24b899;
+}
+
+.step3 .ht-title, .step3 .ht-content {
+    height: 50%;
+    position: relative;
+}
+
+
+.step3 .ht-title .top, .step3 .ht-content .top {
+    height: 55%;
+    width: 100%;
+    position: relative;
+/*    padding-top: 5px;*/
+}
+
+.step3 .ht-content .top {
+    height: 40%;
+}
+
+.step3 .ht-title .bottom, .step3 .ht-content .bottom {
+    height: 0%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 0;
+}
+
+.step3 .step-num-c {
+    top: 60%;
+}
+
+.step3 .ht-content .bottom {
+    height: 60%;
+}
+
+.step3 .ht-content .top .step-num-c {
+    padding-top: 37px;
+    width: 100% !important;
+    text-align: center;
+}
+
+.step3 .ht-content .step-num-c p {
+    width: 100%;
+    font-size: 2.1rem;
+
+}
+
+.step3 .ht-content .step-num-c p span {
+
+}
+
+.step3 .ht-title .bottom>p {
+    height: 30px;
+}
+
+.step3 .ht-content .bottom>p {
+    padding: 10px 0px 25px 0px;
+
+}
+
+
+/*----------------------------------------------------->
+<!-- PAGE 2 --->
+<!-----------------------------------------------------> */
+#page2 {
+    height: auto;
+    min-height: 700px;
+    position: relative;
+}
+
+.ad-container {
+    width: 80%;
+    min-width: 1200px;
+}
+
+.ad-container>div {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.ads-top {
+    width: 100%;
+    height: 30px;
+}
+
+
+.ad-title, .ad-status {
+    height: 100%;
+    position: relative;
+}
+
+.ad-title {
+    font-size: 1.7rem;
+    width: 130px !important;
+}
+
+#my-ads-length {
+    height: 100%;
+}
+
+.ads-drop-filter{
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.ads-drop-filter select {
+    height: 30px !important;
+/*    background-color: #000;*/
+/*    color: #fff;*/
+/*    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1…on points="0,0 32,0 16,24" style="fill: rgb(255,255,255)"></polygon></svg>') !important;*/
+
+}
+
+/*search*/
+.s-ads {
+    height: 30px;
+}
+
+.input-group-label {
+   background-image: url(https://www.dropbox.com/s/6slruhty48p9tyf/search-bg.png?raw=1);
+}
+
+.input-group-button {
+     padding: 0 !important;
+    margin: 0 auto !important;
+    width: 30px !important;
+    height: 30px !important;
+
+}
+
+.input-group-button label {
+/*   background-image: url(https://www.dropbox.com/s/6slruhty48p9tyf/search-bg.png?raw=1);*/
+    width: 30px;
+    height: 30px;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    border: none;
+    background: none;
+
+}
+
+.input-group-button label img {
+   width: 25px;
+    height: 25px;
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+/*ads-bottom*/
+.ads-bottom {
+    height: 50px;
+}
+
+.ads-bottom .columns {
+    height: 100%;
+}
+
+.select-space {
+    width: 150px !important
+}
+.Flex.ad-status {
+    width: 400px;
+    height: 100%;
+}
+
+.Flex.ad-status .Flex-Div {
+    width: 100px;
+    height: 100%;
+    position: relative;
+}
+
+.Flex.ad-status .Flex-Div a {
+    height: 30px !important;
+    width: 100px !important;
+    color: #555;
+}
+
+.ads-select {
+    font-size: .7rem !important;
+}
+
+.ads-select:hover, .ads-select:active {
+    font-weight: bolder;
+    color: #000;
+}
+
+.Flex.ad-status .Flex-Div a p {
+    width: 90px
+}
+
+#ads-search {
+    height: 25px !important;
+
+}
+
+
+
+/*----------------------------------------*/
+/*The table*/
+
+#my-ads-table {
+    width: 1200px;
+}
+
+.ad_cols {
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: #fff;
+    width: 140px !important;
+    border-right: #fff 1px solid;
+}
+
+.ad_id_col {
+    background: #b4cb34;
+}
+
+.book_ref_col {
+    background: #66b202;
+}
+
+.location_col {
+    background: #51d2b7;
+}
+
+.amount_col {
+    background: #24b899;
+}
+
+.duration_col {
+    background: #464b57;
+}
+
+.status_col {
+    background: #000000;
+    width: 250px !important;
+}
+
+/*------*/
+#my-ads-table_length.dataTables_length {
+    display: none !important;
+    height: 0 !important;
+}
+
+#my-ads-table_filter.dataTables_filter {
+    display: none !important;
+    height: 0 !important;
+}
+/*------*/
+
+/*the rows*/
+.my_ads_table_body p {
+
+}
+.my_ads_table_body td {
+    font-size: .8rem !important;
+    background: #f7f7f7;
+    height: 40px;
+    border: #fff 1px solid;
+
+}
+
+.my_ads_table_body td p {
+    font-size: .7rem !important;
+}
+
+/*ad id*/
+.ad_id_ {}
+
+.ad_id_ .Flex {}
+
+.ad_id_ .Flex .Flex-Div {
+    height: auto;
+    width: 50px;
+}
+
+.ad_id_ .Flex .Flex-Div p {
+    font-size: .8rem !important;
+}
+
+.ad_id_ .Flex .Flex-Div .chck {
+    margin: 0;
+}
+
+/*ad status*/
+.ad_stat {
+    width: 50px;
+    color: #51d2b7;
+
+    font-weight: 700;
+}
+.ad_days_left {
+    width: 170px;
+    color: ;
+
+}
+
+.ad_renew {
+    width: 50px;
+/*    color: #000;*/
+    font-weight: bold;
+    font-size: .6rem !important;
+}
