@@ -2,7 +2,7 @@
 <html lang=en>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>DASHBOARD::Adlink</title>
+    <title>MY ADS::Adlink</title>
 
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/2eftb3ous07fmuc/normalize.css?raw=1">
@@ -19,9 +19,9 @@
 <!--    <link rel="stylesheet" type="text/css" href="css/custom_styles.css">-->
 
     <!-- app -->
-    <link rel="stylesheet" href="https://www.dropbox.com/s/4x030lpsakk2pzz/my-ads-app.css?raw=1">
+<!--    <link rel="stylesheet" href="https://www.dropbox.com/s/4x030lpsakk2pzz/my-ads-app.css?raw=1">-->
 
-<!--    <link rel="stylesheet" href="my-ads-app.css">-->
+    <link rel="stylesheet" href="my-ads-app.css">
 
     <!-- left-nav and header -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/zl0uxxuidjclicm/dashboard-left-nav-header.css?raw=1">
@@ -410,40 +410,57 @@
 
         <div class="large-12 columns ad-container center-h">
 
+        <!--- Datatables -->
+        <div id="my-ads-table_wrapper" class="dataTables_wrapper no-footer">
+
             <!---------------------------------->
             <!-- top row -->
             <div class="row columns ads-top">
 
                 <!-- title -->
-                <div class="medium-3 large-3 columns ad-title">
+                <div class="medium-3 large-3 columns end ad-title">
                     <p class="thin100 big center-v">My ADs</p>
                 </div>
 
+                <!-- drop filter -->
+<!--
                 <div class="medium-5 columns ads-drop-filter">
-                    <div class="dataTables_length" id="my-ads-length">
+                    <div class="dataTables_length drop-filter" id="">
                         <label>
 
-                            <select name="my-ads-length" aria-controls="my-ads-table" class=""
-                                    placeholder="All ADs">
+                            <select name="my-ads-length" aria-controls="my-ads-table" class="" placeholder="All ADs">
+
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+
+
                                 <option value="all_ads">All ADs</option>
                                 <option value="live_ads">Live ADs</option>
                                 <option value="expired_ads">Expired ADs</option>
                                 <option value="incomplete_ads">Incomplete ADs</option>
+
                             </select>
 
                         </label>
                     </div>
                 </div>
+-->
 
-
-                <!--------------------------------------------->
+                <!-- search -->
+<!--
                 <div class="medium-3 columns end s-ads">
                     <div class="input-group ">
 
-                      <input id="ads-search" class="input-group-field dataTables_filter" type="search" placeholder="Search" aria-controls="my-ads-table">
+                        <div id="" class="dataTables_filter ads-search">
+                            <label>
+                                <input type="search" class="" placeholder="" aria-controls="my-ads-table">
+                            </label>
+                        </div>
 
                       <div class="input-group-button">
-                          <label for="ads-search" class="button">
+                          <label for="my-ads-table_filter" class="button">
                             <img src="https://www.dropbox.com/s/6slruhty48p9tyf/search-bg.png?raw=1">
                             </label>
 
@@ -451,6 +468,8 @@
 
                     </div>
                 </div>
+-->
+
 
 
             </div> <!-- ads top row end -->
