@@ -1,0 +1,105 @@
+link {
+    display:block;
+}
+
+#left-nav {
+    }
+
+
+#right-body {
+    width: calc(100% - 200px);
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/*--------------------------------------------------------------*/
+/*PAGE 1*/
+/*--------------------------------------------------------------*/
+#page1 {
+/*    height: calc(100vh - 50px);*/
+    height: 1600px;
+    width: 100%;
+}
+
+/*banner*/
+#page1 .banner {
+    height: 300px;
+}
+
+#create-ad-banner {
+    background-image: url(https://www.dropbox.com/s/1zizd7a6q7oji90/my-ads-banner.jpg?raw=1);
+    background: center cover no-repeat;
+
+}
+
+/*-----------------------------------*/
+/*Place ad*/
+
+#place-ad {
+    position: relative;
+    height:100vh;
+    min-height: 800px;
+}
+
+.pl-ad-container {}
+
+/*title*/
+.pl-ad-title {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    position: relative;
+}
+
+.pl-ad-title p {
+    width: 100px;
+    font-weight: bolder;
+}
+/*steps*/
+.pl-ad-steps {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    position: relative;
+}
+
+.pl-left, .pl-right {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.pl-left {
+/*    min-width: 400px;*/
+}
+
+.pl-right {}
+
+/*the tabs*/
+.pl-tabs {}
+
+.pl-tabs #place-ad-tabs .tabs-title {
+    width: 33% !important;
+    height: 30px !important;
+    text-align: left;
+
+}
+
+.pl-tabs #place-ad-tabs .tabs-title a {
+    height: 30px !important;
+    color: #898989 !important;
+
+}
+
+.pl-tabs #place-ad-tabs .tabs-title>a[aria-selected=true]  {
+/*    width: 33% !important;*/
+    text-align: left;
+    color: #191919 !important;
+    font-weight: 700;
+    background: none;
+    border-bottom: #000 solid 5px;
+}
+
+.place-ad-tabs {}
