@@ -19,7 +19,7 @@ link {
 /*--------------------------------------------------------------*/
 #page1 {
 /*    height: calc(100vh - 50px);*/
-    height: 1600px;
+    height: 1800px;
     width: 100%;
 }
 
@@ -470,6 +470,7 @@ input[placeholer=Title] {
     height: 80px;
 }
 
+/*---------------------------------------*/
 /*step 5*/
 .st-5 {}
 
@@ -506,4 +507,36 @@ input[placeholer=Title] {
 .st-5 .st-row2 .column label input {
     width: 335px;
     margin-left: 25px;
+}
+
+/*---------------------------------------*/
+/*step 6*/
+
+.st-6 {
+    text-align: right;
+    height: 130px;
+}
+
+.st-6 input, .st-6 button {
+    width: 170px;
+    height: 33px
+}
+
+.st-6 input {
+    background-color: #191919;
+}
+
+.st-6 input:hover {
+    background-color: #8dc63f;
+    color: #fff;
+    box-shadow: 0 0 0px;
+}
+
+.st-6 button:hover {
+    color: #8dc63f;
+    border: 1px solid;
+    border-radius: 100px !important;
+    box-shadow: 0 0 0px;
+/*    padding: 20px 20px;*/
+    text-decoration: none;
 }
