@@ -258,7 +258,13 @@ button {
     width: auto;
 }
 
-
+Flex-v {
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    width: auto;
+    align-items: center;
+}
 
 /*Break wowd wrap*/
 .br-word {

@@ -142,13 +142,23 @@ link {
     position: relative;
 }
 
+form.place-ad input[type="checkbox"] {
+  /* All browsers except webkit*/
+  transform: scale(1.5);
+
+  /* Webkit browsers*/
+  -webkit-transform: scale(1.5);
+/*    display:none;*/
+}
+
+
 /*step 1*/
 .st-1, .st-2, .st-3 {
     width: 100%;
     height: auto;
     padding: 30px 0px;
     position: relative;
-    border-bottom: 1px solid #e6e6e6
+    border-bottom: 1px solid #e6e6e6;
 }
 
 .st-row1 .Flex {
@@ -177,6 +187,21 @@ link {
     font-weight: 600;
 }
 
+.descr {
+
+    display: block !important;
+    width: 90%;
+    min-width: 400px;
+    height: 100%;
+    text-align: left;
+    font-size: .8rem !important;
+    position: absolute;
+    top: 7px;
+}
+.descr .step-instr  {
+
+}
+
 /*step 1*/
 
 .st-1 {}
@@ -185,7 +210,9 @@ link {
     width: 100%;
     height: 80px;
 }
+
 .descr .step-instr  {
+/*
     font-size: .8rem; !important;
 
     display: block !important;
@@ -195,12 +222,19 @@ link {
     text-align: left;
     position: absolute;
     top: 7px;
+*/
 }
 
-.descr .step-instr .step-instr-txt {
+.step-instr-txt {
     margin-bottom: 20px;
     font-weight: 600;
     text-transform: uppercase;
+    font-size: .8rem !important;
+}
+
+.step-instr-txt2 {
+    font-size: .8rem !important;
+    font-weight: 500;
 }
 
 .descr label.step-instr select {
@@ -208,10 +242,35 @@ link {
 }
 
 .st-txt {
-    font-size: .9rem;
+    font-size: .9rem !important;
+    font-weight: 500 !important;
+    letter-spacing: -.5px
+}
+
+.st-txt2 {
+    font-size: .8rem !important;
     font-weight: 500;
     letter-spacing: -.5px
+}
 
+.st-txt3 {
+    font-size: .9rem !important;
+    font-weight: 300 ;
+    letter-spacing: -.5px
+}
+
+.st-txt4 {
+    font-size: 1.1rem !important;
+    font-weight: 300 ;
+    letter-spacing: -.5px
+}
+
+.descr input[type="checkbox"] {
+    /* All browsers except webkit*/
+  transform: scale(1.5);
+
+  /* Webkit browsers*/
+  -webkit-transform: scale(1.5);
 }
 /*step 2*/
 
@@ -222,30 +281,22 @@ link {
 .st-2 .st-row1 {
     height: 70px !important;
 }
-.descr input[type="checkbox"] {
-    /* All browsers except webkit*/
-  transform: scale(1.5);
-
-  /* Webkit browsers*/
-  -webkit-transform: scale(1.5);
-}
 
 .descr input[type="checkbox"]:checked {
     background-color: #404041;
     color: #fff;
 }
 
-
 .st-row2 {
     text-align: left;
     padding: 5px 40px;
 }
 
-.st-row2 input[type="checkbox"] {
+.st-2 .st-row2 input[type="checkbox"] {
     display:none;
 }
 
-input[type="checkbox"] + label span {
+.st-2 input[type="checkbox"] + label span {
     display:inline-block;
 /*    width:19px;*/
 /*    height:19px;*/
@@ -261,7 +312,109 @@ input[type="checkbox"] + label span {
 .st-row2 input[type="checkbox"]:checked + label {
     background-color: #404041;
     color: #fff;
-    border: 1px solid #fff;
+    border: 3px solid #8dc63f;
     border-radius: 7px;
+    box-shadow: 0 0 1px #8dc63f;
 
+}
+
+/*step 3*/
+.st-3 {
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.st-3 .st-row1 {
+    height: 45px;
+}
+
+.st-3 .st-row2 {
+    height: 150px !important;
+}
+
+.st-3 .st-row2 input[type="checkbox"] {
+    position: absolute;
+    bottom: 35px;
+}
+
+
+/*positioning*/
+
+.st-3 .paper-type, .st-3 .extra, .ad-cost { height: 135px; }
+
+.st-3 .paper-type {width: 210px;}
+
+.st-3 .extra {
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    text-align: center;
+    width: 130px;
+}
+
+#normal-print {left: 52px;}
+
+.st-3 #normal-print[type="checkbox"] + label span {left: 50px;}
+
+#gloss-print {left: 157px;}
+
+.st-3 #gloss-print[type="checkbox"] + label span {left: 155px;}
+
+#laminate-print {left: 282px;}
+
+.st-3 #laminate-print[type="checkbox"] + label span {left: 280px;}
+
+
+
+.st-3 input[type="checkbox"] + label span {
+    display:inline-block;
+    width:70px !important;
+    height: 80px !important;
+    padding: 25px 10px;
+
+    border: 1px solid #000;
+    border-radius: 0px;
+    box-shadow: 0 0 1px #000;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+}
+
+.st-3 .st-row2 input[type="checkbox"]:checked + label {
+    color: #555;
+    border: 3px solid #8dc63f;
+    border-radius: 0px;
+    box-shadow: 0 0 1px #8dc63f;
+}
+
+/*totals*/
+
+.st-3 {
+
+}
+
+.ad-cost {
+    height: 140px;
+    width: 110px;
+}
+
+.ad-cost .Flex-v.top {
+    width: 130px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+.ad-cost .Flex .Flex-Div {
+/*    height: 66%;*/
+/*    white-space: nowrap;*/
+
+    margin-right: 10px;
+
+
+}
+
+.ad-cost .Flex .Flex-Div p {
+/*    width: 110px;*/
+        white-space: nowrap;
 }
