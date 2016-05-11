@@ -260,7 +260,7 @@ form.place-ad input[type="checkbox"] {
 
 .st-txt2 {
     font-size: .8rem !important;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -.5px
 }
 
@@ -276,6 +276,11 @@ form.place-ad input[type="checkbox"] {
     letter-spacing: -.5px
 }
 
+.st-txt5 {
+    font-size: .85rem !important;
+    font-weight: 400 ;
+    letter-spacing: -.4px
+}
 .descr input[type="checkbox"] {
     /* All browsers except webkit*/
   transform: scale(1.5);
@@ -540,3 +545,97 @@ input[placeholer=Title] {
 /*    padding: 20px 20px;*/
     text-decoration: none;
 }
+
+
+/*=========================================================*/
+
+/*THE RIGHT SIDE*/
+.pl-right {
+    height: auto;
+    color: #191919
+}
+
+.r-title {
+    text-align: left;
+    height: 50px;
+    color: #191919 !important;
+    font-weight: 700;
+}
+
+.r-title p {
+     height: 30px;
+    border-bottom: #404041 thin solid;
+    text-transform: uppercase;
+}
+
+/*------------------*/
+/*row 1*/
+/*left*/
+.r-row1, .r-row2, .r-row3 {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 30px 0px;
+}
+
+.r-row1 .medium-4 {
+    border-right: 1px solid #e6e6e6;
+     color: #191919
+}
+.r-row1 .medium-4 .Flex-v {
+    width: 100px;
+}
+
+.r-row1 .sz{
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.r-row1 .ad-size {
+    display:inline-block;
+    padding: 12px 16px;
+    background-color: #404041;
+    color: #fff;
+    margin-bottom: 20px;
+
+    border: 1px solid #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 1px #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.r-row1 .pt{
+    padding-bottom: 15px
+}
+
+.r-row1 .pt2{
+    padding-bottom: 5px
+}
+
+.r-row1 button {
+    padding: 5px 20px;
+     border: 1px solid #8dc63f;
+    border-radius: 3px;
+    color: #404041;
+}
+
+.r-row1 button:hover {
+    color: #fff;
+    background-color: #8dc63f;
+}
+
+/*right*/
+.r-row1 .medium-8 .Flex-v {
+    text-align: left;
+    width: 120px;
+    margin-left: 40px;
+}
+
+.r-row1 .medium-8 .Flex-v.brd {
+    padding-bottom: 10px;
+     border-bottom: 1px solid #e6e6e6;
+}
+
+
+
+/*------------------*/
+/*row 2*/
