@@ -146,14 +146,16 @@ link {
 .st-1, .st-2, .st-3 {
     width: 100%;
     height: auto;
-    padding: 20px 0px;
+    padding: 30px 0px;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6
 }
 
-.st-1-title, .st-1-title .Flex {
+.st-row1 .Flex {
     width: 100%;
-    height: 100px;
-}
+    height: 100%;
 
+}
 .Flex-Div.cNm {
     width: 50px;
     height: 100%;
@@ -177,13 +179,14 @@ link {
 
 /*step 1*/
 
-.st-1 {
-    border-bottom: 1px solid #e6e6e6
-}
-.descr label.step-instr  {
-    text-transform: uppercase;
-    font-size: .8rem; !important;
+.st-1 {}
 
+.st-1 .st-row1 {
+    width: 100%;
+    height: 80px;
+}
+.descr .step-instr  {
+    font-size: .8rem; !important;
 
     display: block !important;
     width: 90%;
@@ -194,17 +197,71 @@ link {
     top: 7px;
 }
 
-.descr label.step-instr p {
-     margin-bottom: 20px;
+.descr .step-instr .step-instr-txt {
+    margin-bottom: 20px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .descr label.step-instr select {
     background-color: #ececec;
 }
 
+.st-txt {
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: -.5px
 
-.st-1-content.row-1 {
-    margin-left: 50px;
-    width: 70%;
+}
+/*step 2*/
+
+.st-2 {
+    height: auto;
+}
+
+.st-2 .st-row1 {
+    height: 70px !important;
+}
+.descr input[type="checkbox"] {
+    /* All browsers except webkit*/
+  transform: scale(1.5);
+
+  /* Webkit browsers*/
+  -webkit-transform: scale(1.5);
+}
+
+.descr input[type="checkbox"]:checked {
+    background-color: #404041;
+    color: #fff;
+}
+
+
+.st-row2 {
+    text-align: left;
+    padding: 5px 40px;
+}
+
+.st-row2 input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+/*    width:19px;*/
+/*    height:19px;*/
+    padding: 12px 16px;
+
+    border: 1px solid #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 1px #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.st-row2 input[type="checkbox"]:checked + label {
+    background-color: #404041;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 7px;
+
 }

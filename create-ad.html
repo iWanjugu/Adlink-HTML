@@ -309,10 +309,12 @@
                           <div class="tabs-panel is-active" id="pl-your-ad">
 
                           <form class="place-ad">
+
                           <!-- Step 1 -->
                             <div class="st-1">
-                                <!-- title -->
-                                <div class="st-1-title">
+
+                                <!-- row 1 -->
+                                <div class="st-row1">
                                     <div class="Flex">
                                         <!--- circle & num -->
                                         <div class="Flex-Div cNm">
@@ -323,37 +325,71 @@
                                         </div>
                                         <div class="descr">
                                             <label class="step-instr">
-                                                <p>select your ad category</p>
-                                                <select class="">
+                                                <p class="step-instr-txt">select your ad category</p>
+                                                <select class="st-txt">
                                                     <option value="category1">Category 1</option>
                                                     <option value="category1">Category 2</option>
                                                     <option value="category1">Category 3</option>
                                                     <option value="category1">Category 4</option>
                                                   </select>
-
-
-
                                             </label>
                                         </div>
                                     </div>
                                 </div>
+                            </div> <!-- step 1 end -->
 
-                                <!-- content -->
-                                <div class="st-1-content row-1">
+                             <!-- Step 2 -->
+                            <div class="st-2">
+                                <!-- row-1 -->
+                                <div class="st-row1">
+                                    <div class="Flex">
+                                        <!--- circle & num -->
+                                        <div class="Flex-Div cNm">
+                                            <div class="step-num-c center-h">
+                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
+                                                <p class="center-c step-num thin100">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="descr">
+                                            <fieldset class="step-instr">
+                                            <legend class="step-instr-txt">
+                                                select size and orientation
+                                            </legend>
+                                            <input id="landscape" type="checkbox">
+                                                <label class="st-txt" for="landscape">Landscape</label>
+                                            <input id="Portrait" type="checkbox">
+                                                <label class="st-txt" for="Portrait">Portrait</label>
 
+                                            </fieldset>
+                                        </div>
+                                    </div>
 
+                                </div> <!--- row 1 end -->
+
+                                <div class="st-row2">
+                                    <fieldset class="step-instr">
+                                        <legend class="step-instr-txt"></legend>
+                                        <input id="a5" type="checkbox">
+                                            <label class="st-txt" for="a5"><span>A5</span></label>
+                                        <input id="a4" type="checkbox">
+                                            <label class="st-txt" for="a4"><span>A4</span></label>
+                                        <input id="a3" type="checkbox">
+                                            <label class="st-txt" for="a3"><span>A3</span></label>
+                                        <input id="a2" type="checkbox">
+                                            <label class="st-txt" for="a2"><span>A2</span></label>
+                                        <input id="a1" type="checkbox">
+                                            <label class="st-txt" for="a1"><span>A1</span></label>
+                                    </fieldset>
                                 </div>
 
-                            </div> <!-- step 1 end -->
-
-                              <!-- Step 2 -->
-                            <div class="st-2">
-                            </div> <!-- step 1 end -->
+                            </div> <!-- step 2 end -->
 
 
-                              <!-- Step 2 -->
+                              <!-- Step 3 -->
+<!--
                             <div class="st-3">
-                            </div> <!-- step 3 end -->
+                            </div>  step 3 end
+-->
 
                         </form>
 
