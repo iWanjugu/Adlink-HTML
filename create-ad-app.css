@@ -43,7 +43,17 @@ link {
     min-height: 800px;
 }
 
-.pl-ad-container {}
+.pl-ad-container {
+    width: 1200px !important;
+/*    max-width: 1200px !important;*/
+    min-width: 1150px !important;
+}
+
+.pl-ad-container .row{
+    width: 1200px !important;
+/*    max-width: 1200px !important;*/
+    min-width: 1150px !important;
+}
 
 /*title*/
 .pl-ad-title {
@@ -67,8 +77,9 @@ link {
 
 .pl-left, .pl-right {
     height: 100%;
+    width: 49% !important;
     padding: 0;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .pl-left {
@@ -78,6 +89,9 @@ link {
 .pl-right {}
 
 /*the tabs*/
+.tabs, .tabs-content {
+     border: 0px solid #e6e6e6 !important;
+}
 .pl-tabs {}
 
 .pl-tabs #place-ad-tabs .tabs-title {
@@ -88,9 +102,23 @@ link {
 }
 
 .pl-tabs #place-ad-tabs .tabs-title a {
+
     height: 30px !important;
     color: #898989 !important;
+    padding: 5px 2.5rem 10px 1.5rem !important;
+}
 
+
+.pl-tabs #place-ad-tabs .pl-your-ad a{
+    width: 70% !important;
+}
+
+.pl-tabs #place-ad-tabs .pl-location-date a{
+    width: 100% !important;
+}
+
+.pl-tabs #place-ad-tabs .pl-payment a{
+    width: 80% !important;
 }
 
 .pl-tabs #place-ad-tabs .tabs-title>a[aria-selected=true]  {
@@ -103,3 +131,80 @@ link {
 }
 
 .place-ad-tabs {}
+
+/*---------------------------------*/
+/*Your ad tab*/
+
+#pl-your-ad {
+    height: auto;
+    width: 100%;
+    color: #191919 !important;
+    position: relative;
+}
+
+/*step 1*/
+.st-1, .st-2, .st-3 {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+.st-1-title, .st-1-title .Flex {
+    width: 100%;
+    height: 100px;
+}
+
+.Flex-Div.cNm {
+    width: 50px;
+    height: 100%;
+    position: relative;
+}
+
+.step-num-c {
+    width: 50px;
+}
+
+.step-num-c img {
+    width: 30px;
+    max-width: 150% !important;
+}
+
+.step-num {
+    font-size: .9rem !important;
+    width: auto;
+    font-weight: 600;
+}
+
+/*step 1*/
+
+.st-1 {
+    border-bottom: 1px solid #e6e6e6
+}
+.descr label.step-instr  {
+    text-transform: uppercase;
+    font-size: .8rem; !important;
+
+
+    display: block !important;
+    width: 90%;
+    min-width: 400px;
+    height: 100%;
+    text-align: left;
+    position: absolute;
+    top: 7px;
+}
+
+.descr label.step-instr p {
+     margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.descr label.step-instr select {
+    background-color: #ececec;
+}
+
+
+.st-1-content.row-1 {
+    margin-left: 50px;
+    width: 70%;
+}
