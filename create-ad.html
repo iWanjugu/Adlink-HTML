@@ -307,8 +307,10 @@
                     <div>
                         <div class="tabs-content" data-tabs-content="place-ad-tabs">
 
-                          <!------------------------------------------------->
-                          <!--- YOUR AD --->
+
+                          <!--====================================================-->
+                          <!--- YOUR AD TAB--->
+                          <!--====================================================-->
                           <div class="tabs-panel is-active" id="pl-your-ad">
 
                           <form class="place-ad">
@@ -467,7 +469,7 @@
                                 </div> <!--end row 1 -->
 
                                 <!--- row 2 -->
-                                <div class="st-row2">
+                                <div class="row st-row2">
                                     <fieldset class="medium-4 column ad-pic-upload">
                                         <label for="ad-pic-upload" class="button">
                                             <img class="center-c" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="upload-abvert-pic"></label>
@@ -560,8 +562,10 @@
 
                           </div> <!-- pl-your-ad end -->
 
-                          <!------------------------------------------------->
-                          <!--- LOCATION AND DATE --->
+                          <!--====================================================-->
+                          <!--- LOCATION AND DATE TAB--->
+                          <!--====================================================-->
+
                           <div class="tabs-panel" id="pl-location-date">
                             <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
 
@@ -569,22 +573,159 @@
                             <!-- pl-locatio-date end -->
 
 
-                          <!------------------------------------------------->
-                          <!--- PAYMENT --->
+                          <!--====================================================-->
+                          <!--- PAYMENT TAB--->
+                          <!--====================================================-->
                           <div class="tabs-panel" id="pl-payment">
-                                <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
 
-                          </div> <!-- pl-payment end -->
+                            <!--- The Table -->
+                            <div id="create-ad-table_wrapper" class="dataTables_wrapper no-footer">
+
+                                <!---------------------------------->
+                                <!-- bottom row -->
+                                <!--- CREATE AD TABLE --->
+                                <table id="create-ad-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="create-ad-info">
+
+                                    <!--Table Header-->
+                                    <thead>
+                                        <tr role="row">
+                                            <th class="ad_cols location_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                LOCATION
+                                            </th>
+
+                                            <th class="ad_cols duration_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
+                                                DURATION
+                                            </th>
+
+                                            <th class="ad_cols from_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="From: activate to sort column ascending">
+                                                FROM
+                                            </th>
+                                            <th class="ad_cols to_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="To: activate to sort column ascending">
+                                                TO
+                                            </th>
+                                            <th class="ad_cols qty_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Qty: activate to sort column ascending">
+                                                QTY
+                                            </th>
+
+                                            <th class="ad_cols price_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                                                PRICES
+                                            </th>
+                                            <th class="ad_cols available_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Available_Slots: activate to sort column ascending">
+                                                AVAILABLE SLOTS
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <!--Table Body-->
+                                    <tbody class="create-ad_table_body">
+
+                                        <!-- row 1 -->
+                                        <tr>
+                                            <td class="location_">
+                                                <p class="center-c">Yaya Center</p></td>
+                                            <td class="duration_">
+                                                <p class="center-c">1 week</p></td>
+                                            <td class="from_">
+                                                <p class="center-c">dd-mm-yyyy</p></td>
+                                            <td class="to_">
+                                                <p class="center-c">dd-mm-yyyy</p></td>
+                                            <td class="qty_">
+                                                <p class="center-c">02</p></td>
+                                            <td class="price_">
+                                                <p class="center-c">150,000 KES</p></td>
+                                            <td class="available_">
+                                                <p class="center-c">4 spaces</p></td>
+                                        </tr>
+
+                                        <!-- row 2 -->
+                                        <tr>
+                                            <td class="location_">
+                                                <p class="center-c">Sarit Center</p></td>
+                                            <td class="duration_">
+                                                <p class="center-c">3 weeks</p></td>
+                                            <td class="from_">
+                                                <p class="center-c">dd-mm-yyyy</p></td>
+                                            <td class="to_">
+                                                <p class="center-c">dd-mm-yyyy</p></td>
+                                            <td class="qty_">
+                                                <p class="center-c">01</p></td>
+                                            <td class="price_">
+                                                <p class="center-c">250,000 KES</p></td>
+                                            <td class="available_">
+                                                <p class="center-c">7 spaces</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div> <!-- my-ads-table_wrapper -->
+
+                            <!----------------------->
+                            <div class="ad-more-advs">
+                                <div class="Flex center-v">
+                                    <div class="Flex-Div">
+                                        <img class="button" src="https://www.dropbox.com/s/0rvkm8mfo9ghu04/add-icon.png?raw=1" alt="add">
+                                    </div>
+
+                                     <div class="Flex-Div">
+                                         <p class="st-txt2">ADD</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!----------------------->
+                            <div class="total-summary row">
+                                <div class="medium-8 columns"></div>
+                                <div class="medium-4 columns">
+                                    <div class="Flex-v">
+                                        <div class="Flex-Div">
+                                            <p class="st-txt2">PRINT OPTIONS TOTAL</p></div>
+                                        <div class="Flex-Div">
+                                            <p class="st-txt4">1,500 KES</p>
+                                        </div>
+                                    </div>
+                                    <div class="Flex-v mid">
+                                        <div class="Flex-Div">
+                                            <p class="st-txt2">TOTAL VAT INC</p></div>
+                                        <div class="Flex-Div">
+                                            <p class="st-txt4">400,000 KES</p>
+                                        </div>
+                                    </div>
+                                    <div class="Flex-v">
+                                        <div class="Flex-Div">
+                                            <p class="st-txt2 bld">GRAND TOTAL</p></div>
+                                        <div class="Flex-Div">
+                                            <p class="st-txt6">401,500 KES</p>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div><!-- total summary end -->
+
+                              <!----------------------->
+                            <div class="final-buttons">
+                                <div class="Flex">
+                                    <a href="#pl-your-ad" class="Flex-Div button st-txt2 full-round-plain-border bttn-b-g bbook">
+                                        BOOK ANOTHER AD
+                                    </a>
+                                </div>
+                                <div class="Flex">
+                                    <a href="#" class="Flex-Div button st-txt2 full-round-plain-border bttn-w bproceed">
+                                        PROCEED TO PAY
+                                    </a>
+                                </div>
+                            </div>
 
 
-                        </div>
-                    </div>
+                           </div> <!-- pl-payment end -->
+                        <!------------------------------------------>
 
+
+                       </div><!-- tabs-content end -->
+                    </div> <!-- content end -->
 
                 </div> <!-- pl-left end-->
 
 
-                <!----------------------------------------------------->
+                <!--====================================================-->
                 <!--- RIGHT PAGE --->
                 <div class="medium-6 columns pl-right">
 
@@ -719,8 +860,7 @@
 
 
                 </div> <!-- pl-right end-->
-
-
+                <!------------------------------------------>
 
 
             </div><!-- place ad steps end-->
@@ -732,8 +872,8 @@
      </div><!-- page 1 end -->
 
     <!-- ========================================================= -->
-    </div> <!-- right body end -->
 
+    </div> <!-- right body end -->
 
 
 </div> <!-- Body end -->
