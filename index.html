@@ -15,9 +15,9 @@
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
 
-    <link rel="stylesheet" href="https://www.dropbox.com/s/x404i0jg5v61q9x/signup-page-app.css?raw=1">
+<!--    <link rel="stylesheet" href="https://www.dropbox.com/s/x404i0jg5v61q9x/signup-page-app.css?raw=1">-->
 
-<!--    <link rel="stylesheet" href="signup-page-app.css">-->
+    <link rel="stylesheet" href="signup-page-app.css">
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
@@ -33,6 +33,7 @@
 <body>
 <div id="wrapper" class="expanded row columns">
 
+<!-- ========================================================= -->
 <!--- PAGE 1 --->
 <!-- ========================================================= -->
 
@@ -133,8 +134,8 @@
             <div class="social-sign">
                 <div class="center-c">
                     <button>
-                        <img src="https://www.dropbox.com/s/653vi5q3zq535sj/logo-fb-white-nc.png?raw=1" alt="logo-fb-white-nc">
-                        Facebook
+                        <img src="https://www.dropbox.com/s/edwsn83awpvg9rl/logo-google-small-white-nc.png?raw=1" alt="google-logo">
+                        Google
                     </button>
                     <button>
                         <img src="https://www.dropbox.com/s/4cuihpj7rmfbb6t/logo-twitter-white-nc.png?raw=1" alt="logo-twitter-white-nc">
@@ -150,20 +151,58 @@
 </div> <!-- end page 1-->
 
 <!-- ========================================================= -->
-<!--Page 2-->
+<!--PAGE 2-->
+<!-- ========================================================= -->
 <div id="page2" class="page2">
 
+    <!-- Locations -->
     <div class="expanded row columns locations">
         <!--heading-->
-        <div class="head Flex center-h">
-            <div class="dash Flex-Div">-</div>
-            <p class="Flex-Div">NOTICE BOARD LOCATIONS</p>
-            <div class="dash Flex-Div">-</div>
+        <div>
+            <div class="head Flex center-h">
+                <div class="dash Flex-Div">-</div>
+                <p class="Flex-Div">NOTICE BOARD LOCATIONS</p>
+                <div class="dash Flex-Div">-</div>
+            </div>
+        </div>
+
+        <!-- the logos -->
+        <div class="location-logo">
+            <!-- Sarit center -->
+            <a href="#" >
+                <img src="https://www.dropbox.com/s/srholc7gbslhik3/logo-sarit.png?raw=1" alt="sarit-center-mall">
+            </a>
+
+            <!-- Yaya Center -->
+            <a href="#" >
+                <img src="https://www.dropbox.com/s/t4x1tk5xfvkkj8h/logo-yaya.png?raw=1" alt="yaya-center-mall">
+            </a>
+
+            <!-- village Market -->
+            <a href="#" >
+                <img src="https://www.dropbox.com/s/epgesegp05kbggx/logo-village-market.pnglocation-logo center-c?raw=1" alt="village-market-mall">
+            </a>
+
+            <!-- galleria -->
+            <!--<img src="https://www.dropbox.com/s/32ps3qmak4nr12e/logo-galleria.gif?raw=1" alt="galleria-mall">-->
+
+            <!-- Junction -->
+            <a href="#" >
+                <img src="https://www.dropbox.com/s/qmqoxhhcuzkr1cr/logo-junction.png?raw=1" alt="junction-mall">
+            </a>
+
+            <!-- TRM -->
+            <a href="#" >
+                <img src="https://www.dropbox.com/s/emys7fl70bvbewq/logo-trm.png?raw=1" alt="TRM-mall">
+            </a>
         </div>
 
 
-    </div>
 
+    </div> <!-- locations end -->
+
+
+    <!-- HOw it works -->
     <div class="expanded row columns workings">
         <!--heading-->
         <div class="head Flex center-h">
@@ -209,16 +248,18 @@
                     </a>
                 </li>
 
+<!--
                 <li class="tabs-title">
                     <a href="#track">
                         <div class="tab-img center-h track">
-<!--                            <img src="assets/home/track.png">-->
+                            <img src="assets/home/track.png">
                         </div>
                         <div class="tab-txt">
                             <p>Track Effectiveness</p>
                         </div>
                     </a>
                 </li>
+-->
             </ul>
         </div> <!--- w-tabs end -->
 
@@ -228,18 +269,21 @@
             <!-- design tab--->
           <div class="tabs-panel is-active" id="design">
             <div class="row">
-                <div class="medium-6 columns">
+                <div class="medium-1 columns"></div>
+                <div class="medium-5 columns">
                     <img class="center-c" src="https://www.dropbox.com/s/x48i7kou5pw5zfo/macbook.png?raw=1" alt="macbook">
                 </div>
-                <div class="medium-6 columns">
+                <div class="medium-5 columns">
                     <div class="step-details center-c">
                         <p class="title">Design Beautiful Ads</p>
-                        <p class="d-descr">Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor
+                        <p class="d-descr">Posting your Poster Advertisement on the noticeboard is easy. You first need to upload the artwork of your AD either as an image or PDF.
                             <br>
-                        Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.
+                            <br>
+                        You would then go ahead to select the size, paper type, location and duration of the AD for each location. The price of posting the AD in each location would be displayed.
                         </p>
                     </div>
                 </div>
+                <div class="medium-1 columns"></div>
               </div><!-- row end -->
           </div><!-- design end -->
 
@@ -247,14 +291,12 @@
             <!-- book tab--->
           <div class="tabs-panel" id="book">
               <div class="row">
-                <div class="medium-6 columns">
-                    <img class="center-c" src="">
-                </div>
-                <div class="medium-6 columns">
+                <div class="medium-12 columns">
                     <div class="step-details center-c">
                         <p class="title">Book and Pay</p>
                         <p class="d-descr">
-                        <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                            Once all options have been selected to satisfaction, your free to check out and pay for your advertisement online, Through Mpesa, Paypal or Visa/Master Card. A receipt would be sent to your email and the transaction would be saved in your account.</p>
+                        <a href="#" class="button">Terms Of Service</a>
                     </div>
                   </div>
               </div> <!-- row end -->
@@ -264,14 +306,12 @@
             <!-- print tab--->
          <div class="tabs-panel" id="print">
             <div class="row">
-                <div class="medium-6 columns">
-                    <img class="center-c" src="">
-                </div>
-                <div class="medium-6 columns">
+                <div class="medium-12 columns">
                     <div class="step-details center-c">
                         <p class="title">Printed and Posted</p>
                         <p class="d-descr">
-                        <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                        Upon Successful payment, Your AD will be vetted to ensure it does not violet our terms of service. Thereafter it would be printed at a central location then delivered and posted in all the locations you had selected by the next day.</p>
+                        <a href="#" class="button">View Rates</a>
                     </div>
               </div>
             </div><!-- row end -->
@@ -279,6 +319,7 @@
 
             <!----------------------------------------->
             <!-- track tab--->
+<!--
         <div class="tabs-panel" id="track">
             <div class="row">
                 <div class="medium-6 columns">
@@ -291,8 +332,12 @@
                         <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
                     </div>
                 </div>
-            </div><!-- row end -->
-          </div><!-- track end -->
+            </div>
+
+          </div>
+-->
+
+            <!-- track end -->
     <!----------------------------------------->
 
      </div><!--tabs-content end -->
@@ -393,6 +438,7 @@
 
 
     <!----------------------------------------->
+<!--
     <div class="expanded row columns subscribe">
     <div class="sub center-c">
 
@@ -424,8 +470,10 @@
         </div>
 
 
-    </div> <!--- sub end -->
-    </div><!--- subscribe end -->
+    </div> sub end
+
+    </div> subscribe end
+-->
 
 
 </div> <!-- page3 end --->
