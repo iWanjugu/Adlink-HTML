@@ -48,10 +48,30 @@ div, p {
     margin: 0 auto;
 }
 
+/*
+.top-bar-title {
+    position: relative;
+    height: 50px;
+    background-color: #555;
+
+}
+*/
+
+.top-bar-title button {
+    color: #fff;
+    left: 10px;
+}
+
 .top-bar-left, .top-bar-right {
     padding: 0;
     margin: 0 auto;
-    height: 100%
+    height: 50px;
+    width: auto;
+}
+
+.top-bar-left {}
+.top-bar-left ul {
+/*    width: 300px;*/
 }
 
 .top-bar ul {
@@ -82,14 +102,17 @@ div, p {
 
 .Logo_bg {
     width: 170px;
-    height: 100%;
+    height: 50px;
     background-color: #fff;
     position: relative;
+    margin: 0 auto;
 }
 
 .Logo_bg img {
     width: 55%;
 }
+
+
 
 .menu-tabs {
     width: 120px;
@@ -107,6 +130,8 @@ div, p {
 /*    color: #fff;*/
 }
 
+
+/*right*/
 .top-bar-right .menu-tabs {
     width: 100px;
 }
@@ -124,13 +149,71 @@ div, p {
 
 #adlink-tabs .tabs-title>a {
     height: 50px;
-/*    padding: 0;*/
+    position: relative;
+}
+
+#adlink-tabs .tabs-title>a p {
+
+}
+
+/*the dropdown icon*/
+.dropdown.menu .is-dropdown-submenu-parent.is-down-arrow>a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px inset;
+    border-color: #515151 transparent transparent;
+    border-top-style: solid;
+    position: absolute;
+    top: 20px;
+    right: 5px;
 }
 
 #adlink-tabs .tabs-title>a:focus, #adlink-tabs .tabs-title>a[aria-selected=true] {
     background: #e6e6e6;
     height: 50px;
 }
+
+/*the drop down*/
+.dropdown.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 200px;
+    height: 150px;
+    z-index: 1;
+    background: #fefefe;
+/*    border: 1px solid #cacaca;*/
+}
+
+.dropdown.menu .submenu>li {
+    top: 0;
+    left: 100%;
+    min-width: 200px;
+    z-index: 1;
+    border: thin solid #b4cb34;
+}
+
+.dropdown.menu .submenu>li:hover {
+    color: #b4cb34;
+}
+
+.dropdown.menu .submenu>li a {
+    height: 100%;
+    position: relative;
+}
+
+.dropdown.menu .submenu>li a p {}
+
+
+.dropdown.menu .submenu>li a:hover{
+    color: #b4cb34;
+}
+
+
+/*--------------------*/
 
 .top-bar-right .menu-tabs:hover {
     background: #fff;
@@ -139,26 +222,6 @@ div, p {
 .top-bar-right .button.sgn {
     color: #fff;
 }
-
-/*
-.top-bar-right .button.sgn:hover {
-    color: #b4cb34;
-    background: #fff;
-    border: #b4cb34 solid 1px;
-}
-
-.top-bar-right .button.lgn {
-    color: #b4cb34;
-    background: #fff;
-    border: #b4cb34 solid 1px;
-}
-
-.top-bar-right .button.lgn:hover {
-    color: #fff;
-    background: #b4cb34;
-    border: #b4cb34 solid 1px;
-}
-*/
 
 .button-gr-bg {
     color: #fff !important;

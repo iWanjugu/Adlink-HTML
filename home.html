@@ -42,68 +42,73 @@
 
     <!-- Header -->
     <div class="top-bar Header_bg">
-        <div class="top-bar-left">
-            <ul class="menu">
-<!--
-                <li class="Navicon_bg">
-                    <a href="#">
-                        <img class="center-c" src="https://www.dropbox.com/s/rekexhf0iq642hf/Navicon-white.png?raw=1" alt="Navicon_White">
-                    </a>
-                </li>
--->
+        <div class="top-bar-title">
+            <span data-responsive-toggle="home-menu" data-hide-for="medium">
+              <button class="menu-icon dark center-v" type="button" data-toggle></button>
+            </span>
 
-                <li class="Logo_bg">
-                    <a href="#"><img class="center-c" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo"></a>
-                </li>
-
-                <!--the tabs-->
-                <li class="mTabs">
-                    <ul class="tabs" data-tabs id="adlink-tabs">
-                        <li class="tabs-title is-active menu-tabs">
-                            <a href="#services-tab" aria-selected="true" class="">Services</a>
-                        </li>
-                        <li class="tabs-title menu-tabs">
-                          <a href="#about-us-tab">About us</a>
-                        </li>
-                        <li class="tabs-title menu-tabs">
-                        <a href="#">Blog</a>
-                        </li>
-                    </ul>
-                </li>
-
-
-
-            </ul>
         </div>
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li class="menu-tabs log-out">
-                    <a href="#" class="button button-gr-bg">sign up</a>
-                </li>
 
-                <li class="menu-tabs log-out">
-                    <a href="#" class="button button-gr-otln">login</a>
-                </li>
+        <div id="home-menu">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <!-- logo -->
+                    <li class="Logo_bg">
+                        <a href="#"><img class="center-c" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo"></a>
+                    </li>
 
-<!--
-                <li class="menu-tabs log-out">
-                    <a href="customer-dashboard.html">customer dashboard</a>
-                </li>
-                <li class="menu-tabs log-out">
-                    <a href="my-ads.html">my ads</a>
-                </li>
+                    <!--the tabs-->
+                    <li class="mTabs">
+                        <ul class="tabs dropdown menu" data-tabs id="adlink-tabs" data-dropdown-menu>
+                            <li class="tabs-title is-active menu-tabs">
+                                <a href="#services-tab" aria-selected="true" >
+                                    <p class="center-c">Services</p>
+                                </a>
+                                <ul class="menu vertical">
+                                  <li><a href="index.html">
+                                      <p class="center-c">Noticeboard</p>
+                                      </a>
+                                  </li>
+                                  <li><a href="#">
+                                      <p class="center-c">Digital</p></a>
+                                  </li>
+                                  <li><a href="#">
+                                      <p class="center-c">Magazines</p>
+                                      </a>
+                                  </li>
+                                </ul>
+                            </li>
+                            <li class="tabs-title menu-tabs">
+                                <a href="#about-us-tab">
+                                  <p class="center-c">About us</p>
+                                </a>
+                            </li>
+                            <li class="tabs-title menu-tabs">
+                            <a href="#">
+                                <p class="center-c">Blog</p>
+                            </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <li class="menu-tabs log-out">
+                        <a href="#" class="button button-gr-bg">sign up</a>
+                    </li>
 
-                <li class="menu-tabs log-out">
-                    <a href="profile.html">edit profile</a>
-                </li>
+                    <li class="menu-tabs log-out">
+                        <a href="#" class="button button-gr-otln">login</a>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- responsive menu -->
+    </div> <!-- top bar end -->
 
-                <li class="menu-tabs log-out">
-                    <a href="create-ad.html">post ad</a>
-                </li>
--->
-            </ul>
-        </div>
-    </div>
+
+
+
 
     <!------------------------------------------------->
     <!-- Banner -->
