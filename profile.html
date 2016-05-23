@@ -19,7 +19,7 @@
 <!--    <link rel="stylesheet" type="text/css" href="css/custom_styles.css">-->
 
     <!-- app -->
-<link rel="stylesheet" href="https://www.dropbox.com/s/zn9gcc0ymhhc6fn/profile-page-new-app.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/zn9gcc0ymhhc6fn/profile-page-new-app.css?raw=1">
 
 
 <!--    <link rel="stylesheet" href="profile-page-new-app.css">-->
@@ -46,7 +46,7 @@
 
 <div id="wrapper" class="expanded row columns">
 
- <!-- ========================================================= -->
+<!-- ========================================================= -->
 <!--- body ----->
 <div id="Body" class="expanded row columns">
 
@@ -83,7 +83,7 @@
             <div class="prof-descr">
                 <div class="Flex center-c">
                     <div class="Flex-Div">
-                        <a class="edit-icon" href="profile-new.html">
+                        <a class="edit-icon" href="profile.html">
                             <img src="https://www.dropbox.com/s/e42mu8dau6uykgp/edit.png?raw=1" alt="edit-button">
                         </a>
                     </div>
@@ -277,7 +277,7 @@
     </div><!-- page 1 end -->
 
     <!----------------------------------------------------->
-    <!-- PAGE 1 --->
+    <!-- PAGE 2 --->
     <!----------------------------------------------------->
     <div id="page2" class="expanded row columns page2">
 
@@ -332,7 +332,7 @@
                         </div>
                         <div class="medium-2 columns"></div>
                         <div class="medium-5 columns">
-                            <label>Password:<input type="text" name="password" placeholder="password">
+                            <label>Password:<input type="password" name="password" placeholder="password">
                             </label>
                         </div>
                     </div>
@@ -364,7 +364,11 @@
                     <!-- row 5 -->
                     <div class="row">
                         <div class="medium-5 columns">
-                            <label>Gender:<input type="text" name="gender" placeholder="male or female">
+                            <label>Gender:
+                                <select name="gender" class="st-txt">
+                                    <option value="male" class="st-txt3">male</option>
+                                    <option value="female" class="st-txt3">female</option>
+                                </select>
                             </label>
                         </div>
 
@@ -396,13 +400,11 @@
                     <!-- upload image -->
                     <div class="row upload-image">
                         <div class=" medium-5 columns end">
-                            <label>
-<!--                                <input type="file" name="profile-pic" placeholder="upload profile pic">-->
-                                <label for="profile-pic" class="button">
-                                    Upload Picture
-                                </label>
-                                    <input type="file" id="profile-pic" class="show-for-sr">
+<!--                        <input type="file" name="profile-pic" placeholder="upload profile pic">-->
+                            <label for="profile-pic" class="button">
+                                Upload Picture
                             </label>
+                                <input type="file" id="profile-pic" name="profile-pic" class="show-for-sr">
                         </div>
 
                     </div>
