@@ -17,8 +17,14 @@
 
     <!-- app -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/ijgzp4x3bis22zp/sign-up.css?raw=1">
-
 <!--    <link rel="stylesheet" href="sign-up.css">-->
+
+    <!-- modals -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
+
+
+
+<!--    <link rel="stylesheet" href="modals.css">-->
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
@@ -49,7 +55,7 @@
             <ul id="navlist" class="menu">
                 <!-- logo -->
                 <li class="menu-tabs dv Logo_bg">
-                    <a href="#">
+                    <a href="index.html">
                         <img class="" src="https://www.dropbox.com/s/me6lh3zsxqtc0bs/adlink-logo-white.png?raw=1" alt="Adlink Logo">
                     </a>
                 </li>
@@ -64,12 +70,67 @@
 -->
 
                 <li class="menu-tabs log-out">
-                    <a href="#" class="button button-gr-otln">log in</a>
+                    <a href="#" class="button button-gr-otln" data-open="signInModal">log in</a>
                 </li>
             </ul>
         </div>
     </div>
     </div> <!-- top bar end -->
+
+<!------------------------------->
+    <!-- Sign up Modal -->
+    <div id="signInModal" class="tiny reveal round-plain-no-margin"  data-reveal>
+      <form>
+          <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">Have an account?</p>
+            </div>
+
+          <!--content-->
+            <div class="row columns form-cntnts">
+                <!-- names -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="username or email">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="password">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="small-12 columns">
+                            <label><input type="submit" class="button" value="Log In">
+                            </label>
+                        </div>
+                    </div>
+          </div>
+
+          </form>
+
+          <!--other social-->
+            <div class="form-ttl f-center form-cntnts">
+                <p class="thin100 st-txt4 bold">New to Adlink?</p>
+            </div>
+
+            <div class="f-hor form-cntnts">
+                <a href="sign-up.html" class="button sign">
+                    Sign up
+                </a>
+             </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+    </div>
+    <!------------------------------->
+
+
+
 
     <!------------------------------------------------->
     <!---------->
@@ -162,7 +223,12 @@
             <div class="disclaimer f-hor">
                 <p class="">
                     By signing up, you agree to the
-                    <span>Terms of Service</span> and <span>Privacy Policy</span>, including <span>Cookie Use</span>. Others will be able to find you by email or phone number when provided.
+                    <span><a href="">Terms of Service</a></span>
+                    and
+                    <span><a href="">Privacy Policy</a></span>
+                    , including
+                    <span><a href="">Cookie Use</a></span>
+                    . Others will be able to find you by email or phone number when provided.
                 </p>
             </div>
 

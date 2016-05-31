@@ -2,7 +2,7 @@
 <html lang=en>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>SIGN-UP::Adlink</title>
+    <title>NOTICEBOARDS::Adlink</title>
 
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/2eftb3ous07fmuc/normalize.css?raw=1">
@@ -15,9 +15,19 @@
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
 
-    <link rel="stylesheet" href="https://www.dropbox.com/s/x404i0jg5v61q9x/signup-page-app.css?raw=1">
+<!-- apps -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/fp87vx73osyl34n/noticeboard-app.css?raw=1">
+<!--    <link rel="stylesheet" href="header.css">-->
+<!--    <link rel="stylesheet" href="noticeboard-app.css">-->
 
-<!--    <link rel="stylesheet" href="signup-page-app.css">-->
+    <!-- modals -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
+
+
+
+<!--    <link rel="stylesheet" href="modals.css">-->
+
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
@@ -39,107 +49,142 @@
 
 <div id="page1" class="page1">
 
+    <!------------------------------------------------->
+    <!---------->
     <!-- Header -->
-    <div class="top-bar Header_bg">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="Logo_bg">
-                    <a href="#"><img class="center-c" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo"></a>
-                </li>
+    <div class="expanded row columns top-bar Header_bg" >
 
+        <div id="home-menu" class="">
 
-                <li class="menu-tabs">
-                    <a href="#">Noticeboard </a>
-                </li>
-                <li class="menu-tabs">
-                    <a href="#">Billboard </a>
-                </li>
-                <li class="menu-tabs">
-                    <a href="#">Magazine </a>
-                </li>
-            </ul>
-        </div>
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li class="menu-tabs log-out">
-                    <a href="customer-dashboard.html">customer dashboard</a>
-                </li>
-                <li class="menu-tabs log-out">
-                    <a href="my-ads.html">my ads</a>
-                </li>
+            <div class="top-bar-left navbar">
 
-                <li class="menu-tabs log-out">
-                    <a href="profile.html">edit profile</a>
-                </li>
+                <ul id="navlist" class="menu">
 
-                <li class="menu-tabs log-out">
-                    <a href="create-ad.html">post ad</a>
-                </li>
-            </ul>
-        </div>
+                    <!-- logo -->
+
+                    <li class="menu-tabs dv Logo_bg">
+                        <a href="#">
+                            <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+                        </a>
+                    </li>
+
+                    <!-- Services -->
+                    <li class="menu-tabs dv serv">
+                        <a href="#" >
+                            <div>Services</div>
+                        </a>
+
+                        <ul id="sub_navlist" class="">
+                            <li class="nb">
+                                <a href="index.html">
+                                    <div>Noticeboard</div>
+                                </a>
+                            </li>
+                            <li class="dm">
+                                <a href="#">
+                                    <div>Digital Marketing</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-tabs dv">
+                        <a href="#" class="">
+                            <div>About us</div>
+                        </a>
+                    </li>
+                    <li class="menu-tabs dv">
+                        <a href="#">
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <!-- Visible when NOT logged in -->
+                    <li class="menu-tabs sign-in">
+                        <a href="#" class="" data-open="signInModal">Have and account? Sign In</a>
+                    </li>
+
+                    <!-- Visible when logged in -->
+                    <li class="menu-tabs log-out">
+                        <a href="#" class="button-gr-bg">logout</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div> <!-- responsive menu -->
+
+    </div> <!-- top bar end -->
+
+    <!-- Sign up Modal -->
+    <div id="signInModal" class="tiny reveal f-400 round-plain-no-margin"  data-reveal>
+      <form>
+          <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">Have an account?</p>
+            </div>
+
+          <!--content-->
+            <div class="row columns form-cntnt">
+                <!-- names -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="username or email">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="password">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="small-12 columns">
+                            <label><input type="submit" class="button" value="Log In">
+                            </label>
+                        </div>
+                    </div>
+          </div>
+
+          </form>
+
+          <!--other social-->
+            <div class="form-ttl f-center form-cntnt">
+                <p class="thin100 st-txt4 bold">New to Adlink?</p>
+            </div>
+
+            <div class="f-hor form-cntnt">
+                <a href="sign-up.html" class="button sign">
+                    Sign up
+                </a>
+             </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
     </div>
 
     <!------------------------------------------------->
     <!-- Banner -->
-    <div id="banner" class="expanded row columns">
+    <div id="banner" class="expanded row columns bg-photo r1">
 
-        <!--Bg-Photo-->
-        <div id="banner-photo" class="expanded row columns bg-photo"></div>
+      <!--banner content -->
+        <div id="banner-content" class="expanded row columns white-overlay center-v">
+            <p >We leverage on the power of both digital marketing and offline advertising to help your business grow in sales.</p>
+        </div>
 
-        <!--banner content -->
-        <div id="banner-content" class="expanded row columns white-overlay">
+    </div> <!-- banner row 1 end -->
 
-            <div class="notice-ad">
-                <p class="center-h">
-                    LETS YOU POST YOUR OFFLINE ADS ONLINE </p>
-            </div>
 
-            <div class="sign-up-txt">
-                <p class="center-c">SIGN UP </p>
-            </div>
+    <!------------------------------------------------->
+    <!--Services -->
 
-            <div class="sign-up-form ">
-                <form class="e-form center-h">
-                    <div class="row">
-                        <div class="medium-7 columns">
-                            <label>
-                                <input type="text" placeholder="EMAIL ADDRESS">
-                            </label>
-                        </div>
-                        <div class="medium-5 columns next-row">
-                            <div class="next">
-                                <a class="Flex" href="customer-dashboard.html">
-                                    <p class="Flex-Div">Next</p>
-                                    <div class="Flex-Div next-div">
-                                        <input class="center-c" type="image" src="https://www.dropbox.com/s/pn2fjiu0x60q7as/arrow.png?raw=1">
-<!--                                        <img class="center-c" src="https://www.dropbox.com/s/pn2fjiu0x60q7as/arrow.png?raw=1" alt="arrow">-->
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+    <div id="services" class="expanded row columns r2">
 
-            </div>
-
-            <div class="sign-up-txt">
-                <p class="center-c">OR SIGN UP WITH</p>
-            </div>
-
-            <div class="social-sign">
-                <div class="center-c">
-                    <button>
-                        <img src="https://www.dropbox.com/s/edwsn83awpvg9rl/logo-google-small-white-nc.png?raw=1" alt="google-logo">
-                        Google
-                    </button>
-                    <button>
-                        <img src="https://www.dropbox.com/s/4cuihpj7rmfbb6t/logo-twitter-white-nc.png?raw=1" alt="logo-twitter-white-nc">
-                        Twitter
-                    </button>
-                </div>
-            </div>
-
-        </div> <!-- end banner content -->
 
     </div>
 
