@@ -22,8 +22,6 @@
     <!-- modals -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
 
-
-
 <!--    <link rel="stylesheet" href="modals.css">-->
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
@@ -79,54 +77,58 @@
 
 <!------------------------------->
     <!-- Sign up Modal -->
-    <div id="signInModal" class="tiny reveal round-plain-no-margin"  data-reveal>
-      <form>
-          <!--title-->
-            <div class="form-ttl f-center">
-                <p class="thin100 st-txt4 bold">Have an account?</p>
-            </div>
-
-          <!--content-->
-            <div class="row columns form-cntnts">
-                <!-- names -->
-                <div class="row">
-                    <div class="small-12 columns">
-                        <label><input type="text" placeholder="username or email">
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="small-12 columns">
-                        <label><input type="text" placeholder="password">
-                        </label>
-                    </div>
+    <!-- Sign up Modal -->
+    <div id="signInModal" class="pop reveal round-plain-no-margin "  data-reveal>
+        <div class="cont f-center">
+        <div class="form-container ">
+            <form>
+            <!--title-->
+                <div class="form-ttl f-center">
+                    <p class="thin100 st-txt4 bold">Have an account?</p>
                 </div>
 
-                <div class="row">
+              <!--content-->
+                <div class="row columns form-cntnt">
+                    <!-- names -->
+                    <div class="row">
                         <div class="small-12 columns">
-                            <label><input type="submit" class="button" value="Log In">
+                            <label><input type="text" placeholder="username or email">
                             </label>
                         </div>
                     </div>
-          </div>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label><input type="text" placeholder="password">
+                            </label>
+                        </div>
+                    </div>
 
-          </form>
+                    <div class="row">
+                            <div class="small-12 columns">
+                                <label><input type="submit" class="button" value="Log In">
+                                </label>
+                            </div>
+                        </div>
+              </div>
 
-          <!--other social-->
-            <div class="form-ttl f-center form-cntnts">
+            </form>
+
+            <!--other social-->
+            <div class="form-ttl f-center form-cntnt">
                 <p class="thin100 st-txt4 bold">New to Adlink?</p>
             </div>
 
-            <div class="f-hor form-cntnts">
+            <div class="f-hor form-cntnt">
                 <a href="sign-up.html" class="button sign">
                     Sign up
                 </a>
-             </div>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
-
-    </div>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div> <!-- end of form-container -->
+        </div>
+    </div> <!-- sign in modal end -->
     <!------------------------------->
 
 
@@ -220,7 +222,7 @@
             </div>
 
             <!--disclaimer-->
-            <div class="disclaimer f-hor">
+            <div class="discl f-hor">
                 <p class="">
                     By signing up, you agree to the
                     <span><a href="">Terms of Service</a></span>
