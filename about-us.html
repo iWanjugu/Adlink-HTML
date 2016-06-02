@@ -15,10 +15,18 @@
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
 
-    <!-- app -->
-<!--    <link rel="stylesheet" href="https://www.dropbox.com/s/qdbpepgwuht8psl/home-app.css?raw=1">-->
-
+<!-- apps -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
+<!--    <link rel="stylesheet" href="https://www.dropbox.com/s/j6ph91nbb7sfwbu/about-us-app.css?raw=1">-->
+<!--    <link rel="stylesheet" href="header.css">-->
     <link rel="stylesheet" href="about-us-app.css">
+
+    <!-- modals -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
+
+
+<!--    <link rel="stylesheet" href="modals.css">-->
+
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
@@ -41,71 +49,123 @@
 <div id="page1" class="page1">
 
     <!------------------------------------------------->
-    <!--Accordion-->
-    <div class="expanded row columns">
+    <!---------->
+    <!-- Header -->
+    <div class="expanded row columns top-bar Header_bg" >
 
-        <!---------->
-        <!-- Header -->
-        <div class="top-bar Header_bg" >
+        <div id="home-menu" class="">
 
-            <div id="home-menu" class="">
+            <div class="top-bar-left navbar">
 
-                <div class="top-bar-left navbar">
+                <ul id="navlist" class="menu">
 
-                    <ul id="navlist" class="menu">
+                    <!-- logo -->
 
-                        <!-- logo -->
+                    <li class="menu-tabs dv Logo_bg">
+                        <a href="#">
+                            <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+                        </a>
+                    </li>
 
-                        <li class="menu-tabs dv Logo_bg">
-                            <a href="#">
-                                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
-                            </a>
-                        </li>
+                    <!-- Services -->
+                    <li class="menu-tabs dv serv">
+                        <a href="#" >
+                            <div>Services</div>
+                        </a>
 
-                        <!-- Services -->
-                        <li class="menu-tabs serv">
-                            <a href="#" >Services</a>
+                        <ul id="sub_navlist" class="">
+                            <li class="nb">
+                                <a href="index.html">
+                                    <div>Noticeboard</div>
+                                </a>
+                            </li>
+                            <li class="dm">
+                                <a href="#">
+                                    <div>Digital Marketing</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                            <ul id="sub_navlist">
-                                <li class="">
-                                    <a href="#">Noticeboard</a>
-                                </li>
-                                <li class="">
-                                    <a href="#">About us</a>
-                                </li>
-                            </ul>
-                        </li>
+                    <li class="menu-tabs dv">
+                        <a href="#" class="">
+                            <div>About us</div>
+                        </a>
+                    </li>
+                    <li class="menu-tabs dv">
+                        <a href="#">
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu">
+                    <!-- Visible when NOT logged in -->
+                    <li class="menu-tabs sign-in">
+                        <a href="#" class="" data-open="signInModal">Have and account? Sign In</a>
+                    </li>
 
-                        <li class="menu-tabs dv">
-                            <a href="#" class="">               <div>About us</div>
-                            </a>
-                        </li>
-                        <li class="menu-tabs dv">
-                            <a href="#">
-                                <div>Blog</div>
-                            </a>
-                        </li>
-                    </ul>
+                    <!-- Visible when logged in -->
+                    <li class="menu-tabs log-out">
+                        <a href="#" class="button-gr-bg">logout</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div> <!-- responsive menu -->
+
+    </div> <!-- top bar end -->
+
+    <!-- Sign up Modal -->
+    <div id="signInModal" class="tiny reveal f-400 round-plain-no-margin"  data-reveal>
+      <form>
+          <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">Have an account?</p>
+            </div>
+
+          <!--content-->
+            <div class="row columns form-cntnt">
+                <!-- names -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="username or email">
+                        </label>
+                    </div>
                 </div>
-                <div class="top-bar-right">
-                    <ul class="menu">
-                        <li class="menu-tabs log-out">
-                            <a href="#" class="button button-gr-bg">sign up</a>
-                        </li>
-
-                        <li class="menu-tabs log-out">
-                            <a href="#" class="button button-gr-otln">login</a>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="password">
+                        </label>
+                    </div>
                 </div>
-            </div> <!-- responsive menu -->
 
+                <div class="row">
+                        <div class="small-12 columns">
+                            <label><input type="submit" class="button" value="Log In">
+                            </label>
+                        </div>
+                    </div>
+          </div>
 
-        </div> <!-- top bar end -->
+          </form>
 
+          <!--other social-->
+            <div class="form-ttl f-center form-cntnt">
+                <p class="thin100 st-txt4 bold">New to Adlink?</p>
+            </div>
+
+            <div class="f-hor form-cntnt">
+                <a href="sign-up.html" class="button sign">
+                    Sign up
+                </a>
+             </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
 
     </div>
-
 
     <!------------------------------------------------->
     <!-- Banner -->
@@ -113,22 +173,33 @@
 
       <!--banner content -->
         <div id="banner-content" class="expanded row columns white-overlay center-v">
-            <p >We leverage on the power of both digital marketing and offline advertising to help your business grow in sales.</p>
+            <p>
+                <!-- content -->
+                <div class="abt-adlink-text">
+                    <p> We make it
+                        <span> simple for small businesses to advertise</span>
+                        <br>
+                        their products and services across both <span>offline</span>
+                        and
+                        <br>
+                        <span> online </span>
+                        marketing channels.
+                    </p>
+                </div>
+            </p>
         </div>
 
     </div> <!-- banner row 1 end -->
 
-
-    <!------------------------------------------------->
-    <!--Services -->
-
-    <div id="services" class="expanded row columns r2">
-
-
-    </div>
-
 </div> <!-- end page 1-->
 
+<!-- ========================================================= -->
+<!--- PAGE 2 --->
+<!-- ========================================================= -->
+<div id="page2">
+
+
+</div> <!-- end page 2 -->
 <!-- ========================================================= -->
 <!--- FOOTER ----->
 
