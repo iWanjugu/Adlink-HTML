@@ -19,18 +19,21 @@
     <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
 
     <link rel="stylesheet" href="https://www.dropbox.com/s/fp87vx73osyl34n/noticeboard-app.css?raw=1">
-<!--    <link rel="stylesheet" href="header.css">-->
 
+<!--    <link rel="stylesheet" href="header.css">-->
 <!--    <link rel="stylesheet" href="noticeboard-app.css">-->
 
     <!-- modals -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
-
 <!--    <link rel="stylesheet" href="modals.css">-->
 
+    <!-- responsive tables -->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/7ca0q1vc5ytiugh/responsive-tables.css?raw=1">
 
+
+    <!-- footer -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
-
+<!--    <link rel="stylesheet" href="footer.css">-->
     <!----------------------------------------->
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -43,6 +46,214 @@
 <body>
 <div id="wrapper" class="expanded row columns">
 
+<!-- ========================================================= -->
+<!--MODALS-->
+<!-- ========================================================= -->
+
+<!-- Log In Modal -->
+<div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+    <div class="mod-cont form-container ">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+
+                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+
+        </div>
+
+        <form>
+        <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">Have an account?</p>
+            </div>
+
+          <!--content-->
+            <div class="row columns form-cntnt">
+                <!-- names -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="username or email">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- password -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="password">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Log In button -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="submit" class="button" value="Log In">
+                        </label>
+                    </div>
+                </div>
+
+                <!--forgotten password-->
+                <div class="other">
+                    <a href="#">
+                        <p class="or2 su">Forgotten Password?</p>
+                    </a>
+                </div>
+          </div>
+
+        </form>
+
+        <!--other social-->
+        <div class="form-ttl f-center form-cntnt">
+            <p class="thin100 st-txt4 bold">New to Adlink?</p>
+        </div>
+
+        <div class="f-hor form-cntnt">
+            <a href="sign-up.html" class="button sign">
+                Sign up
+            </a>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> <!-- end of form-container -->
+    </div>
+</div> <!-- log in modal end -->
+
+<!------------------------------------------------->
+    <!-- Rates Modal -->
+    <div id="ratesModal" class="reveal round-plain-no-margin"  data-reveal>
+
+        <div class="f-center cont">
+        <div class="mod-cont rates-container">
+            <!--logo-->
+            <div class="logo f-center form-cntnt ">
+                    <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+            </div>
+
+            <div class="ttl f-center">
+                <p class="thin300">NOTICEBOARD RATES</p>
+            </div>
+
+            <div class="row form-ttl">
+                <div class="small-4 columns">
+                    <p class="st-txt4"> WEEKLY RATES</p>
+                </div>
+                <div class="small-8 columns">
+                    <p class="st-txt4"></p>
+                </div>
+            </div>
+
+
+            <!-- Rates table -->
+            <table class="responsive">
+              <thead>
+                <tr>
+                    <th class="loc">Location</th>
+                    <th class="ad-sz">A5</th>
+                    <th class="ad-sz">A4</th>
+                    <th class="ad-sz">A3</th>
+                    <th class="ad-sz">A2</th>
+                    <th class="ad-sz">A1</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td class="loc">Yaya Center</td>
+                    <td class="ad-sz">500</td>
+                    <td class="ad-sz">700</td>
+                    <td class="ad-sz">1,400</td>
+                    <td class="ad-sz">2,800</td>
+                    <td class="ad-sz">5,600</td>
+                </tr>
+
+                  <tr>
+                    <td class="loc">Village Market</td>
+                    <td class="ad-sz">500</td>
+                    <td class="ad-sz">700</td>
+                    <td class="ad-sz">1,400</td>
+                    <td class="ad-sz">2,800</td>
+                    <td class="ad-sz">5,000</td>
+                </tr>
+
+                  <tr>
+                    <td class="loc">Junction</td>
+                    <td class="ad-sz">350</td>
+                    <td class="ad-sz">600</td>
+                    <td class="ad-sz">1,100</td>
+                    <td class="ad-sz">2,200</td>
+                    <td class="ad-sz">3,800</td>
+                </tr>
+
+                  <tr>
+                    <td class="loc">Sarit Center</td>
+                    <td class="ad-sz">300</td>
+                    <td class="ad-sz">550</td>
+                    <td class="ad-sz">1,100</td>
+                    <td class="ad-sz">2,200</td>
+                    <td class="ad-sz">3,800</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <!-- Print and delivery costs -->
+            <div class="row form-ttl printNdel">
+                <div class="small-8 columns">
+                    <p class="st-txt4"> PRINT AND DELIVERY COSTS</p>
+                </div>
+                <div class="small-4 columns">
+                    <p class="st-txt4"></p>
+                </div>
+            </div>
+
+            <table class="responsive ">
+              <thead>
+                <tr>
+                    <th class="loc">Paper Type</th>
+                    <th class="ad-sz">A5</th>
+                    <th class="ad-sz">A4</th>
+                    <th class="ad-sz">A3</th>
+                    <th class="ad-sz">A2</th>
+                    <th class="ad-sz">A1</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td class="loc">Normal</td>
+                    <td class="ad-sz">50</td>
+                    <td class="ad-sz">100</td>
+                    <td class="ad-sz">250</td>
+                    <td class="ad-sz">800</td>
+                    <td class="ad-sz">N/A</td>
+                </tr>
+
+                <tr>
+                    <td class="loc">Gloss Paper</td>
+                    <td class="ad-sz">100</td>
+                    <td class="ad-sz">150</td>
+                    <td class="ad-sz">350</td>
+                    <td class="ad-sz">1,100</td>
+                    <td class="ad-sz">5,000</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <div class="row columns form-ttl">
+                <p class="st-txt4"> Delivery fee to each mall:
+                    <span>Ksh 300</span>
+                </p>
+            </div>
+
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+        </div>
+    </div> <!-- Rates Modal End -->
+
+    <!------------------------------------------------->
 <!-- ========================================================= -->
 <!--- PAGE 1 --->
 <!-- ========================================================= -->
@@ -104,7 +315,7 @@
                 <ul class="menu">
                     <!-- Visible when NOT logged in -->
                     <li class="menu-tabs sign-in">
-                        <a href="#" class="" data-open="signInModal">Have and account? Sign In</a>
+                        <a class="" data-open="logInModal">Have and account? Sign In</a>
                     </li>
 
                     <!-- Visible when logged in -->
@@ -118,59 +329,6 @@
 
     </div> <!-- top bar end -->
 
-    <!-- Sign up Modal -->
-    <div id="signInModal" class="pop reveal round-plain-no-margin "  data-reveal>
-        <div class="cont f-center">
-        <div class="form-container ">
-            <form>
-            <!--title-->
-                <div class="form-ttl f-center">
-                    <p class="thin100 st-txt4 bold">Have an account?</p>
-                </div>
-
-              <!--content-->
-                <div class="row columns form-cntnt">
-                    <!-- names -->
-                    <div class="row">
-                        <div class="small-12 columns">
-                            <label><input type="text" placeholder="username or email">
-                            </label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="small-12 columns">
-                            <label><input type="text" placeholder="password">
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                            <div class="small-12 columns">
-                                <label><input type="submit" class="button" value="Log In">
-                                </label>
-                            </div>
-                        </div>
-              </div>
-
-            </form>
-
-            <!--other social-->
-            <div class="form-ttl f-center form-cntnt">
-                <p class="thin100 st-txt4 bold">New to Adlink?</p>
-            </div>
-
-            <div class="f-hor form-cntnt">
-                <a href="sign-up.html" class="button sign">
-                    Sign up
-                </a>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div> <!-- end of form-container -->
-        </div>
-    </div>
-
     <!------------------------------------------------->
     <!-- Banner -->
     <div id="banner" class="expanded row columns bg-photo r1">
@@ -180,7 +338,7 @@
             <p >Post your Local Noticeboard Advertisement Online & Have it distributed across major Noticeboard Locations in Kenya
             </p>
             <div class="">
-                <a href="#" class="button PostAd ntcb rgt" data-open="signInModal"> post ad</a>
+                <a class="button PostAd ntcb rgt" data-open="logInModal"> post ad</a>
             </div>
         </div>
 
@@ -246,7 +404,7 @@
         </div>
 
         <div class="rates f-hor ">
-            <a href="#" class="button ntcb">view rates</a>
+            <a class="button ntcb" data-open="ratesModal">view rates</a>
         </div>
     </div> <!-- locations end -->
 
@@ -323,7 +481,7 @@
                         You would then go ahead to select the size, paper type, location and duration of the AD for each location. The price of posting the AD in each location would be displayed.
                         </p>
                         <div class="">
-                            <a href="#" class="button ntcb-lt" data-open="signInModal"> post ad</a>
+                            <a class="button ntcb-lt" data-open="logInModal"> post ad</a>
                         </div>
                     </div>
                 </div>
@@ -361,7 +519,7 @@
                         <p class="title">AD is Printed and Posted</p>
                         <p class="d-descr">
                         Upon Successful payment, Your AD will be vetted to ensure it does not violet our terms of service. Thereafter it would be printed at a central location then delivered and posted in all the locations you had selected by the next day.</p>
-                        <a href="#" class="button ntcb-lt">View Rates</a>
+                        <a class="button ntcb-lt" data-open="ratesModal">View Rates</a>
                     </div>
                 </div>
             </div><!-- row end -->
@@ -418,7 +576,7 @@
                     <img class="center-h" src="https://www.dropbox.com/s/oslnhoaa9y51zqi/clients.png?raw=1" alt="clients">
                 </div>
                 <div class="total-client-num c-fact-text-big">
-                    <p>3000</p>
+                    <p>3,000</p>
                 </div>
 
                 <div class="c-fact-text">
@@ -551,8 +709,31 @@
 
         <div class="adlink-info">
             <p> Send Us Mail @ <span> wecare@adlink.co.ke</span></p>
-            <p>Or Find Us @ <span> 1st Floor Yaya Centre, Argwins Kodhek RD, Nairobi</span></p>
+
+            <p class="find-us">Or Find Us @ </p>
+
+            <div class="row branch">
+                <!-- yaya -->
+
+                <div class="medium-2 columns"></div>
+                <div class="small-12 medium-4 columns yaya">
+                    <p><span class="und"> Yaya Centre Branch </span></p>
+                    <p><span> 1st Floor Yaya Centre,</span></p>
+                    <p><span> Argwins Kodhek RD, Nairobi</span></p>
+                    <p><span>+254 710 640694 </span></p>
+                </div>
+
+                <!-- sarit -->
+                <div class="small-12 medium-4 columns">
+                    <p><span class="und"> Sarit Centre Branch </span></p>
+                    <p><span> Ground Floor, Sarit Centre</span></p>
+                    <p><span>+254 20 528 4496 </span></p>
+                    <p><span>+254 728 464 418</span></p>
+                </div>
+                <div class="medium-2 columns"></div>
+            </div>
         </div>
+
 
         <div class="logo-grey">
             <img src="https://www.dropbox.com/s/s329ft86hdk1p2o/adlink-logo-grey.png?raw=1" alt="adlink logo grey">
@@ -577,6 +758,9 @@
     <script src="https://www.dropbox.com/s/he2ds4nd4a41let/what-input.min.js?raw=1"></script>
     <script src="https://www.dropbox.com/s/dskhrx47eu0afhl/foundation.min.js?raw=1"></script>
     <script src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
+
+    <!-- responsive tables -->
+    <script src="https://www.dropbox.com/s/r59n4ua0tpic3jy/responsive-tables.js?raw=1"></script>
 
     <!--Vegas-->
     <script src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
