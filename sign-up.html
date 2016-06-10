@@ -111,11 +111,38 @@
         </button>
     </div> <!-- end of form-container -->
     </div>
-</div> <!-- sign in modal end -->
-<!------------------------------->
+</div> <!-- log in modal end -->
 
+<!------------------------------------------------->
+<!-- Check Email Modal -->
+<div id="checkEmailModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="f-center cont">
+    <div class="mod-cont rates-container">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+        </div>
 
+        <div class="ttl f-center">
+            <p class="thin300">ACCOUNT SUCCESSFULLY CREATED!!!</p>
+        </div>
 
+        <div class="row columns form-ttl">
+            <p class="st-txt4"> Next steps: </p>
+
+            <ol class="st-txt4">
+                <li>Check your email (the one used to create account) to get your password.</li>
+                <li>Click on link provided to go to the sign in page.</li>
+                <li>Enter your email and password provided to enter account</li>
+                <li>VOILA! You're in!</li>
+            </ol>
+
+        </div>
+    </div>
+    </div>
+</div> <!-- Check Email Modal end-->
+
+<!------------------------------------------------->
 <!-- ========================================================= -->
 <!--- PAGE 1 --->
 <!-- ========================================================= -->
@@ -216,7 +243,7 @@
                     <!-- Sign up Button -->
                     <div class="row">
                         <div class="small-12 columns">
-                            <label><input type="submit" class="button" value="Sign Up">
+                            <label><input type="submit" class="button" value="Sign Up" data-open="checkEmailModal">
                             </label>
                         </div>
                     </div>
