@@ -34,7 +34,7 @@
     <!-- left-nav and header -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/zl0uxxuidjclicm/dashboard-left-nav-header.css?raw=1">
 
-<!--    <link rel="stylesheet" href="css/dashboard-left-nav-header.css">-->
+<!--    <link rel="stylesheet" href="dashboard-left-nav-header.css">-->
 
     <!-- footer -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
@@ -44,16 +44,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
 
     <!-- Datepicker -->
-<!--    <link rel="stylesheet" type="text/css" href=" https://www.dropbox.com/s/4yz95bgp4z9y99r/foundation-datepicker.min.css?raw=1">-->
-
-    <link rel="stylesheet" type="text/css" href=" https://www.dropbox.com/s/j2hrzworpfofewt/foundation-datepicker.css?raw=1">
-
-    <link rel="stylesheet" type="text/css" href=" https://www.dropbox.com/s/4p17lifq6wppn8z/foundation-datepicker-example.css?raw=1">
-
-    <!----------------------------------------->
-    <!-- SelectScripts-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://www.dropbox.com/s/nyn9h2gmbz93ful/select.js?raw=1"></script>
+    <link rel="stylesheet" type="text/css" href=" https://www.dropbox.com/s/4yz95bgp4z9y99r/foundation-datepicker.min.css?raw=1">
 
 </head>
 <!---------------------------------------------------------------------->
@@ -608,23 +599,28 @@
                                                 LOCATION
                                             </th>
 
-                                            <th class="ad_cols duration_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
-                                                DURATION
+                                             <th class="ad_cols price_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                                                PRICES
                                             </th>
 
                                             <th class="ad_cols from_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="From: activate to sort column ascending">
-                                                FROM
+                                                SELECT FROM
                                             </th>
                                             <th class="ad_cols to_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="To: activate to sort column ascending">
-                                                TO
+                                                SELECT TO
                                             </th>
+
+                                            <th class="ad_cols duration_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
+                                                <a id="btnCalc" class="st-txt2 button ">
+                                                GET DURATION</a>
+
+                                            </th>
+
                                             <th class="ad_cols qty_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Qty: activate to sort column ascending">
                                                 QTY
                                             </th>
 
-                                            <th class="ad_cols price_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
-                                                PRICES
-                                            </th>
+
 
                                         </tr>
                                     </thead>
@@ -634,8 +630,8 @@
                                         <!-- row 1 -->
                                         <tr>
                                             <!-- location -->
-                                            <td class="location_">
-                                                <select id="adLocation" class="st-txt">
+                                            <td class="location_ ">
+                                                <select id="adLocation" class="st-txt ">
                                                     <option>--Select--</option>
                                                     <option>Yaya Centre</option>
                                                     <option>Sarit Centre</option>
@@ -650,21 +646,25 @@
 
                                             <!-- start date -->
                                             <td class="from_">
-                                                <input id="dpd1" type="text" class="span2 st-txt2" value="">
+                                                <input id="dpd1" class="span2 st-txt2" value="dd/mm/yyyy">
                                             </td>
 
                                             <!-- end date -->
                                             <td class="to_">
-                                                <input id="dpd2" type="text" class="span2 st-txt2" value="">
+                                                <input id="dpd2" class="span2 st-txt2" value="dd/mm/yyyy">
                                             </td>
 
                                             <!-- duration -->
                                             <td class="duration_">
-                                                <p class="center-c">1 week</p></td>
+                                                <div>
+                                                    <p id="dpDuration" class="st-txt2 center-c"></p>
+                                                </div>
+                                            </td>
 
                                             <!-- number of ads -->
                                             <td class="qty_">
-                                                <p class="center-c">02</p></td>
+                                                <input type="number" value="---" class="center-c">
+                                            </td>
 
                                         </tr>
 
@@ -971,10 +971,17 @@
 <!---------------------------------------------------------------------->
     <!--- Scripts ----->
 <!--    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>    -->
-    <script src="https://www.dropbox.com/s/4dbmwxhwcanrzjd/jquery.min.js?raw=1"></script>
+<!--    <script src="https://www.dropbox.com/s/4dbmwxhwcanrzjd/jquery.min.js?raw=1"></script>-->
+    <!----------------------------------------->
+    <!-- SelectScripts-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://www.dropbox.com/s/he2ds4nd4a41let/what-input.min.js?raw=1"></script>
     <script src="https://www.dropbox.com/s/dskhrx47eu0afhl/foundation.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
+<!--    <script src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>-->
+
+    <!-- auto select stuff -->
+    <script type="text/javascript" src="https://www.dropbox.com/s/nyn9h2gmbz93ful/select.js?raw=1"></script>
+<!--    <script type="text/javascript" src="select.js"></script>-->
 
     <!--Vegas-->
     <script src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
@@ -985,11 +992,10 @@
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
 
     <!-- Datepicker -->
-<!--    <script type="text/javascript" src="https://www.dropbox.com/s/owpt4qced4rompr/foundation-datepicker.min.js?raw=1"></script>-->
+    <script type="text/javascript" src="https://www.dropbox.com/s/owpt4qced4rompr/foundation-datepicker.min.js?raw=1"></script>
 
-    <script type="text/javascript" src="https://www.dropbox.com/s/az1joo8up2c4qa1/foundation-datepicker.js?raw=1"></script>
+    <script type="text/javascript" src=" https://www.dropbox.com/s/00gs8wkts9jy8m9/datepicker-duration.js?raw=1"></script>
 
-<!--    <script type="text/javascript" src=" https://www.dropbox.com/s/00gs8wkts9jy8m9/foundation-datepicker-example.js?raw=1"></script>-->
 
 <!---------------------------------------------------------------------->
 </body>
