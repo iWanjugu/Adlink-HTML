@@ -15,8 +15,6 @@
     <!-- Icons -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.dropbox.com/s/wicimf8428hjp82/foundation-icons.css?raw=1" />
-
     <link rel="stylesheet" href="https://www.dropbox.com/s/axu55ju5dyfjdn0/foundation.min.css?raw=1">
 
 
@@ -27,13 +25,14 @@
 <!--    <link rel="stylesheet" type="text/css" href="css/custom_styles.css">-->
 
     <!-- app -->
-    <link rel="stylesheet" href="https://www.dropbox.com/s/ho4qj036uhkqny8/create-ad-app.css?raw=1">
+<!--    <link rel="stylesheet" href="https://www.dropbox.com/s/ho4qj036uhkqny8/create-ad-app.css?raw=1">-->
 
-<!--    <link rel="stylesheet" href="create-ad-app.css">-->
+    <link rel="stylesheet" href="create-ad-app.css">
 
     <!-- left-nav and header -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
     <link rel="stylesheet" href="https://www.dropbox.com/s/zl0uxxuidjclicm/dashboard-left-nav-header.css?raw=1">
-
+<!--    <link rel="stylesheet" href="header.css">-->
 <!--    <link rel="stylesheet" href="dashboard-left-nav-header.css">-->
 
     <!-- footer -->
@@ -320,188 +319,10 @@
                           <!--====================================================-->
                           <div class="tabs-panel is-active" id="pl-your-ad">
 
-                          <form class="place-ad">
-
-                        <!-------------------------------->
-                          <!-- Step 1 -->
-                            <div class="st-1">
-
-                                <!-- row 1 -->
-                                <div class="st-row1">
-                                    <div class="Flex">
-                                        <!--- circle & num -->
-                                        <div class="Flex-Div cNm">
-                                            <div class="step-num-c center-h">
-                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
-                                                <p class="center-c step-num thin100">1</p>
-                                            </div>
-                                        </div>
-                                        <div class="descr">
-                                            <label class="step-instr">
-                                                <p class="step-instr-txt">select your ad category</p>
-                                                <select class="st-txt">
-                                                    <option value="cars">Cars</option>
-                                                    <option value="property">Property</option>
-                                                    <option value="jobs">Jobs</option>
-                                                    <option value="services">Services</option>
-                                                    <option value="household">Household</option>
-                                                    <option value="events">Events</option>
-                                                    <option value="products">Products & Other Goods</option>
-                                                    <option value="pets">Pets</option>
-                                                  </select>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- step 1 end -->
+                          <form class="place-ad custom">
 
                             <!-------------------------------->
-                            <!-- Step 2 -->
-                            <div class="st-2">
-                                <!-- row-1 -->
-                                <div class="st-row1">
-                                    <div class="Flex">
-                                        <!--- circle & num -->
-                                        <div class="Flex-Div cNm">
-                                            <div class="step-num-c center-h">
-                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
-                                                <p class="center-c step-num thin100">2</p>
-                                            </div>
-                                        </div>
-                                        <div class="descr">
-                                            <fieldset class="step-instr">
-                                            <legend class="step-instr-txt">
-                                                select size and orientation
-                                            </legend>
-                                            <input id="landscape" type="checkbox">
-                                                <label class="st-txt" for="landscape">Landscape</label>
-                                            <input id="Portrait" type="checkbox">
-                                                <label class="st-txt" for="Portrait">Portrait</label>
-
-                                            </fieldset>
-                                        </div>
-                                    </div>
-
-                                </div> <!--- row 1 end -->
-
-                                <!-- row 2-->
-                                <div class="st-row2">
-                                    <fieldset class="step-instr ads-size">
-                                        <legend class="step-instr-txt"></legend>
-                                        <input id="a5" type="checkbox">
-                                            <label class="st-txt" for="a5"><span>A5</span></label>
-                                        <input id="a4" type="checkbox" onclick="">
-                                            <label class="st-txt" for="a4"><span>A4</span></label>
-                                        <input id="a3" type="checkbox">
-                                            <label class="st-txt" for="a3"><span>A3</span></label>
-                                        <input id="a2" type="checkbox">
-                                            <label class="st-txt" for="a2"><span>A2</span></label>
-                                        <input id="a1" type="checkbox">
-                                            <label class="st-txt" for="a1"><span>A1</span></label>
-                                    </fieldset>
-                                </div>
-
-                            </div> <!-- step 2 end -->
-
-                              <!-------------------------------->
-                              <!-- Step 3 -->
-                            <div class="st-3">
-                                <!-- row-1 -->
-                                <div class="st-row1">
-                                    <div class="Flex">
-                                        <!--- circle & num -->
-                                        <div class="Flex-Div cNm">
-                                            <div class="step-num-c center-h">
-                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
-                                                <p class="center-c step-num thin100">3</p>
-                                            </div>
-                                        </div>
-                                        <div class="Flex-Div descr step-instr">
-                                            <p class="step-instr-txt">select printing option</p>
-                                        </div>
-                                    </div>
-                                </div> <!--end row 1 -->
-
-                                <!--- row 2 -->
-                                <div class="st-row2">
-                                    <fieldset class="medium-6 column paper-type">
-                                        <legend class="st-txt">Paper type</legend>
-                                        <input id="normal-print" type="checkbox">
-                                            <label class="st-txt2" for="normal-print">
-                                                <span>Normal</span></label>
-                                        <input id="gloss-print" type="checkbox">
-                                            <label class="st-txt2" for="gloss-print"><span>Gloss</span></label>
-                                    </fieldset>
-
-                                    <fieldset class="medium-4 column extra">
-                                        <legend class="st-txt ex-txt">
-                                            Extra Options</legend>
-                                        <input id="laminate-print" type="checkbox">
-                                            <label class="st-txt2" for="laminate-print"><span>Laminate</span></label>
-                                    </fieldset>
-
-                                    <div class="medium-2 column ad-cost">
-                                        <div class="Flex-v top">
-                                            <div class="Flex-Div"><p class="st-txt paper-type-selected">Gloss Print</p></div>
-                                            <div class="Flex-Div"><p class="st-txt3 paper-type-cost">KES 1000</p></div>
-                                            <div class="Flex-Div"><p class="st-txt extra-selected">Lamination</p></div>
-                                            <div class="Flex-Div"><p class="st-txt3 extra-cost">KES 500</p></div>
-
-                                        </div>
-
-                                        <div class="Flex-v">
-                                            <div class="Flex-Div"><p class="st-txt">TOTAL</p></div>
-                                            <div class="Flex-Div"><p class="st-txt4 total-selected-cost">KES 1500</p></div>
-
-                                        </div>
-                                    </div>
-
-                                </div> <!--- row 2 end -->
-
-                              </div><!-- step 3 end -->
-
-                            <!-------------------------------->
-                            <!-- Step 4 -->
-                             <div class="st-4">
-                                <!-- row-1 -->
-                                <div class="st-row1">
-                                    <div class="Flex">
-                                        <!--- circle & num -->
-                                        <div class="Flex-Div cNm">
-                                            <div class="step-num-c center-h">
-                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
-                                                <p class="center-c step-num thin100">4</p>
-                                            </div>
-                                        </div>
-                                        <div class="Flex-Div descr step-instr">
-                                            <p class="step-instr-txt">upload poster image</p>
-                                        </div>
-                                    </div>
-                                </div> <!--end row 1 -->
-
-                                <!--- row 2 -->
-                                <div class="row st-row2">
-                                    <fieldset class="medium-4 column ad-pic-upload">
-                                        <label for="ad-pic-upload" class="button">
-                                            <img class="center-c" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="upload-abvert-pic"></label>
-                                            <input type="file" id="ad-pic-upload" class="show-for-sr">
-                                    </fieldset>
-
-                                    <div class="medium-8 column ad-details">
-                                            <label>
-                                                <input class="st-txt2" type="text" placeholder="Title">
-                                            </label>
-
-                                            <label>
-                                                <textarea class="st-txt2" placeholder="Description"></textarea>
-                                            </label>
-                                        </div>
-                                </div> <!--- row 2 end -->
-
-                              </div><!-- step 4 end -->
-
-                            <!-------------------------------->
-                            <!-- Step 5 -->
+                            <!-- Contact Details -->
                              <div class="st-5">
                                 <!-- row-1 -->
                                 <div class="st-row1">
@@ -510,7 +331,7 @@
                                         <div class="Flex-Div cNm">
                                             <div class="step-num-c center-h">
                                                 <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
-                                                <p class="center-c step-num thin100">5</p>
+                                                <p class="center-c step-num thin100">0</p>
                                             </div>
                                         </div>
                                         <div class="Flex-Div descr step-instr">
@@ -554,10 +375,187 @@
 
                                 </div> <!--- row 2 end -->
 
-                              </div><!-- step 5 end -->
+                              </div><!-- contact details -->
 
                             <!-------------------------------->
-                            <!-- Step 6 -->
+                            <!-- Step 1 -->
+                             <div class="st-4">
+                                <!-- row-1 -->
+                                <div class="st-row1">
+                                    <div class="Flex">
+                                        <!--- circle & num -->
+                                        <div class="Flex-Div cNm">
+                                            <div class="step-num-c center-h">
+                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
+                                                <p class="center-c step-num thin100">1</p>
+                                            </div>
+                                        </div>
+                                        <div class="Flex-Div descr step-instr">
+                                            <p class="step-instr-txt">upload poster image</p>
+                                        </div>
+                                    </div>
+                                </div> <!--end row 1 -->
+
+                                <!--- row 2 -->
+                                <div class="row st-row2">
+                                    <fieldset class="medium-4 column ad-pic-upload">
+                                        <label for="ad-pic-upload" class="button">
+                                            <img class="center-c" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="upload-abvert-pic"></label>
+                                            <input type="file" id="ad-pic-upload" class="show-for-sr">
+                                    </fieldset>
+
+                                    <div class="medium-8 column ad-details">
+                                            <label>
+                                                <input class="st-txt2" type="text" placeholder="Title">
+                                            </label>
+
+                                            <label>
+                                                <textarea class="st-txt2" placeholder="Description"></textarea>
+                                            </label>
+                                        </div>
+                                </div> <!--- row 2 end -->
+
+                              </div><!-- step 1 end -->
+
+                            <!-------------------------------->
+                            <!-- Step 2 -->
+                            <div class="st-1">
+
+                                <!-- row 1 -->
+                                <div class="st-row1">
+                                    <div class="Flex">
+                                        <!--- circle & num -->
+                                        <div class="Flex-Div cNm">
+                                            <div class="step-num-c center-h">
+                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
+                                                <p class="center-c step-num thin100">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="descr">
+                                            <label class="step-instr">
+                                                <p class="step-instr-txt">select your ad category</p>
+                                                <select class="st-txt">
+                                                    <option value="cars">Cars</option>
+                                                    <option value="property">Property</option>
+                                                    <option value="jobs">Jobs</option>
+                                                    <option value="services">Services</option>
+                                                    <option value="household">Household</option>
+                                                    <option value="events">Events</option>
+                                                    <option value="products">Products & Other Goods</option>
+                                                    <option value="pets">Pets</option>
+                                                  </select>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- step 1 end -->
+
+                            <!-------------------------------->
+                            <!-- Step 3 -->
+                            <div class="st-2">
+                                <!-- row-1 -->
+                                <div class="st-row1">
+                                    <div class="Flex">
+                                        <!--- circle & num -->
+                                        <div class="Flex-Div cNm">
+                                            <div class="step-num-c center-h">
+                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
+                                                <p class="center-c step-num thin100">3</p>
+                                            </div>
+                                        </div>
+                                        <div class="descr">
+                                            <fieldset class="step-instr">
+                                                <legend class="step-instr-txt">
+                                                    select size and orientation
+                                                </legend>
+                                                <input id="landscape" type="radio" name="orientation" value="landscape">
+                                                    <label class="st-txt" for="landscape">Landscape</label>
+                                                <input id="Portrait" type="radio" name="orientation" value="portrait">
+                                                    <label class="st-txt" for="Portrait">Portrait</label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                </div> <!--- row 1 end -->
+
+                                <!-- row 2-->
+                                <div class="st-row2">
+                                    <fieldset class="step-instr ads-size">
+                                        <legend class="step-instr-txt"></legend>
+                                        <input id="a5" type="radio" name="ad-size">
+                                            <label class="st-txt" for="a5"><span>A5</span></label>
+                                        <input id="a4" type="radio" name="ad-size">
+                                            <label class="st-txt" for="a4"><span>A4</span></label>
+                                        <input id="a3" type="radio" name="ad-size">
+                                            <label class="st-txt" for="a3"><span>A3</span></label>
+                                        <input id="a2" type="radio" name="ad-size">
+                                            <label class="st-txt" for="a2"><span>A2</span></label>
+                                        <input id="a1" type="radio" name="ad-size">
+                                            <label class="st-txt" for="a1"><span>A1</span></label>
+                                    </fieldset>
+                                </div>
+
+                            </div> <!-- step 2 end -->
+
+                              <!-------------------------------->
+                              <!-- Step 4 -->
+                            <div class="st-3">
+                                <!-- row-1 -->
+                                <div class="st-row1">
+                                    <div class="Flex">
+                                        <!--- circle & num -->
+                                        <div class="Flex-Div cNm">
+                                            <div class="step-num-c center-h">
+                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
+                                                <p class="center-c step-num thin100">4</p>
+                                            </div>
+                                        </div>
+                                        <div class="Flex-Div descr step-instr">
+                                            <p class="step-instr-txt">select printing option</p>
+                                        </div>
+                                    </div>
+                                </div> <!--end row 1 -->
+
+                                <!--- row 2 -->
+                                <div class="st-row2">
+                                    <fieldset class="medium-6 column paper-type">
+                                        <legend class="st-txt">Paper type</legend>
+                                        <input id="normal-print" type="radio" name="paper-type">
+                                            <label class="st-txt2" for="normal-print">
+                                                <span>Normal</span></label>
+                                        <input id="gloss-print" type="radio" name="paper-type">
+                                            <label class="st-txt2" for="gloss-print"><span>Gloss</span></label>
+                                    </fieldset>
+
+                                    <fieldset class="medium-4 column extra">
+                                        <legend class="st-txt ex-txt">
+                                            Extra Options</legend>
+                                        <input id="laminate-print" type="radio" name="paper-type-extra">
+                                            <label class="st-txt2" for="laminate-print"><span>Laminate</span></label>
+                                    </fieldset>
+
+                                    <div class="medium-2 column ad-cost">
+                                        <div class="Flex-v top">
+                                            <div class="Flex-Div"><p class="st-txt paper-type-selected">Gloss Print</p></div>
+                                            <div class="Flex-Div"><p class="st-txt3 paper-type-cost">KES 1000</p></div>
+                                            <div class="Flex-Div"><p class="st-txt extra-selected">Lamination</p></div>
+                                            <div class="Flex-Div"><p class="st-txt3 extra-cost">KES 500</p></div>
+
+                                        </div>
+
+                                        <div class="Flex-v bottom">
+                                            <div class="Flex-Div"><p class="st-txt">TOTAL</p></div>
+                                            <div class="Flex-Div"><p class="st-txt4 total-selected-cost">KES 1500</p></div>
+
+                                        </div>
+                                    </div>
+
+                                </div> <!--- row 2 end -->
+
+                              </div><!-- step 3 end -->
+
+                            <!-------------------------------->
+                            <!-- Step 5 -->
                               <div class="st-6">
 
                                 <div class="Flex">
@@ -688,33 +686,7 @@
                                 </div>
                             </div>
 
-                            <!----------------------->
-                            <div class="total-summary row">
-                                <div class="medium-8 columns"></div>
-                                <div class="medium-4 columns">
-                                    <div class="Flex-v">
-                                        <div class="Flex-Div">
-                                            <p class="st-txt2">PRINT OPTIONS TOTAL</p></div>
-                                        <div class="Flex-Div">
-                                            <p class="st-txt4">1,500 KES</p>
-                                        </div>
-                                    </div>
-                                    <div class="Flex-v mid">
-                                        <div class="Flex-Div">
-                                            <p class="st-txt2">TOTAL VAT INC</p></div>
-                                        <div class="Flex-Div">
-                                            <p class="st-txt4">400,000 KES</p>
-                                        </div>
-                                    </div>
-                                    <div class="Flex-v">
-                                        <div class="Flex-Div">
-                                            <p class="st-txt2 bld">GRAND TOTAL</p></div>
-                                        <div class="Flex-Div">
-                                            <p class="st-txt6">401,500 KES</p>
-                                        </div>
-                                    </div>
-                                </div>
-                             </div><!-- total summary end -->
+
 
                               <!----------------------->
                             <div class="final-buttons">
@@ -746,7 +718,34 @@
                           <!--- PAYMENT TAB--->
                           <!--====================================================-->
                           <div class="tabs-panel" id="pl-payment">
-                              <p>Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                              <!----------------------->
+                            <div class="total-summary row">
+                                <div class="medium-4 columns"></div>
+                                <div class="medium-4 columns">
+                                    <div class="Flex-v">
+                                        <div class="Flex-Div">
+                                            <p class="st-txt2">PRINT OPTIONS TOTAL</p></div>
+                                        <div class="Flex-Div">
+                                            <p class="st-txt4">1,500 KES</p>
+                                        </div>
+                                    </div>
+                                    <div class="Flex-v mid">
+                                        <div class="Flex-Div">
+                                            <p class="st-txt2">TOTAL VAT INC</p></div>
+                                        <div class="Flex-Div">
+                                            <p class="st-txt4">400,000 KES</p>
+                                        </div>
+                                    </div>
+                                    <div class="Flex-v">
+                                        <div class="Flex-Div">
+                                            <p class="st-txt2 bld">GRAND TOTAL</p></div>
+                                        <div class="Flex-Div">
+                                            <p class="st-txt6">401,500 KES</p>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div><!-- total summary end -->
+                            <div class="medium-4 columns"></div>
 
                           </div>
 
@@ -971,9 +970,11 @@
 <!---------------------------------------------------------------------->
     <!--- Scripts ----->
 
-    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!--    <script src="https://www.dropbox.com/s/4dbmwxhwcanrzjd/jquery.min.js?raw=1"></script>-->
-    <script type="text/javascript"  src="https://www.dropbox.com/s/dskhrx47eu0afhl/foundation.min.js?raw=1"></script>
+
+    <script src="https://www.dropbox.com/s/4dbmwxhwcanrzjd/jquery.min.js?raw=1"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+
 
     <script type="text/javascript" src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
 
@@ -983,9 +984,8 @@
 
 
 
-
     <!-- SelectScripts-->
-
+    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.dropbox.com/s/nyn9h2gmbz93ful/select.js?raw=1"></script>
 
     <!--Vegas-->
@@ -995,6 +995,9 @@
     <!-- Datepicker -->
     <script type="text/javascript" src="https://www.dropbox.com/s/owpt4qced4rompr/foundation-datepicker.min.js?raw=1"></script>
     <script type="text/javascript" src=" https://www.dropbox.com/s/00gs8wkts9jy8m9/datepicker-duration.js?raw=1"></script>
+<!--    <script type="text/javascript" src="datepicker-setter.js"></script>-->
+    <script type="text/javascript" src="https://www.dropbox.com/s/ww3dcp6904svogl/datepicker-setter.js?raw=1"></script>
+<!--    <script type="text/javascript" src="datepicker-duration.js"></script>-->
 
 
 
