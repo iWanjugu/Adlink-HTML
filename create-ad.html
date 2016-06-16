@@ -318,7 +318,7 @@
                           <!--====================================================-->
                           <div class="tabs-panel is-active" id="pl-your-ad">
 
-                          <form class="place-ad custom accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                          <form id="place-ad" class="place-ad custom accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
 
                             <!-------------------------------->
                             <!-- Step 0 - Contact Details  -->
@@ -629,7 +629,7 @@
         <!--                                        <form id="loc-date" name="loc-date">-->
                                                     <!-- location -->
                                                     <td class="location_ ">
-                                                        <select id="adLocation" class="st-txt ">
+                                                        <select id="adLocation" class="adLocation st-txt ">
                                                             <option>--Select--</option>
                                                             <option>Yaya Centre</option>
                                                             <option>Sarit Centre</option>
@@ -637,31 +637,31 @@
                                                     </td>
                                                     <!-- price -->
                                                     <td class="price_">
-                                                        <select class="adPrice">
+                                                        <input id="adPrice" class="adPrice"readonly>
 
-                                                        </select>
+
                                                     </td>
 
                                                     <!-- start date -->
                                                     <td class="from_">
-                                                        <input class="dpd1 span2 st-txt2" value="dd/mm/yyyy">
+                                                        <input id="startDate" class="dpd1 span2 st-txt2" value="dd/mm/yyyy">
                                                     </td>
 
                                                     <!-- end date -->
                                                     <td class="to_">
-                                                        <input class="dpd2 span2 st-txt2" value="dd/mm/yyyy">
+                                                        <input id="endDate" class="dpd2 span2 st-txt2" value="dd/mm/yyyy">
                                                     </td>
 
                                                     <!-- duration -->
                                                     <td class="duration_">
                                                         <div>
-                                                            <p class="dpDuration st-txt2 center-c"></p>
+                                                            <p id="dWeeks" class="dpDuration st-txt2 center-c"></p>
                                                         </div>
                                                     </td>
 
                                                     <!-- number of ads -->
                                                     <td class="qty_">
-                                                        <input type="number" value="0" class="center-c">
+                                                        <input id="adQty" type="number" value="0" class="center-c">
                                                     </td>
         <!--                                        </form>-->
                                                 </tr>
@@ -675,12 +675,12 @@
                                         <!-- Add Button -->
                                         <div class="ad-more-advs">
                                             <div class="Flex center-v">
-                                                <div class="Flex-Div">
-                                                    <img class="button addForm" onclick="CloneForm('loc-date');" src="https://www.dropbox.com/s/0rvkm8mfo9ghu04/add-icon.png?raw=1" alt="add">
+                                                <div id="addForm" class="Flex-Div">
+                                                    <img class="button " src="https://www.dropbox.com/s/0rvkm8mfo9ghu04/add-icon.png?raw=1" alt="add">
                                                 </div>
 
-                                                 <div class="Flex-Div addForm">
-                                                     <a class="st-txt2">ADD</a>
+                                                 <div class="Flex-Div ">
+                                                     <div class="st-txt2">ADD LOCATION</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -709,7 +709,7 @@
                             <!-- Step 6 -->
                             <div class="st-6">
                                 <div class="Flex">
-                                    <input type="submit" class=" Flex-Div button st-txt2 full-round-plain-border" value="SAVE AND CONTINUE">
+                                    <input id="saveAndContinue" type="submit" class=" Flex-Div button st-txt2 full-round-plain-border" value="SAVE AND CONTINUE">
                                 </div>
 
 <!--
@@ -718,31 +718,20 @@
                                 </div>
 -->
 
-                              </div>
+                            </div>
 
 
                           </form>
 
                           </div> <!-- pl-your-ad end -->
 
-                          <!--====================================================-->
-                          <!--- LOCATION AND DATE TAB--->
-                          <!--====================================================-->
-
-<!--
-                          <div class="tabs-panel" id="pl-location-date">
-
-
-
-                           </div>
--->
-
 
                           <!--====================================================-->
                           <!--- PAYMENT TAB--->
                           <!--====================================================-->
                           <div class="tabs-panel" id="pl-payment">
-                              <!----------------------->
+
+                            <!----------------------->
                             <div class="total-summary row">
                                 <div class="medium-4 columns"></div>
                                 <div class="medium-4 columns">
@@ -767,19 +756,112 @@
                                             <p class="st-txt6">401,500 KES</p>
                                         </div>
                                     </div>
-                                </div>
-                             </div><!-- total summary end -->
-                            <div class="medium-4 columns"></div>
 
-                          </div>
+                                </div>
+                                <div class="medium-4 columns"></div>
+                             </div><!-- total summary end -->
+
+
+                            <!-- Calculation Table -->
+                            <!--- The Table -->
+                            <div id="payment_table_wrapper" class="dataTables_wrapper no-footer">
+
+
+                                <!-- location and date table -->
+                                <table id="payment_table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="payment-info">
+
+                                    <!--Table Header-->
+                                    <thead>
+                                        <tr role="row">
+
+                                            <th class="ad_cols p-loc" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                Location
+                                            </th>
+
+                                            <th class="ad_cols p-dur" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                Duration
+                                            </th>
+
+                                            <th class="ad_cols p-print" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                Print Option Costs
+                                            </th>
+
+                                            <th class="ad_cols p-qty" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                Qty
+                                            </th>
+
+                                            <th class="ad_cols p-deliv" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                Delivery Cost
+                                            </th>
+
+                                            <th class="ad_cols p-total" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                Total
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <!--Table Body-->
+                                    <tbody class="payment_table_body">
+                                        <!-- row 1 -->
+
+                                        <tr>
+                                            <!-- location -->
+                                            <td class="r-pay p-loc">
+                                                <div>
+                                                    <p id="Loc" class="Loc st-txt2 center-c">Yaya Center</p>
+                                                </div>
+                                            </td>
+
+                                            <!-- duration -->
+                                            <td class="r-pay p-dur">
+                                                <div>
+                                                    <p id="Dur" class="Dur st-txt2 center-c">3 weeks</p>
+                                                </div>
+                                            </td>
+
+                                             <!-- print options -->
+                                            <td class="r-pay p-print">
+                                                <div>
+                                                    <p id="Print" class="Print st-txt2 center-c">1,500</p>
+                                                </div>
+                                            </td>
+
+                                             <!-- quantity -->
+                                            <td class="r-pay p-qty">
+                                                <div>
+                                                    <p id="Qty" class="Qty st-txt2 center-c">5</p>
+                                                </div>
+                                            </td>
+
+                                             <!-- delivery cost -->
+                                            <td class="r-pay p-deliv">
+                                                <div>
+                                                    <p id="Deliv" class="Deliv st-txt2 center-c">300</p>
+                                                </div>
+                                            </td>
+
+                                            <!-- total -->
+                                            <td class="r-pay p-total">
+                                                <div>
+                                                    <p id="Total" class="Total st-txt4 center-c">400,000</p>
+                                                </div>
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
 
                         <!------------------------------------------>
 
 
-                       </div><!-- tabs-content end -->
-                    </div> <!-- content end -->
+                        </div><!-- pl-payment end -->
 
+
+                    </div> <!-- content end -->
+                    </div>
                 </div> <!-- pl-left end-->
 
 
@@ -1025,8 +1107,8 @@
 
     <!-- Create-ad.js -->
 
-    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>
-<!--    <script type="text/javascript" src="create-ad.js"></script>-->
+<!--    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>-->
+    <script type="text/javascript" src="create-ad.js"></script>
 
 <!---------------------------------------------------------------------->
 </body>
