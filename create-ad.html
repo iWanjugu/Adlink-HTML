@@ -26,7 +26,6 @@
 
     <!-- app -->
 <!--    <link rel="stylesheet" href="https://www.dropbox.com/s/ho4qj036uhkqny8/create-ad-app.css?raw=1">-->
-
     <link rel="stylesheet" href="create-ad-app.css">
 
     <!-- left-nav and header -->
@@ -302,7 +301,7 @@
                           <li class="tabs-title is-active pl-your-ad"><a href="#pl-your-ad" aria-selected="true">YOUR AD</a></li>
 
                             <!--- LOCATION AND DATE --->
-                          <li class="tabs-title pl-location-date"><a href="#pl-location-date">LOCATION & DATE</a></li>
+<!--                          <li class="tabs-title pl-location-date"><a href="#pl-location-date">LOCATION & DATE</a></li>-->
 
                             <!--- PAYMENT --->
                          <li class="tabs-title pl-payment"><a href="#pl-payment">PAYMENT</a></li>
@@ -319,14 +318,14 @@
                           <!--====================================================-->
                           <div class="tabs-panel is-active" id="pl-your-ad">
 
-                          <form class="place-ad custom">
+                          <form class="place-ad custom accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
 
                             <!-------------------------------->
-                            <!-- Contact Details -->
-                             <div class="st-5">
+                            <!-- Step 0 - Contact Details  -->
+                             <div class="st-5 accordion-item" data-accordion-item>
                                 <!-- row-1 -->
-                                <div class="st-row1">
-                                    <div class="Flex">
+                                <a href="#" class="st-row1 accordion-title">
+                                    <div class="Flex ">
                                         <!--- circle & num -->
                                         <div class="Flex-Div cNm">
                                             <div class="step-num-c center-h">
@@ -335,13 +334,13 @@
                                             </div>
                                         </div>
                                         <div class="Flex-Div descr step-instr">
-                                            <p class="step-instr-txt">contact details</p>
+                                            <p class="step-instr-txt">Contact Details</p>
                                         </div>
                                     </div>
-                                </div> <!--end row 1 -->
+                                </a> <!--end row 1 -->
 
                                 <!--- row 2 -->
-                                <div class="st-row2">
+                                <div class="st-row2 accordion-content" data-tab-content>
 
                                     <div class="row">
                                         <div class="medium-4 column st-txt">
@@ -379,9 +378,9 @@
 
                             <!-------------------------------->
                             <!-- Step 1 -->
-                             <div class="st-4">
+                             <div class="st-4 accordion-item" data-accordion-item>
                                 <!-- row-1 -->
-                                <div class="st-row1">
+                                <a href="#" class="st-row1 accordion-title">
                                     <div class="Flex">
                                         <!--- circle & num -->
                                         <div class="Flex-Div cNm">
@@ -394,10 +393,10 @@
                                             <p class="step-instr-txt">upload poster image</p>
                                         </div>
                                     </div>
-                                </div> <!--end row 1 -->
+                                </a> <!--end row 1 -->
 
                                 <!--- row 2 -->
-                                <div class="row st-row2">
+                                <div class="row st-row2 accordion-content" data-tab-content>
                                     <fieldset class="medium-4 column ad-pic-upload">
                                         <label for="ad-pic-upload" class="button">
                                             <img class="center-c" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="upload-abvert-pic"></label>
@@ -419,10 +418,10 @@
 
                             <!-------------------------------->
                             <!-- Step 2 -->
-                            <div class="st-1">
+                            <div class="st-1 accordion-item" data-accordion-item>
 
-                                <!-- row 1 -->
-                                <div class="st-row1">
+                                <!-- row-1 -->
+                                <a href="#" class="st-row1 accordion-title">
                                     <div class="Flex">
                                         <!--- circle & num -->
                                         <div class="Flex-Div cNm">
@@ -431,30 +430,37 @@
                                                 <p class="center-c step-num thin100">2</p>
                                             </div>
                                         </div>
-                                        <div class="descr">
-                                            <label class="step-instr">
-                                                <p class="step-instr-txt">select your ad category</p>
-                                                <select class="st-txt">
-                                                    <option value="cars">Cars</option>
-                                                    <option value="property">Property</option>
-                                                    <option value="jobs">Jobs</option>
-                                                    <option value="services">Services</option>
-                                                    <option value="household">Household</option>
-                                                    <option value="events">Events</option>
-                                                    <option value="products">Products & Other Goods</option>
-                                                    <option value="pets">Pets</option>
-                                                  </select>
-                                            </label>
+                                        <div class="Flex-Div descr step-instr">
+                                            <p class="step-instr-txt">select your ad category</p>
                                         </div>
                                     </div>
+                                </a> <!--end row 1 -->
+
+                                <!--- row 2 -->
+                                <div class="row st-row2 accordion-content" data-tab-content>
+
+                                    <label class="step-instr">
+                                        <select class="st-txt">
+                                            <option value="cars">Cars</option>
+                                            <option value="property">Property</option>
+                                            <option value="jobs">Jobs</option>
+                                            <option value="services">Services</option>
+                                            <option value="household">Household</option>
+                                            <option value="events">Events</option>
+                                            <option value="products">Products & Other Goods</option>
+                                            <option value="pets">Pets</option>
+                                          </select>
+                                    </label>
+
                                 </div>
-                            </div> <!-- step 1 end -->
+
+                            </div> <!-- step 2 end -->
 
                             <!-------------------------------->
                             <!-- Step 3 -->
-                            <div class="st-2">
+                            <div class="st-2 accordion-item" data-accordion-item>
                                 <!-- row-1 -->
-                                <div class="st-row1">
+                                <a href="#" class="st-row1 accordion-title">
                                     <div class="Flex">
                                         <!--- circle & num -->
                                         <div class="Flex-Div cNm">
@@ -463,23 +469,22 @@
                                                 <p class="center-c step-num thin100">3</p>
                                             </div>
                                         </div>
-                                        <div class="descr">
-                                            <fieldset class="step-instr">
-                                                <legend class="step-instr-txt">
-                                                    select size and orientation
-                                                </legend>
-                                                <input id="landscape" type="radio" name="orientation" value="landscape">
-                                                    <label class="st-txt" for="landscape">Landscape</label>
-                                                <input id="Portrait" type="radio" name="orientation" value="portrait">
-                                                    <label class="st-txt" for="Portrait">Portrait</label>
-                                            </fieldset>
+                                        <div class="Flex-Div descr step-instr">
+                                            <p class="step-instr-txt">select size and orientation</p>
                                         </div>
                                     </div>
+                                </a><!--- row 1 end -->
 
-                                </div> <!--- row 1 end -->
+                                <!--- row 2 -->
+                                <div class="row st-row2 accordion-content" data-tab-content>
+                                    <fieldset class="step-instr">
+                                        <legend class="step-instr-txt"></legend>
+                                        <input id="landscape" type="radio" name="orientation" value="landscape">
+                                            <label class="st-txt" for="landscape">Landscape</label>
+                                        <input id="Portrait" type="radio" name="orientation" value="portrait">
+                                            <label class="st-txt" for="Portrait">Portrait</label>
+                                    </fieldset>
 
-                                <!-- row 2-->
-                                <div class="st-row2">
                                     <fieldset class="step-instr ads-size">
                                         <legend class="step-instr-txt"></legend>
                                         <input id="a5" type="radio" name="ad-size">
@@ -495,13 +500,14 @@
                                     </fieldset>
                                 </div>
 
-                            </div> <!-- step 2 end -->
+                            </div> <!-- step 3 end -->
 
                               <!-------------------------------->
                               <!-- Step 4 -->
-                            <div class="st-3">
+                            <div class="st-3 accordion-item" data-accordion-item>
+
                                 <!-- row-1 -->
-                                <div class="st-row1">
+                                <a href="#" class="st-row1 accordion-title">
                                     <div class="Flex">
                                         <!--- circle & num -->
                                         <div class="Flex-Div cNm">
@@ -514,10 +520,10 @@
                                             <p class="step-instr-txt">select printing option</p>
                                         </div>
                                     </div>
-                                </div> <!--end row 1 -->
+                                </a><!--- row 1 end -->
 
                                 <!--- row 2 -->
-                                <div class="st-row2">
+                                <div class="st-row2 accordion-content" data-tab-content>
                                     <fieldset class="medium-6 column paper-type">
                                         <legend class="st-txt">Paper type</legend>
                                         <input id="normal-print" type="radio" name="paper-type">
@@ -551,13 +557,157 @@
                                     </div>
 
                                 </div> <!--- row 2 end -->
+                              </div><!-- step 4 end --->
 
-                              </div><!-- step 3 end -->
+                            <!------------------------------------------------->
+                              <!-- Step 5 -->
+                            <div id="pl-location-date" class="st-7 location-date accordion-item" name="location-date" data-accordion-item>
+
+                                <!-- row-1 -->
+                                <a href="#" class="st-row1 accordion-title">
+                                    <div class="Flex">
+                                        <!--- circle & num -->
+                                        <div class="Flex-Div cNm">
+                                            <div class="step-num-c center-h">
+                                                <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
+                                                <p class="center-c step-num thin100">5</p>
+                                            </div>
+                                        </div>
+                                        <div class="Flex-Div descr step-instr">
+                                            <p class="step-instr-txt">select location and dates</p>
+                                        </div>
+                                    </div>
+                                </a><!--- row 1 end -->
+
+
+
+                                <!--- row 2 -->
+                                <div class="st-row2 accordion-content" data-tab-content>
+                                    <!--- The Table -->
+                                    <div id="create-ad-table_wrapper" class="dataTables_wrapper no-footer">
+                                        <!-- location and date table -->
+                                        <table id="create-ad-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="create-ad-info">
+
+                                            <!--Table Header-->
+                                            <thead>
+                                                <tr role="row">
+                                                    <th class="ad_cols location_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                        LOCATION
+                                                    </th>
+
+                                                     <th class="ad_cols price_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                                                        PRICES
+                                                    </th>
+
+                                                    <th class="ad_cols from_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="From: activate to sort column ascending">
+                                                        SELECT FROM
+                                                    </th>
+                                                    <th class="ad_cols to_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="To: activate to sort column ascending">
+                                                        SELECT TO
+                                                    </th>
+
+                                                    <th class="ad_cols duration_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
+                                                        <a id="btnCalc" class="st-txt2 button ">
+                                                        CALCULATE DURATION</a>
+
+                                                    </th>
+
+                                                    <th class="ad_cols qty_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Qty: activate to sort column ascending">
+                                                        QTY
+                                                    </th>
+
+
+
+                                                </tr>
+                                            </thead>
+
+                                            <!--Table Body-->
+                                            <tbody class="create-ad_table_body">
+                                                <!-- row 1 -->
+
+                                                <tr>
+        <!--                                        <form id="loc-date" name="loc-date">-->
+                                                    <!-- location -->
+                                                    <td class="location_ ">
+                                                        <select id="adLocation" class="st-txt ">
+                                                            <option>--Select--</option>
+                                                            <option>Yaya Centre</option>
+                                                            <option>Sarit Centre</option>
+                                                        </select>
+                                                    </td>
+                                                    <!-- price -->
+                                                    <td class="price_">
+                                                        <select class="adPrice">
+
+                                                        </select>
+                                                    </td>
+
+                                                    <!-- start date -->
+                                                    <td class="from_">
+                                                        <input class="dpd1 span2 st-txt2" value="dd/mm/yyyy">
+                                                    </td>
+
+                                                    <!-- end date -->
+                                                    <td class="to_">
+                                                        <input class="dpd2 span2 st-txt2" value="dd/mm/yyyy">
+                                                    </td>
+
+                                                    <!-- duration -->
+                                                    <td class="duration_">
+                                                        <div>
+                                                            <p class="dpDuration st-txt2 center-c"></p>
+                                                        </div>
+                                                    </td>
+
+                                                    <!-- number of ads -->
+                                                    <td class="qty_">
+                                                        <input type="number" value="0" class="center-c">
+                                                    </td>
+        <!--                                        </form>-->
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+
+
+                                        <!----------------------->
+                                        <!-- Add Button -->
+                                        <div class="ad-more-advs">
+                                            <div class="Flex center-v">
+                                                <div class="Flex-Div">
+                                                    <img class="button addForm" onclick="CloneForm('loc-date');" src="https://www.dropbox.com/s/0rvkm8mfo9ghu04/add-icon.png?raw=1" alt="add">
+                                                </div>
+
+                                                 <div class="Flex-Div addForm">
+                                                     <a class="st-txt2">ADD</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div> <!-- create-ad-table_wrapper -->
+
+                                </div><!-- Row 2 end -->
+
+                              <!----------------------->
+<!--
+                            <div class="final-buttons">
+                                <div class="Flex">
+                                    <a href="#" class="Flex-Div button st-txt2 full-round-plain-border bttn-w bproceed">
+                                        PROCEED TO PAY
+                                    </a>
+                                </div>
+
+                                <div class="Flex">
+                                    <input type="submit" class=" Flex-Div button st-txt2 full-round-plain-border bttn-w bproceed" value="PROCEED TO PAY">
+                                </div>
+                            </div>
+-->
+                            </div> <!-- pl-location-date end -->
 
                             <!-------------------------------->
-                            <!-- Step 5 -->
-                              <div class="st-6">
-
+                            <!-- Step 6 -->
+                            <div class="st-6">
                                 <div class="Flex">
                                     <input type="submit" class=" Flex-Div button st-txt2 full-round-plain-border" value="SAVE AND CONTINUE">
                                 </div>
@@ -569,6 +719,8 @@
 -->
 
                               </div>
+
+
                           </form>
 
                           </div> <!-- pl-your-ad end -->
@@ -577,141 +729,13 @@
                           <!--- LOCATION AND DATE TAB--->
                           <!--====================================================-->
 
+<!--
                           <div class="tabs-panel" id="pl-location-date">
 
-                          <!---------------------------------->
-                          <form class="location-date">
-
-                            <!--- The Table -->
-                            <div id="create-ad-table_wrapper" class="dataTables_wrapper no-footer">
 
 
-
-                                <!-- location and date table -->
-                                <table id="create-ad-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="create-ad-info">
-
-                                    <!--Table Header-->
-                                    <thead>
-                                        <tr role="row">
-                                            <th class="ad_cols location_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
-                                                LOCATION
-                                            </th>
-
-                                             <th class="ad_cols price_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
-                                                PRICES
-                                            </th>
-
-                                            <th class="ad_cols from_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="From: activate to sort column ascending">
-                                                SELECT FROM
-                                            </th>
-                                            <th class="ad_cols to_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="To: activate to sort column ascending">
-                                                SELECT TO
-                                            </th>
-
-                                            <th class="ad_cols duration_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
-                                                <a id="btnCalc" class="st-txt2 button ">
-                                                GET DURATION</a>
-
-                                            </th>
-
-                                            <th class="ad_cols qty_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Qty: activate to sort column ascending">
-                                                QTY
-                                            </th>
-
-
-
-                                        </tr>
-                                    </thead>
-
-                                    <!--Table Body-->
-                                    <tbody class="create-ad_table_body">
-                                        <!-- row 1 -->
-                                        <tr>
-                                            <!-- location -->
-                                            <td class="location_ ">
-                                                <select id="adLocation" class="st-txt ">
-                                                    <option>--Select--</option>
-                                                    <option>Yaya Centre</option>
-                                                    <option>Sarit Centre</option>
-                                                </select>
-                                            </td>
-                                            <!-- price -->
-                                            <td class="price_">
-                                                <select id="adPrice">
-
-                                                </select>
-                                            </td>
-
-                                            <!-- start date -->
-                                            <td class="from_">
-                                                <input id="dpd1" class="span2 st-txt2" value="dd/mm/yyyy">
-                                            </td>
-
-                                            <!-- end date -->
-                                            <td class="to_">
-                                                <input id="dpd2" class="span2 st-txt2" value="dd/mm/yyyy">
-                                            </td>
-
-                                            <!-- duration -->
-                                            <td class="duration_">
-                                                <div>
-                                                    <p id="dpDuration" class="st-txt2 center-c"></p>
-                                                </div>
-                                            </td>
-
-                                            <!-- number of ads -->
-                                            <td class="qty_">
-                                                <input type="number" value="0" class="center-c">
-                                            </td>
-
-                                        </tr>
-
-
-
-                                    </tbody>
-                                </table>
-
-                            </div> <!-- create-ad-table_wrapper -->
-
-                            <!----------------------->
-                            <div class="ad-more-advs">
-                                <div class="Flex center-v">
-                                    <div class="Flex-Div">
-                                        <img class="button" src="https://www.dropbox.com/s/0rvkm8mfo9ghu04/add-icon.png?raw=1" alt="add">
-                                    </div>
-
-                                     <div class="Flex-Div">
-                                         <p class="st-txt2">ADD</p>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                              <!----------------------->
-                            <div class="final-buttons">
-                                <div class="Flex">
-<!--
-                                    <a href="#pl-your-ad" class="Flex-Div button st-txt2 full-round-plain-border bttn-b-g bbook">
-                                        BOOK ANOTHER AD
-                                    </a>
+                           </div>
 -->
-                                </div>
-<!--
-                                <div class="Flex">
-                                    <a href="#" class="Flex-Div button st-txt2 full-round-plain-border bttn-w bproceed">
-                                        PROCEED TO PAY
-                                    </a>
-                                </div>
--->
-
-                                <div class="Flex">
-                                    <input type="submit" class=" Flex-Div button st-txt2 full-round-plain-border bttn-w bproceed" value="PROCEED TO PAY">
-                                </div>
-                            </div>
-
-                            </form>
-                           </div> <!-- pl-location-date end -->
 
 
                           <!--====================================================-->
@@ -999,7 +1023,10 @@
     <script type="text/javascript" src="https://www.dropbox.com/s/ww3dcp6904svogl/datepicker-setter.js?raw=1"></script>
 <!--    <script type="text/javascript" src="datepicker-duration.js"></script>-->
 
+    <!-- Create-ad.js -->
 
+    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>
+<!--    <script type="text/javascript" src="create-ad.js"></script>-->
 
 <!---------------------------------------------------------------------->
 </body>
