@@ -25,8 +25,8 @@
 <!--    <link rel="stylesheet" type="text/css" href="css/custom_styles.css">-->
 
     <!-- app -->
-<!--    <link rel="stylesheet" href="https://www.dropbox.com/s/ho4qj036uhkqny8/create-ad-app.css?raw=1">-->
-    <link rel="stylesheet" href="create-ad-app.css">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/ho4qj036uhkqny8/create-ad-app.css?raw=1">
+<!--    <link rel="stylesheet" href="create-ad-app.css">-->
 
     <!-- left-nav and header -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
@@ -485,7 +485,7 @@
                                             <label class="st-txt" for="Portrait">Portrait</label>
                                     </fieldset>
 
-                                    <fieldset class="step-instr ads-size">
+                                    <fieldset id="adSizeSelect" class="step-instr ads-size">
                                         <legend class="step-instr-txt"></legend>
                                         <input id="a5" type="radio" name="ad-size">
                                             <label class="st-txt" for="a5"><span>A5</span></label>
@@ -524,7 +524,7 @@
 
                                 <!--- row 2 -->
                                 <div class="st-row2 accordion-content" data-tab-content>
-                                    <fieldset class="medium-6 column paper-type">
+                                    <fieldset id="paper-type" class="medium-6 column paper-type">
                                         <legend class="st-txt">Paper type</legend>
                                         <input id="normal-print" type="radio" name="paper-type">
                                             <label class="st-txt2" for="normal-print">
@@ -536,22 +536,40 @@
                                     <fieldset class="medium-4 column extra">
                                         <legend class="st-txt ex-txt">
                                             Extra Options</legend>
-                                        <input id="laminate-print" type="radio" name="paper-type-extra">
+                                        <input id="laminate-print" type="radio" name="Lamination" value=500>
                                             <label class="st-txt2" for="laminate-print"><span>Laminate</span></label>
                                     </fieldset>
 
                                     <div class="medium-2 column ad-cost">
                                         <div class="Flex-v top">
-                                            <div class="Flex-Div"><p class="st-txt paper-type-selected">Gloss Print</p></div>
-                                            <div class="Flex-Div"><p class="st-txt3 paper-type-cost">KES 1000</p></div>
-                                            <div class="Flex-Div"><p class="st-txt extra-selected">Lamination</p></div>
-                                            <div class="Flex-Div"><p class="st-txt3 extra-cost">KES 500</p></div>
+                                            <div class="Flex-Div">
+                                                <p id="paper-type-selected" class="st-txt paper-type-selected">
+                                                    <!-- normal/gloss cost -->
+                                                </p>
+                                            </div>
+                                            <div class="Flex-Div">
+                                                <p id="paper-type-cost" class="st-txt3 paper-type-cost">
+                                                    <!-- normal/gloss cost -->
+                                                </p>
+                                            </div>
+                                            <div class="Flex-Div">
+                                                <p id="extra-selected" class="st-txt extra-selected">
+                                                    <!-- lamination -->
+                                                </p>
+                                            </div>
+                                            <div class="Flex-Div">
+                                                <p id="lamination_cost" class="st-txt3 extra-cost" value="0">
+                                                    <!-- 500 -->
+                                                </p>
+                                            </div>
 
                                         </div>
 
                                         <div class="Flex-v bottom">
                                             <div class="Flex-Div"><p class="st-txt">TOTAL</p></div>
-                                            <div class="Flex-Div"><p class="st-txt4 total-selected-cost">KES 1500</p></div>
+                                            <div class="Flex-Div">
+                                                <input id="total_paper_cost" class="st-txt4 total-selected-cost" readonly>
+                                            </div>
 
                                         </div>
                                     </div>
@@ -632,7 +650,12 @@
                                                         <select id="adLocation" class="adLocation st-txt ">
                                                             <option>--Select--</option>
                                                             <option>Yaya Centre</option>
+                                                            <option>Village Market</option>
+                                                            <option>Junction</option>
                                                             <option>Sarit Centre</option>
+                                                            <option>TRM</option>
+                                                            <option>Karen Crossroads</option>
+
                                                         </select>
                                                     </td>
                                                     <!-- price -->
@@ -1093,6 +1116,9 @@
     <!-- SelectScripts-->
     <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.dropbox.com/s/nyn9h2gmbz93ful/select.js?raw=1"></script>
+<!--    <script type="text/javascript" src="select.js"></script>-->    <script type="text/javascript" src="https://www.dropbox.com/s/9bj7jz8ifkf4qvn/select2.js?raw=1"></script>
+
+<!--    <script type="text/javascript" src="select2.js"></script>-->
 
     <!--Vegas-->
     <script type="text/javascript"  src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
@@ -1107,8 +1133,8 @@
 
     <!-- Create-ad.js -->
 
-<!--    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>-->
-    <script type="text/javascript" src="create-ad.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>
+<!--    <script type="text/javascript" src="create-ad.js"></script>-->
 
 <!---------------------------------------------------------------------->
 </body>
