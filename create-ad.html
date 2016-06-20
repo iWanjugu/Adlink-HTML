@@ -22,8 +22,6 @@
     <!-- custom -styles -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
 
-<!--    <link rel="stylesheet" type="text/css" href="css/custom_styles.css">-->
-
     <!-- app -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/ho4qj036uhkqny8/create-ad-app.css?raw=1">
 <!--    <link rel="stylesheet" href="create-ad-app.css">-->
@@ -43,6 +41,10 @@
 
     <!-- Datepicker -->
     <link rel="stylesheet" type="text/css" href=" https://www.dropbox.com/s/4yz95bgp4z9y99r/foundation-datepicker.min.css?raw=1">
+
+
+    <!-- Scripts -->
+    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
 <!---------------------------------------------------------------------->
@@ -322,11 +324,13 @@
 
                             <!-------------------------------->
                             <!-- Step 0 - Contact Details  -->
+<!--
                              <div class="st-5 accordion-item" data-accordion-item>
-                                <!-- row-1 -->
+
+                                 row-1
                                 <a href="#" class="st-row1 accordion-title">
                                     <div class="Flex ">
-                                        <!--- circle & num -->
+                                        - circle & num
                                         <div class="Flex-Div cNm">
                                             <div class="step-num-c center-h">
                                                 <img  src="https://www.dropbox.com/s/t5klansxfg8t2to/grey-circle.png?raw=1" >
@@ -337,9 +341,9 @@
                                             <p class="step-instr-txt">Contact Details</p>
                                         </div>
                                     </div>
-                                </a> <!--end row 1 -->
+                                </a> end row 1
 
-                                <!--- row 2 -->
+                                - row 2
                                 <div class="st-row2 accordion-content" data-tab-content>
 
                                     <div class="row">
@@ -372,9 +376,12 @@
                                         </div>
                                     </div>
 
-                                </div> <!--- row 2 end -->
+                                </div> - row 2 end
 
-                              </div><!-- contact details -->
+                              </div>
+-->
+
+                              <!-- contact details end -->
 
                             <!-------------------------------->
                             <!-- Step 1 -->
@@ -405,11 +412,11 @@
 
                                     <div class="medium-8 column ad-details">
                                             <label>
-                                                <input class="st-txt2" type="text" placeholder="Title">
+                                                <input id="adTitle" class="st-txt2" type="text" placeholder="Title">
                                             </label>
 
                                             <label>
-                                                <textarea class="st-txt2" placeholder="Description"></textarea>
+                                                <textarea id="adDescr"  class="st-txt2" placeholder="Description"></textarea>
                                             </label>
                                         </div>
                                 </div> <!--- row 2 end -->
@@ -523,8 +530,8 @@
                                 </a><!--- row 1 end -->
 
                                 <!--- row 2 -->
-                                <div class="st-row2 accordion-content" data-tab-content>
-                                    <fieldset id="paper-type" class="medium-6 column paper-type">
+                                <div id="printOptions" class="st-row2 accordion-content" data-tab-content>
+                                    <fieldset id="paperType" class="medium-6 column paper-type">
                                         <legend class="st-txt">Paper type</legend>
                                         <input id="normal-print" type="radio" name="paper-type">
                                             <label class="st-txt2" for="normal-print">
@@ -533,10 +540,10 @@
                                             <label class="st-txt2" for="gloss-print"><span>Gloss</span></label>
                                     </fieldset>
 
-                                    <fieldset class="medium-4 column extra">
+                                    <fieldset id="lamType" class="medium-4 column extra">
                                         <legend class="st-txt ex-txt">
                                             Extra Options</legend>
-                                        <input id="laminate-print" type="radio" name="Lamination" value=500>
+                                        <input id="laminate-print" type="checkbox" name="lamination" value="500">
                                             <label class="st-txt2" for="laminate-print"><span>Laminate</span></label>
                                     </fieldset>
 
@@ -544,22 +551,22 @@
                                         <div class="Flex-v top">
                                             <div class="Flex-Div">
                                                 <p id="paper-type-selected" class="st-txt paper-type-selected">
-                                                    <!-- normal/gloss cost -->
+                                                    --select paper type--
                                                 </p>
                                             </div>
                                             <div class="Flex-Div">
                                                 <p id="paper-type-cost" class="st-txt3 paper-type-cost">
-                                                    <!-- normal/gloss cost -->
+                                                    0
                                                 </p>
                                             </div>
                                             <div class="Flex-Div">
-                                                <p id="extra-selected" class="st-txt extra-selected">
-                                                    <!-- lamination -->
+                                                <p id="lamination-selected" class="st-txt extra-selected">
+                                                    Lamination
                                                 </p>
                                             </div>
                                             <div class="Flex-Div">
-                                                <p id="lamination_cost" class="st-txt3 extra-cost" value="0">
-                                                    <!-- 500 -->
+                                                <p id="lamination-cost" class="st-txt3 extra-cost" value="">
+                                                    0
                                                 </p>
                                             </div>
 
@@ -568,7 +575,9 @@
                                         <div class="Flex-v bottom">
                                             <div class="Flex-Div"><p class="st-txt">TOTAL</p></div>
                                             <div class="Flex-Div">
-                                                <input id="total_paper_cost" class="st-txt4 total-selected-cost" readonly>
+                                                <p id="total_paper_cost" class="st-txt4 total-selected-cost">
+                                                    0
+                                                </p>
                                             </div>
 
                                         </div>
@@ -644,18 +653,10 @@
                                                 <!-- row 1 -->
 
                                                 <tr>
-        <!--                                        <form id="loc-date" name="loc-date">-->
                                                     <!-- location -->
                                                     <td class="location_ ">
                                                         <select id="adLocation" class="adLocation st-txt ">
-                                                            <option>--Select--</option>
-                                                            <option>Yaya Centre</option>
-                                                            <option>Village Market</option>
-                                                            <option>Junction</option>
-                                                            <option>Sarit Centre</option>
-                                                            <option>TRM</option>
-                                                            <option>Karen Crossroads</option>
-
+                                                            <!-- options selelcted in js -->
                                                         </select>
                                                     </td>
                                                     <!-- price -->
@@ -667,12 +668,12 @@
 
                                                     <!-- start date -->
                                                     <td class="from_">
-                                                        <input id="startDate" class="dpd1 span2 st-txt2" value="dd/mm/yyyy">
+                                                        <input id="startDate" class="dpd1 span2 st-txt2" value="">
                                                     </td>
 
                                                     <!-- end date -->
                                                     <td class="to_">
-                                                        <input id="endDate" class="dpd2 span2 st-txt2" value="dd/mm/yyyy">
+                                                        <input id="endDate" class="dpd2 span2 st-txt2" value="">
                                                     </td>
 
                                                     <!-- duration -->
@@ -697,8 +698,8 @@
                                         <!----------------------->
                                         <!-- Add Button -->
                                         <div class="ad-more-advs">
-                                            <div class="Flex center-v">
-                                                <div id="addForm" class="Flex-Div">
+                                            <div id="addForm" class="Flex center-v">
+                                                <div class="Flex-Div">
                                                     <img class="button " src="https://www.dropbox.com/s/0rvkm8mfo9ghu04/add-icon.png?raw=1" alt="add">
                                                 </div>
 
@@ -898,71 +899,6 @@
                     </div>
 
                     <!-- row 1 -->
-                    <div class=" row columns r-row1">
-                        <div class="medium-4 columns">
-                            <div class="Flex-v">
-
-                                <!-- selected ad size -->
-                                <div class="Flex-Div">
-                                    <p class="st-txt5 sz"> SIZE</p>
-                                </div>
-
-                                <div class="Flex-Div">
-                                    <p class="st-txt2 ad-size"> A4 </p>
-                                </div>
-
-                                <!-- selected ad orientation -->
-                                <div class="Flex-Div">
-                                    <p class="st-txt2 pt"> Portrait </p>
-                                </div>
-
-                                <!-- edit button -->
-<!--
-                                <div class="Flex-Div">
-                                    <p class="st-txt2">
-                                        <button href="" class="bttn edit_ad_info">EDIT INFO</button>
-                                    </p>
-                                </div>
--->
-
-                            </div>
-
-                        </div>
-                        <div class="medium-8 columns">
-
-                            <div class="Flex-v brd">
-                                <div class="Flex-Div">
-                                    <p class="st-txt5 sz"> PRINT OPTIONS </p>
-                                </div>
-                                <div class="Flex-Div">
-                                    <p class="st-txt2"> Gloss Print </p>
-                                </div>
-                                <div class="Flex-Div">
-                                    <p class="st-txt2"> Lamination </p>
-                                </div>
-                            </div>
-
-                            <div class="Flex-v">
-                                <div class="Flex-Div">
-                                    <p class="st-txt5"> TOTAL </p>
-                                </div>
-                                <div class="Flex-Div">
-                                    <p class="st-txt4 pt2"> KES 1500</p>
-                                </div>
-
-                                <!-- edit button -->
-<!--
-                                <div class="Flex-Div">
-                                    <p class="st-txt2">
-                                        <button href="" class="bttn edit_ad_info">EDIT INFO</button>
-                                    </p>
-                                </div>
--->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- row 2 -->
                     <div class=" row columns r-row2">
                         <div class="medium-4 columns">
                             <div class="Flex-v">
@@ -972,38 +908,28 @@
                                     <p class="st-txt5 sz"> POSTER</p>
                                 </div>
 
-                                <div class="Flex-Div pi">
-                                    <img class="pc" src="https://www.dropbox.com/s/ndqqjrx3jg6fikw/poster.png?raw=1" alt="ad preview">
+                                <div id="summPic" class="Flex-Div pi">  <!-- summPic -->
+                                    <img class="center-c pc" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="ad preview">
                                 </div>
-
-                                <!-- edit button -->
-<!--
-                                <div class="Flex-Div">
-                                    <p class="st-txt2">
-                                        <button href="" class="bttn change_ad_image">CHANGE</button>
-                                    </p>
-                                </div>
--->
-
                             </div>
 
                         </div>
 
                         <div class="medium-8 columns">
 
-                            <div class="Flex-v brd">
+                            <div class="Flex-v brd center-h">
                                 <div class="Flex-Div">
                                     <p class="st-txt5 sz"> DETAILS </p>
                                 </div>
                                 <div class="Flex-Div">
-                                    <p class="st-txt6 sz"> Old is the New </p>
+                                    <p id="summAdTitle" class="st-txt6 sz"> -- Ad Title -- </p>
                                 </div>
                                 <div class="Flex-Div">
-                                    <p class="st-txt7"> Lorem ipsum dolor sit amet, dictas eruditi evertitur mei no. Partem mediocrem ea per. Singulis maluisset pri cu.
-                                    Lorem ipsum dolor sit amet, dictas eruditi evertitur mei no. Partem mediocrem ea per. Singulis maluisset pri cu.</p>
+                                    <p id="summAdDescr" class="st-txt7"> -- Ad Description -- </p>
                                 </div>
                             </div>
 
+<!--
                             <div class="Flex-v">
                                 <div class="Flex-Div">
                                     <p class="st-txt"> Jared </p>
@@ -1014,18 +940,60 @@
                                 <div class="Flex-Div">
                                     <p class="st-txt pt"> jQuery@gmail.com</p>
                                 </div>
-
-                                <!-- edit button -->
-<!--
-                                <div class="Flex-Div">
-                                    <p class="st-txt2">
-                                        <button href="" class="bttn change_ad_details">CHANGE</button>
-                                    </p>
-                                </div>
+                            </div>
 -->
+                        </div>
+                    </div> <!--- row 1 end -->
+
+                    <!-- row 2 -->
+                    <div class=" row columns r-row1">
+                        <div class="medium-4 columns">
+                            <div class="Flex-v">
+
+                                <!-- selected ad size -->
+                                <div class="Flex-Div">
+                                    <p class="st-txt5 sz"> SIZE</p>
+                                </div>
+
+                                <div class="Flex-Div">
+                                    <p id="summSize" class="st-txt2 ad-size"> -- </p>
+                                </div>
+
+                                <!-- selected ad orientation
+                                <div class="Flex-Div">
+                                    <p class="st-txt2 pt"> Portrait </p>
+                                </div>
+                                -->
+
+                            </div>
+
+                        </div>
+                        <div class="medium-8 columns">
+
+                            <div class="Flex-v brd center-h">
+                                <div class="Flex-Div">
+                                    <p class="st-txt5 sz"> PRINT OPTIONS </p>
+                                </div>
+                                <div class="Flex-Div">
+                                    <p id="summPaperType" class="st-txt2"> --- </p>
+                                </div>
+                                <div class="Flex-Div">
+                                    <p id="summLam"class="st-txt2"> --- </p>
+                                </div>
+                            </div>
+
+                            <div class="Flex-v btm center-h">
+                                <div class="Flex-Div">
+                                    <p class="st-txt5"> TOTAL </p>
+                                </div>
+                                <div class="Flex-Div">
+                                    <p id="summPrintTotal" class="st-txt4 pt2"> 0 </p>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
+                    </div><!--- row 2 end -->
+
 
                     <!-- row 3 edit button -->
                     <div class="row columns r-row3">
@@ -1098,43 +1066,34 @@
 
 <!---------------------------------------------------------------------->
     <!--- Scripts ----->
-
-
-    <script src="https://www.dropbox.com/s/4dbmwxhwcanrzjd/jquery.min.js?raw=1"></script>
-
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
-
-
     <script type="text/javascript" src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
 
-<!--    <script type="text/javascript"  src="https://www.dropbox.com/s/he2ds4nd4a41let/what-input.min.js?raw=1"></script> -->
-    <script type="text/javascript" src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
     <!----------------------------------------->
+    <!-- main.js (for header etc) -->
+    <script type="text/javascript" src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
 
-
-
+    <!----------------------------------------->
     <!-- SelectScripts-->
-    <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://www.dropbox.com/s/nyn9h2gmbz93ful/select.js?raw=1"></script>
-<!--    <script type="text/javascript" src="select.js"></script>-->    <script type="text/javascript" src="https://www.dropbox.com/s/9bj7jz8ifkf4qvn/select2.js?raw=1"></script>
-
+    <script type="text/javascript" src="https://www.dropbox.com/s/9bj7jz8ifkf4qvn/select2.js?raw=1"></script>
 <!--    <script type="text/javascript" src="select2.js"></script>-->
+    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>
+<!--    <script type="text/javascript" src="create-ad.js"></script>-->
 
+    <!----------------------------------------->
     <!--Vegas-->
     <script type="text/javascript"  src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
     <script type="text/javascript"  src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
 
+    <!----------------------------------------->
     <!-- Datepicker -->
     <script type="text/javascript" src="https://www.dropbox.com/s/owpt4qced4rompr/foundation-datepicker.min.js?raw=1"></script>
     <script type="text/javascript" src=" https://www.dropbox.com/s/00gs8wkts9jy8m9/datepicker-duration.js?raw=1"></script>
-<!--    <script type="text/javascript" src="datepicker-setter.js"></script>-->
     <script type="text/javascript" src="https://www.dropbox.com/s/ww3dcp6904svogl/datepicker-setter.js?raw=1"></script>
+<!--    <script type="text/javascript" src="datepicker-setter.js"></script>-->
 <!--    <script type="text/javascript" src="datepicker-duration.js"></script>-->
 
-    <!-- Create-ad.js -->
 
-    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>
-<!--    <script type="text/javascript" src="create-ad.js"></script>-->
 
 <!---------------------------------------------------------------------->
 </body>
