@@ -634,13 +634,19 @@
                                                     </th>
 
                                                     <th class="ad_cols duration_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
-                                                        <a id="btnCalc" class="st-txt2 button" onclick="calculateDuration()">
+                                                        DURATION
+<!--                                                        <a id="btnCalc" class="st-txt2 button">
                                                         CALCULATE DURATION</a>
+-->
 
                                                     </th>
 
                                                     <th class="ad_cols qty_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Qty: activate to sort column ascending">
                                                         QTY
+                                                    </th>
+
+                                                    <th class="ad_cols tot_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Total: activate to sort column ascending">
+                                                        TOTAL
                                                     </th>
 
 
@@ -666,12 +672,12 @@
 
                                                     <!-- start date -->
                                                     <td class="from_">
-                                                        <input id="startDate" class="dpd1 span2 st-txt2" value="" placeholder="dd/mm/yyyy" name="created_at">
+                                                        <input id="startDate" class="dpd1 span2 st-txt2 startDate" value="" placeholder="dd/mm/yyyy" name="created_at">
                                                     </td>
 
                                                     <!-- end date -->
                                                     <td class="to_">
-                                                        <input id="endDate" class="dpd2 span2 st-txt2" value="" placeholder="dd/mm/yyyy" name="end_date">
+                                                        <input id="endDate" class="dpd2 span2 st-txt2 endDate" value="" placeholder="dd/mm/yyyy" name="end_date">
                                                     </td>
 
                                                     <!-- duration -->
@@ -685,9 +691,14 @@
 
                                                     <!-- number of ads -->
                                                     <td class="qty_">
-                                                        <input id="adQty" type="number" placeholder="0" class="center-c st-txt5">
+                                                        <input id="adQty" type="number" placeholder="0" class="center-c st-txt5" name="quantity">
                                                     </td>
-        <!--                                        </form>-->
+
+                                                    <!-- Location total -->
+                                                    <td class="total_">
+                                                        <input id="adTotal" type="number" name="total">
+                                                    </td>
+
                                                 </tr>
 
 
@@ -785,6 +796,8 @@
                                             <th class="ad_cols p-total" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
                                                 Total
                                             </th>
+
+
                                         </tr>
                                     </thead>
 
@@ -898,19 +911,6 @@
                                 </div>
                             </div>
 
-<!--
-                            <div class="Flex-v">
-                                <div class="Flex-Div">
-                                    <p class="st-txt"> Jared </p>
-                                </div>
-                                <div class="Flex-Div">
-                                    <p class="st-txt"> 0722 222222</p>
-                                </div>
-                                <div class="Flex-Div">
-                                    <p class="st-txt pt"> jQuery@gmail.com</p>
-                                </div>
-                            </div>
--->
                         </div>
                     </div> <!--- row 1 end -->
 
@@ -1065,24 +1065,28 @@
     <script type="text/javascript" src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
 
     <!----------------------------------------->
-    <!-- SelectScripts-->
-    <script type="text/javascript" src="https://www.dropbox.com/s/9bj7jz8ifkf4qvn/select2.js?raw=1"></script>
-<!--    <script type="text/javascript" src="select2.js"></script>-->
-    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>
-<!--    <script type="text/javascript" src="create-ad.js"></script>-->
-
-    <!----------------------------------------->
     <!--Vegas-->
     <script type="text/javascript"  src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
     <script type="text/javascript"  src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
+
+
 
     <!----------------------------------------->
     <!-- Datepicker -->
     <script type="text/javascript" src="https://www.dropbox.com/s/owpt4qced4rompr/foundation-datepicker.min.js?raw=1"></script>
     <script type="text/javascript" src="https://www.dropbox.com/s/9sj9x8yklnma6w6/datepicker-setter.js?raw=1"></script>
-    <script type="text/javascript" src="https://www.dropbox.com/s/n1qkamytfsnwn4x/datepicker-duration.js?raw=1"></script>
+<!--    <script type="text/javascript" src="https://www.dropbox.com/s/n1qkamytfsnwn4x/datepicker-duration.js?raw=1"></script>-->
+    <script type="text/javascript" src="https://www.dropbox.com/s/nw698lct65gc9x0/datepicker-duration2.js?raw=1"></script>
 <!--    <script type="text/javascript" src="datepicker-setter.js"></script>-->
 <!--    <script type="text/javascript" src="datepicker-duration.js"></script>-->
+<!--    <script type="text/javascript" src="datepicker-duration2.js"></script>-->
+
+    <!----------------------------------------->
+    <!-- SelectScripts-->
+    <script type="text/javascript" src="https://www.dropbox.com/s/9bj7jz8ifkf4qvn/select2.js?raw=1"></script>
+<!--    <script type="text/javascript" src="select2.js"></script>-->
+<!--    <script type="text/javascript" src="https://www.dropbox.com/s/xwxm0dmt5rkgnxx/create-ad.js?raw=1"></script>-->
+<!--    <script type="text/javascript" src="create-ad.js"></script>-->
 
 
 
