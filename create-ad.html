@@ -64,7 +64,7 @@
         <!--- HEADER ----->
         <div class="row columns">
             <div class="Logo_bg">
-                <a href="index.html"><img class="center-c" src="http://bit.ly/1U6Bhar" alt="adlink-logo-white"></a>
+                <a href="index.html"><img class="center-c" src="https://www.dropbox.com/s/tajbxt5qoehwzf2/logo-white.png?raw=1" alt="logo-white"></a>
             </div>
         </div>
 
@@ -275,7 +275,7 @@
     <div id="page1" class="expanded row columns">
 
         <!--- BANNER -->
-        <div id="create-ad-banner" class="expanded row columns banner"></div>
+        <div id="create-ad-bphoto" class="expanded row columns bphoto"></div>
 
         <!-- PLACE AD -->
         <div id="place-ad" class="expanded row columns">
@@ -494,15 +494,15 @@
 
                                     <fieldset id="adSizeSelect" class="step-instr ads-size">
                                         <legend class="step-instr-txt"></legend>
-                                        <input id="a5" type="radio" name="ad-size">
+                                        <input id="a5" type="radio" name="size">
                                             <label class="st-txt" for="a5"><span>A5</span></label>
-                                        <input id="a4" type="radio" name="ad-size">
+                                        <input id="a4" type="radio" name="size">
                                             <label class="st-txt" for="a4"><span>A4</span></label>
-                                        <input id="a3" type="radio" name="ad-size">
+                                        <input id="a3" type="radio" name="size">
                                             <label class="st-txt" for="a3"><span>A3</span></label>
-                                        <input id="a2" type="radio" name="ad-size">
+                                        <input id="a2" type="radio" name="size">
                                             <label class="st-txt" for="a2"><span>A2</span></label>
-                                        <input id="a1" type="radio" name="ad-size">
+                                        <input id="a1" type="radio" name="size">
                                             <label class="st-txt" for="a1"><span>A1</span></label>
                                     </fieldset>
                                 </div>
@@ -533,10 +533,10 @@
                                 <div id="printOptions" class="st-row2 accordion-content" data-tab-content>
                                     <fieldset id="paperType" class="medium-6 column paper-type">
                                         <legend class="st-txt">Paper type</legend>
-                                        <input id="normal-print" type="radio" name="paper-type">
+                                        <input id="normal-print" type="radio" name="papertype">
                                             <label class="st-txt2" for="normal-print">
                                                 <span>Normal</span></label>
-                                        <input id="gloss-print" type="radio" name="paper-type">
+                                        <input id="gloss-print" type="radio" name="papertype">
                                             <label class="st-txt2" for="gloss-print"><span>Gloss</span></label>
                                     </fieldset>
 
@@ -634,7 +634,7 @@
                                                     </th>
 
                                                     <th class="ad_cols duration_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
-                                                        <a id="btnCalc" class="st-txt2 button ">
+                                                        <a id="btnCalc" class="st-txt2 button" onclick="calculateDuration()">
                                                         CALCULATE DURATION</a>
 
                                                     </th>
@@ -655,37 +655,37 @@
                                                 <tr>
                                                     <!-- location -->
                                                     <td class="location_ ">
-                                                        <select id="adLocation" class="adLocation st-txt ">
+                                                        <select id="adNLocation" class="adNLocation st-txt5" name="location">
                                                             <!-- options selelcted in js -->
                                                         </select>
                                                     </td>
                                                     <!-- price -->
                                                     <td class="price_">
-                                                        <input id="adPrice" class="adPrice"readonly>
-
-
+                                                        <input id="adPrice" class="adPrice st-txt5" name="price" placeholder="0" readonly>
                                                     </td>
 
                                                     <!-- start date -->
                                                     <td class="from_">
-                                                        <input id="startDate" class="dpd1 span2 st-txt2" value="">
+                                                        <input id="startDate" class="dpd1 span2 st-txt2" value="" placeholder="dd/mm/yyyy" name="created_at">
                                                     </td>
 
                                                     <!-- end date -->
                                                     <td class="to_">
-                                                        <input id="endDate" class="dpd2 span2 st-txt2" value="">
+                                                        <input id="endDate" class="dpd2 span2 st-txt2" value="" placeholder="dd/mm/yyyy" name="end_date">
                                                     </td>
 
                                                     <!-- duration -->
                                                     <td class="duration_">
-                                                        <div>
-                                                            <p id="dWeeks" class="dpDuration st-txt2 center-c"></p>
-                                                        </div>
+                                                        <input id="dWeeks" class="dpDuration st-txt5" name="duration" placeholder="0" readonly>
+                                                        <div class="f-center">
+                                                            <p id="dWeeks_p" class="dpDuration st-txt5">0 week(s)</p>
+
+                                                         </div>
                                                     </td>
 
                                                     <!-- number of ads -->
                                                     <td class="qty_">
-                                                        <input id="adQty" type="number" value="0" class="center-c">
+                                                        <input id="adQty" type="number" placeholder="0" class="center-c st-txt5">
                                                     </td>
         <!--                                        </form>-->
                                                 </tr>
@@ -755,37 +755,6 @@
                           <!--====================================================-->
                           <div class="tabs-panel" id="pl-payment">
 
-                            <!----------------------->
-                            <div class="total-summary row">
-                                <div class="medium-4 columns"></div>
-                                <div class="medium-4 columns">
-                                    <div class="Flex-v">
-                                        <div class="Flex-Div">
-                                            <p class="st-txt2">PRINT OPTIONS TOTAL</p></div>
-                                        <div class="Flex-Div">
-                                            <p class="st-txt4">1,500 KES</p>
-                                        </div>
-                                    </div>
-                                    <div class="Flex-v mid">
-                                        <div class="Flex-Div">
-                                            <p class="st-txt2">TOTAL VAT INC</p></div>
-                                        <div class="Flex-Div">
-                                            <p class="st-txt4">400,000 KES</p>
-                                        </div>
-                                    </div>
-                                    <div class="Flex-v">
-                                        <div class="Flex-Div">
-                                            <p class="st-txt2 bld">GRAND TOTAL</p></div>
-                                        <div class="Flex-Div">
-                                            <p class="st-txt6">401,500 KES</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="medium-4 columns"></div>
-                             </div><!-- total summary end -->
-
-
                             <!-- Calculation Table -->
                             <!--- The Table -->
                             <div id="payment_table_wrapper" class="dataTables_wrapper no-footer">
@@ -797,17 +766,12 @@
                                     <!--Table Header-->
                                     <thead>
                                         <tr role="row">
+                                            <th class="ad_cols p-title" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
+                                                Title
+                                            </th>
 
                                             <th class="ad_cols p-loc" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
                                                 Location
-                                            </th>
-
-                                            <th class="ad_cols p-dur" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
-                                                Duration
-                                            </th>
-
-                                            <th class="ad_cols p-print" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
-                                                Print Option Costs
                                             </th>
 
                                             <th class="ad_cols p-qty" tabindex="0" aria-controls="payment-table" rowspan="1" colspan="1" aria-label="From: activate to sort column descending" aria-sort="ascending">
@@ -829,45 +793,37 @@
                                         <!-- row 1 -->
 
                                         <tr>
+                                            <!-- Ad name -->
+                                            <td class="r-pay p-loc">
+                                                <div>
+                                                    <p id="Title" class="Title st-txt5 center-c">--Ad Title--</p>
+                                                </div>
+                                            </td>
                                             <!-- location -->
                                             <td class="r-pay p-loc">
                                                 <div>
-                                                    <p id="Loc" class="Loc st-txt2 center-c">Yaya Center</p>
+                                                    <p id="Loc" class="Loc st-txt5 center-c"> --Location--</p>
                                                 </div>
                                             </td>
 
-                                            <!-- duration -->
-                                            <td class="r-pay p-dur">
-                                                <div>
-                                                    <p id="Dur" class="Dur st-txt2 center-c">3 weeks</p>
-                                                </div>
-                                            </td>
-
-                                             <!-- print options -->
-                                            <td class="r-pay p-print">
-                                                <div>
-                                                    <p id="Print" class="Print st-txt2 center-c">1,500</p>
-                                                </div>
-                                            </td>
-
-                                             <!-- quantity -->
+                                           <!-- quantity -->
                                             <td class="r-pay p-qty">
                                                 <div>
-                                                    <p id="Qty" class="Qty st-txt2 center-c">5</p>
+                                                    <p id="Qty" class="Qty st-txt5 center-c">0</p>
                                                 </div>
                                             </td>
 
                                              <!-- delivery cost -->
                                             <td class="r-pay p-deliv">
                                                 <div>
-                                                    <p id="Deliv" class="Deliv st-txt2 center-c">300</p>
+                                                    <p id="Deliv" class="Deliv st-txt5 center-c" value="300">300</p>
                                                 </div>
                                             </td>
 
                                             <!-- total -->
                                             <td class="r-pay p-total">
                                                 <div>
-                                                    <p id="Total" class="Total st-txt4 center-c">400,000</p>
+                                                    <p id="Total" class="Total st-txt5 center-c">---</p>
                                                 </div>
                                             </td>
 
@@ -877,11 +833,24 @@
                                 </table>
                             </div>
 
+                            <!----------------------->
+                            <div class="total-summary row">
 
-                        <!------------------------------------------>
+                                <div class="medium-8 columns"></div>
+                                <div class="medium-4 columns">
+                                    <div class="Flex-v">
+                                        <div class="Flex-Div">
+                                            <p class="st-txt2 bld">GRAND TOTAL</p></div>
+                                        <div class="Flex-Div">
+                                            <p class="st-txt6">401,500 KES</p>
+                                        </div>
+                                    </div>
 
+                                </div>
+                             </div><!-- total summary end -->
 
-                        </div><!-- pl-payment end -->
+                          <!------------------------------------------>
+                          </div><!-- pl-payment end -->
 
 
                     </div> <!-- content end -->
@@ -925,7 +894,7 @@
                                     <p id="summAdTitle" class="st-txt6 sz"> -- Ad Title -- </p>
                                 </div>
                                 <div class="Flex-Div">
-                                    <p id="summAdDescr" class="st-txt7"> -- Ad Description -- </p>
+                                    <p id="summAdDescr" class="st-txt4"> -- Ad Description -- </p>
                                 </div>
                             </div>
 
@@ -1047,11 +1016,33 @@
 
         <div class="adlink-info">
             <p> Send Us Mail @ <span> wecare@adlink.co.ke</span></p>
-            <p>Or Find Us @ <span> 1st Floor Yaya Centre, Argwins Kodhek RD, Nairobi</span></p>
+
+            <p class="find-us">Or Find Us @ </p>
+
+            <div class="row branch">
+                <!-- yaya -->
+
+                <div class="medium-2 columns"></div>
+                <div class="small-12 medium-4 columns yaya">
+                    <p><span class="und"> Yaya Centre Branch </span></p>
+                    <p><span> 1st Floor Yaya Centre,</span></p>
+                    <p><span> Argwins Kodhek RD, Nairobi</span></p>
+                    <p><span>+254 710 640694 </span></p>
+                </div>
+
+                <!-- sarit -->
+                <div class="small-12 medium-4 columns">
+                    <p><span class="und"> Sarit Centre Branch </span></p>
+                    <p><span> Ground Floor, Sarit Centre</span></p>
+                    <p><span>+254 20 528 4496 </span></p>
+                    <p><span>+254 728 464 418</span></p>
+                </div>
+                <div class="medium-2 columns"></div>
+            </div>
         </div>
 
         <div class="logo-grey">
-            <img src="https://www.dropbox.com/s/s329ft86hdk1p2o/adlink-logo-grey.png?raw=1" alt="adlink logo grey">
+            <img src="https://www.dropbox.com/s/pq3pktmpkj6g5yf/logo-grey.png?raw=1" alt="logo-grey">
         </div>
 
         <div class="copy">
@@ -1088,8 +1079,8 @@
     <!----------------------------------------->
     <!-- Datepicker -->
     <script type="text/javascript" src="https://www.dropbox.com/s/owpt4qced4rompr/foundation-datepicker.min.js?raw=1"></script>
-    <script type="text/javascript" src=" https://www.dropbox.com/s/00gs8wkts9jy8m9/datepicker-duration.js?raw=1"></script>
-    <script type="text/javascript" src="https://www.dropbox.com/s/ww3dcp6904svogl/datepicker-setter.js?raw=1"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/9sj9x8yklnma6w6/datepicker-setter.js?raw=1"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/n1qkamytfsnwn4x/datepicker-duration.js?raw=1"></script>
 <!--    <script type="text/javascript" src="datepicker-setter.js"></script>-->
 <!--    <script type="text/javascript" src="datepicker-duration.js"></script>-->
 
