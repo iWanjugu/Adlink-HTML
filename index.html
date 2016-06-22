@@ -273,26 +273,29 @@
 
                     <!-- logo -->
 
-                    <li class="menu-tabs dv Logo_bg">
+                    <li class="menu-tabs dv Logo_bg wht">
                         <a href="#">
-                            <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+                            <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Logo">
                         </a>
                     </li>
 
                     <!-- Services -->
                     <li class="menu-tabs dv serv">
-                        <a href="#" >
+                        <a id="services" href="#" >
                             <div>Services</div>
+                            <div class="arrow">
+                                <img class="" src="https://www.dropbox.com/s/bbyxdo4792ke7jm/down-button.png?raw=1" >
+                            </div>
                         </a>
 
                         <ul id="sub_navlist" class="">
-                            <li class="nb">
+                            <li id="noticeboard" class="nb">
                                 <a href="index.html">
                                     <div>Noticeboard</div>
                                 </a>
                             </li>
-                            <li class="dm">
-                                <a href="#">
+                            <li id="digital_marketing" class="dm">
+                                <a data-open="digitalModal">
                                     <div>Digital Marketing</div>
                                 </a>
                             </li>
@@ -311,7 +314,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="top-bar-right">
+            <div class="top-bar-right out">
                 <ul class="menu">
                     <!-- Visible when NOT logged in -->
                     <li class="menu-tabs sign-in">
@@ -319,9 +322,11 @@
                     </li>
 
                     <!-- Visible when logged in -->
+<!--
                     <li class="menu-tabs log-out">
-                        <a href="#" class="button-gr-bg">logout</a>
+                        <a href="#" class="button-gr-otln">logout</a>
                     </li>
+-->
 
                 </ul>
             </div>
@@ -331,7 +336,7 @@
 
     <!------------------------------------------------->
     <!-- Banner -->
-    <div id="banner" class="expanded row columns bg-photo r1">
+    <div id="ad-photo" class="Noticeboard expanded row columns bg-photo r1">
 
       <!--banner content -->
         <div id="banner-content" class="expanded row columns white-overlay center-v">
@@ -342,7 +347,7 @@
             </div>
         </div>
 
-    </div> <!-- banner row 1 end -->
+    </div> <!-- ad photo row 1 end -->
 
 </div> <!-- end page 1-->
 
@@ -759,6 +764,8 @@
     <script src="https://www.dropbox.com/s/he2ds4nd4a41let/what-input.min.js?raw=1"></script>
     <script src="https://www.dropbox.com/s/dskhrx47eu0afhl/foundation.min.js?raw=1"></script>
     <script src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
+
+    <script src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
 
     <!-- responsive tables -->
     <script src="https://www.dropbox.com/s/r59n4ua0tpic3jy/responsive-tables.js?raw=1"></script>
