@@ -27,16 +27,16 @@
 
     <!-- left-nav and header -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
-    <link rel="stylesheet" href="https://www.dropbox.com/s/eo0rzyg3igy7juu/dashboard-left-nav.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/2xyg7elaij6jilw/dashboard-left-nav-trans.css?raw=1">
 <!--    <link rel="stylesheet" href="header.css">-->
-<!--    <link rel="stylesheet" href="dashboard-left-nav.css">-->
+<!--    <link rel="stylesheet" href="dashboard-left-nav-trans.css">-->
 
     <!-- footer -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
     <!-- apps -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w9cluzopnmb4b1o/transactions-app.css?raw=1">
-    <link rel="stylesheet" type="text/css" href="transactions-app.css">
+<!--    <link rel="stylesheet" type="text/css" href="transactions-app.css">-->
 
      <!-- Datatables -->
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
@@ -534,39 +534,39 @@
         <!--- The Table -->
         <!-- title -->
         <div id="transactions" class="transactions">
-            <div class="trans_cont center-c">
-                <ul class="tabs" data-tabs id="transaction-tabs">
+            <div class="trans_cont center-h">
+                <ul id="transaction-tabs" class="tabs" data-tabs>
                     <li class="tabs-title is-active">
-                        <a href="#complete" aria-selected="true">My Orders</a>
+                        <a href="#complete" aria-selected="true" class="st-txt2">My Orders</a>
                     </li>
                     <li class="tabs-title">
-                        <a href="#incomplete">Pending Payment</a>
+                        <a href="#incomplete" class="st-txt2">Pending Payment</a>
                     </li>
                 </ul>
 
 
                 <!-- content -->
-                <div class="tabs-content" data-tabs-content="transaction-tabs">
+                <div id="trans-table" class="tabs-content" data-tabs-content="transaction-tabs">
 
                     <!-- Complete ads -->
-                    <div id="complete" class=" row columns ad-container center-h tabs-panel is-active" >
+                    <div id="complete" class="expanded row columns ad-container center-h tabs-panel is-active" >
 
                         <!--- Datatables -->
                         <div id="complete_transactions-table_wrapper" class="dataTables_wrapper no-footer">
                             <!---------------------------------->
                             <!--- transactions-table --->
-                            <table id="complete_transactions-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="my-ads-info">
+                            <table id="complete_transactions-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="complete-transactions-info">
 
                                 <!--Table Header-->
                                 <thead>
                                     <tr role="row">
-                                        <th class="sorting_asc ad_cols order_num_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                        <th class="sorting_asc ad_cols order_num_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="order_num: activate to sort column descending" aria-sort="ascending">
                                             ORDER NUMBER
                                         </th>
-                                         <th class="sorting_asc ad_cols date_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                         <th class="sorting_asc ad_cols date_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="date: activate to sort column descending" aria-sort="ascending">
                                             DATE
                                         </th>
-                                         <th class="sorting_asc ad_cols trans_amount_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                         <th class="sorting_asc ad_cols trans_amount_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="trans_amount: activate to sort column descending" aria-sort="ascending">
                                             AMOUNT
                                         </th>
 
@@ -578,58 +578,229 @@
 
                                     <!-- row 1 -->
                                     <tr>
-                                        <td class="order-num_">
+                                        <td class="frst order-num_">
                                             <div class="Flex">
                                                 <div class="Flex-Div">
                                                     <input class="chck" type="checkbox">
                                                 </div>
 
                                                 <div class="Flex-Div">
-                                                    <p>#32432</p>
+                                                    <p>#32292</p>
                                                 </div>
 
                                             </div>
                                         </td>
-                                        <td class="date_">YA0263749</td>
-                                        <td class="trans_amount_">Yaya Center</td>
+                                        <td class="date_">16/06/2016</td>
+                                        <td class="trans_amount_">KES 15,000</td>
 
                                     </tr>
 
                                     <!-- row 2 -->
                                     <tr>
-                                        <td class="order-num_">
+                                        <td class="frst order-num_">
                                             <div class="Flex">
                                                 <div class="Flex-Div">
                                                     <input class="chck" type="checkbox">
                                                 </div>
 
                                                 <div class="Flex-Div">
-                                                    <p>#32432</p>
+                                                    <p>#57032</p>
                                                 </div>
 
                                             </div>
                                         </td>
-                                        <td class="date_">YA0263749</td>
-                                        <td class="trans_amount_">Yaya Center</td>
+                                        <td class="date_">30/06/2016</td>
+                                        <td class="trans_amount_">KES 10,000</td>
 
                                     </tr>
 
                                     <!-- row 3 -->
                                     <tr>
-                                        <td class="order-num_">
+                                        <td class="frst order-num_">
                                             <div class="Flex">
                                                 <div class="Flex-Div">
                                                     <input class="chck" type="checkbox">
                                                 </div>
 
                                                 <div class="Flex-Div">
-                                                    <p>#32432</p>
+                                                    <p>#84928</p>
                                                 </div>
 
                                             </div>
                                         </td>
-                                        <td class="date_">YA0263749</td>
-                                        <td class="trans_amount_">Yaya Center</td>
+                                        <td class="date_">07/07/2016</td>
+                                        <td class="trans_amount_">KES 117,000</td>
+
+                                    </tr>
+
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32292</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">16/06/2016</td>
+                                        <td class="trans_amount_">KES 15,000</td>
+
+                                    </tr>
+
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#57032</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">30/06/2016</td>
+                                        <td class="trans_amount_">KES 10,000</td>
+
+                                    </tr>
+
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#84928</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">07/07/2016</td>
+                                        <td class="trans_amount_">KES 117,000</td>
+
+                                    </tr>
+
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32292</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">16/06/2016</td>
+                                        <td class="trans_amount_">KES 15,000</td>
+
+                                    </tr>
+
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#57032</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">30/06/2016</td>
+                                        <td class="trans_amount_">KES 10,000</td>
+
+                                    </tr>
+
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#84928</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">07/07/2016</td>
+                                        <td class="trans_amount_">KES 117,000</td>
+
+                                    </tr>
+
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32292</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">16/06/2016</td>
+                                        <td class="trans_amount_">KES 15,000</td>
+
+                                    </tr>
+
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#57032</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">30/06/2016</td>
+                                        <td class="trans_amount_">KES 10,000</td>
+
+                                    </tr>
+
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#84928</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">07/07/2016</td>
+                                        <td class="trans_amount_">KES 117,000</td>
 
                                     </tr>
                                 </tbody>
@@ -637,25 +808,25 @@
 
                         </div> <!-- transactions-table_wrapper end -->
                     </div> <!-- complete end -->
-
                     <!-- Incomplete ads -->
-                    <div class="tabs-panel" id="incomplete">
+                    <div id="incomplete" class="expanded row columns ad-container center-h tabs-panel">
                         <!--- Datatables -->
                         <div id="incomplete_transactions-table_wrapper" class="dataTables_wrapper no-footer">
                             <!---------------------------------->
                             <!--- transactions-table --->
-                            <table id="incomplete_transactions-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="my-ads-info">
+                            <table id="incomplete_transactions-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="incomplete-transactions-info">
 
                                 <!--Table Header-->
                                 <thead>
                                     <tr role="row">
-                                        <th class="sorting_asc ad_cols order_num_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                        <th class="sorting_asc ad_cols order_num_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="order_num: activate to sort column descending" aria-sort="ascending">
                                             ORDER NUMBER
                                         </th>
-                                         <th class="sorting_asc ad_cols date_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                         <th class="sorting_asc ad_cols date_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="date: activate to sort column descending" aria-sort="ascending">
                                             DATE
                                         </th>
                                          <th class="sorting_asc ad_cols trans_amount_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                         <th class="sorting_asc ad_cols trans_amount_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="trans_amount: activate to sort column descending" aria-sort="ascending">
                                             AMOUNT
                                         </th>
 
@@ -667,62 +838,345 @@
 
                                     <!-- row 1 -->
                                     <tr>
-                                        <td class="order-num_">
+                                        <td class="frst order-num_">
                                             <div class="Flex">
                                                 <div class="Flex-Div">
                                                     <input class="chck" type="checkbox">
                                                 </div>
 
                                                 <div class="Flex-Div">
-                                                    <p>#32432</p>
+                                                    <p>#32292</p>
                                                 </div>
 
                                             </div>
                                         </td>
-                                        <td class="date_">YA0263749</td>
-                                        <td class="trans_amount_">15,000</td>
+                                        <td class="date_">16/06/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 15,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
 
+                                            </div>
+                                        </td>
                                     </tr>
 
                                     <!-- row 2 -->
                                     <tr>
-                                        <td class="order-num_">
+                                        <td class="frst order-num_">
                                             <div class="Flex">
                                                 <div class="Flex-Div">
                                                     <input class="chck" type="checkbox">
                                                 </div>
 
                                                 <div class="Flex-Div">
-                                                    <p>#32432</p>
+                                                    <p>#57032</p>
                                                 </div>
 
                                             </div>
                                         </td>
-                                        <td class="date_">YA0263749</td>
-                                        <td class="trans_amount_">15,000</td>
+                                        <td class="date_">30/06/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 10,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
 
                                     </tr>
 
                                     <!-- row 3 -->
                                     <tr>
-                                        <td class="order-num_">
+                                        <td class="frst order-num_">
                                             <div class="Flex">
                                                 <div class="Flex-Div">
                                                     <input class="chck" type="checkbox">
                                                 </div>
 
                                                 <div class="Flex-Div">
-                                                    <p>#32432</p>
+                                                    <p>#84928</p>
                                                 </div>
 
                                             </div>
                                         </td>
-                                        <td class="date_">YA0263749</td>
-                                        <td class="trans_amount_">15,000</td>
+                                        <td class="date_">07/07/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 117,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
 
                                     </tr>
+
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32292</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">16/06/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 15,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#57032</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">30/06/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 10,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#84928</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">07/07/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 117,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32292</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">16/06/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 15,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#57032</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">30/06/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 10,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#84928</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">07/07/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 117,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                        <!-- row 1 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32292</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">16/06/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 15,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#57032</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">30/06/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 10,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="frst order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#84928</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">07/07/2016</td>
+                                        <td class="lst trans_amount_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div amnt">
+                                                    <p>KES 117,000</p>
+                                                </div>
+                                                <div class="Flex-Div comp">
+                                                    <a href="#">Complete Transaction</a>
+                                                </div>
+
+                                            </div>
+                                        </td>
                                 </tbody>
-                            </table>
+                            </table> <!-- incomplete table end -->
 
                         </div> <!-- transactions-table_wrapper end -->
                     </div>
