@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>TRANSACTIONS::Adlink</title>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/2eftb3ous07fmuc/normalize.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/sulpatr3tx30u6l/vegas.min.css?raw=1">
+
+    <!-- Icons -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/axu55ju5dyfjdn0/foundation.min.css?raw=1">
+
+    <!-- modals -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
+<!--    <link rel="stylesheet" href="modals.css">-->
+
+    <!----------------------------------------->
+    <!-- custom -styles -->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
+
+
+    <!-- left-nav and header -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/eo0rzyg3igy7juu/dashboard-left-nav.css?raw=1">
+<!--    <link rel="stylesheet" href="header.css">-->
+<!--    <link rel="stylesheet" href="dashboard-left-nav.css">-->
+
+    <!-- footer -->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
+
+    <!-- apps -->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w9cluzopnmb4b1o/transactions-app.css?raw=1">
+    <link rel="stylesheet" type="text/css" href="transactions-app.css">
+
+     <!-- Datatables -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
+
+    <!----------------------------------------->
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<!---------------------------------------------------------------------->
+<body>
+
+<div id="wrapper" class="Noticeboard expanded row columns">
+
+<!-- ========================================================= -->
+<!--MODALS-->
+<!-- ========================================================= -->
+<!-- Log In Modal -->
+<div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+    <div class="mod-cont form-container ">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+        </div>
+
+        <form>
+        <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">Have an account?</p>
+            </div>
+
+          <!--content-->
+            <div class="row columns form-cntnt">
+                <!-- names -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="username or email">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- password -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="password">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Log In button -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="submit" class="button" value="Log In">
+                        </label>
+                    </div>
+                </div>
+
+                <!--forgotten password-->
+                <div class="other">
+                    <a href="#">
+                        <p class="or2 su">Forgotten Password?</p>
+                    </a>
+                </div>
+          </div>
+
+        </form>
+
+        <!--other social-->
+        <div class="form-ttl f-center form-cntnt">
+            <p class="thin100 st-txt4 bold">New to Adlink?</p>
+        </div>
+
+        <div class="f-hor form-cntnt">
+            <a href="sign-up.html" class="button sign">
+                Sign up
+            </a>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> <!-- end of form-container -->
+    </div>
+</div> <!-- log in modal end -->
+
+<!------------------------------------------------->
+<!-- Rates Modal -->
+<div id="ratesModal" class="reveal round-plain-no-margin"  data-reveal>
+
+    <div class="f-center cont">
+    <div class="mod-cont rates-container">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+        </div>
+
+        <div class="ttl f-center">
+            <p class="thin300">NOTICEBOARD RATES</p>
+        </div>
+
+        <div class="row form-ttl">
+            <div class="small-4 columns">
+                <p class="st-txt4"> WEEKLY RATES</p>
+            </div>
+            <div class="small-8 columns">
+                <p class="st-txt4"></p>
+            </div>
+        </div>
+
+
+        <!-- Rates table -->
+        <table class="responsive">
+          <thead>
+            <tr>
+                <th class="loc">Location</th>
+                <th class="ad-sz">A5</th>
+                <th class="ad-sz">A4</th>
+                <th class="ad-sz">A3</th>
+                <th class="ad-sz">A2</th>
+                <th class="ad-sz">A1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="loc">Yaya Center</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">700</td>
+                <td class="ad-sz">1,400</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,600</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Village Market</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">700</td>
+                <td class="ad-sz">1,400</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Junction</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">600</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">3,800</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Sarit Center</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">3,800</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <!-- Print and delivery costs -->
+        <div class="row form-ttl printNdel">
+            <div class="small-8 columns">
+                <p class="st-txt4"> PRINT AND DELIVERY COSTS</p>
+            </div>
+            <div class="small-4 columns">
+                <p class="st-txt4"></p>
+            </div>
+        </div>
+
+        <table class="responsive ">
+          <thead>
+            <tr>
+                <th class="loc">Paper Type</th>
+                <th class="ad-sz">A5</th>
+                <th class="ad-sz">A4</th>
+                <th class="ad-sz">A3</th>
+                <th class="ad-sz">A2</th>
+                <th class="ad-sz">A1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="loc">Normal</td>
+                <td class="ad-sz">50</td>
+                <td class="ad-sz">100</td>
+                <td class="ad-sz">250</td>
+                <td class="ad-sz">800</td>
+                <td class="ad-sz">N/A</td>
+            </tr>
+
+            <tr>
+                <td class="loc">Gloss Paper</td>
+                <td class="ad-sz">100</td>
+                <td class="ad-sz">150</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <div class="row columns form-ttl">
+            <p class="st-txt4"> Delivery fee to each mall:
+                <span>Ksh 300</span>
+            </p>
+        </div>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+    </div>
+</div> <!-- Rates Modal End -->
+
+<!------------------------------------------------->
+<!-- Digital Marketting Modal -->
+<div id="digitalModal" class="pop reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+    <div class="mod-cont form-container ">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+        </div>
+
+        <!--title-->
+        <div class="form-ttl f-center">
+            <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon - Stay Tuned</p>
+        </div>
+
+        <!-- close button -->
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+        </button>
+
+    </div> <!-- end of form-container -->
+    </div>
+</div> <!-- digital modal end -->
+
+
+ <!-- ========================================================= -->
+<!--- body ----->
+<div id="Body" class="expanded row columns">
+
+     <!-- ==================================== -->
+    <!-- LEFT NAV -->
+    <div id="left-nav" class="medium-2 large-2 columns left-nav dark-nav">
+
+        <!----------------------------------------->
+        <!--- HEADER ----->
+        <div class="row columns">
+            <div class="Logo_bg wht_">
+                <a href="index.html"><img class="center-c" src="https://www.dropbox.com/s/tajbxt5qoehwzf2/logo-white.png?raw=1" alt="logo-white"></a>
+            </div>
+        </div>
+
+        <!----------------------------------------->
+        <!--- Pic area ----->
+        <div class="row columns pic-area">
+            <div class="prof-pic center-h">
+                <div class="pic-round ">
+                    <img  src="https://www.dropbox.com/s/ec3o56n0bqenwdn/profile_image.png?raw=1">
+                </div>
+            </div>
+
+            <div class="prof-descr">
+                <div class="Flex center-c">
+                    <div class="welcome Flex-Div"> Welcome </div>
+                    <div class="prof-name Flex-Div"> Jared </div>
+                </div>
+            </div>
+
+            <div class="prof-descr">
+                <div class="Flex center-c">
+                    <div class="Flex-Div">
+                        <a class="edit-icon" href="profile-new.html">
+                            <img src="https://www.dropbox.com/s/e42mu8dau6uykgp/edit.png?raw=1" alt="edit-button">
+                        </a>
+                    </div>
+                    <div class="Flex-Div">
+                        <p>EDIT</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-advs">
+                <a class="button center-c" href="create-ad.html">Post AD</a>
+            </div>
+
+        </div> <!-- end pic-area -->
+
+        <!----------------------------------------->
+        <!-- Home-->
+        <div class="row columns nav-list home-area center-h">
+            <a href="customer-dashboard.html">
+                <div class="ttl">
+                    <div class="Flex center-c">
+                        <div class="Flex-Div">
+                            <img src="https://www.dropbox.com/s/6ju52h3br1ptx2i/home.png?raw=1" alt="home">
+                        </div>
+                        <div class="Flex-Div">
+                            <p>Home <span>(Dashboard)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div><!-- end home-area -->
+
+        <!----------------------------------------->
+        <!-- My Ads-->
+        <div class="row columns nav-list my-advs center-h">
+            <a href="my-ads.html">
+                <div class="ttl">
+                    <div class="Flex center-c">
+                        <div class="Flex-Div">
+                            <img src="https://www.dropbox.com/s/r4reo61y8mz6h0l/my-ads.png?raw=1" alt="my-advs">
+                        </div>
+                        <div class="Flex-Div">
+                            <p>My ADs</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <!---------------------------------------------
+----------------------------------->
+            <div class="bdy">
+
+                <!-- Live ads -->
+                <a href="#">
+                    <div class="Flex">
+                        <div class="Flex-Div num">
+                            <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
+
+                            <p class="center-c">9</p>
+                        </div>
+
+                        <div class="Flex-Div txt">
+                            <p>Live ADs</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Expired ads -->
+                <a href="#">
+                    <div class="Flex">
+                        <div class="Flex-Div num">
+                            <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
+
+                            <p class="center-c">10</p>
+                        </div>
+
+                        <div class="Flex-Div txt">
+                            <p>Expired ADs</p>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Incomplate ads -->
+                <a href="#">
+                    <div class="Flex">
+                        <div class="Flex-Div num">
+                            <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
+
+                            <p class="center-c">11</p>
+                        </div>
+
+                        <div class="Flex-Div txt">
+                            <p>Incomplete ADs</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---------------------------------------------
+----------------------------------->
+
+        </div><!-- end my ads -->
+
+        <!----------------------------------------->
+        <!-- Transactions -->
+        <div class="row columns nav-list transactions center-h">
+            <a href="#">
+                <div class="ttl">
+                    <div class="Flex center-c">
+                        <div class="Flex-Div">
+                            <img src="https://www.dropbox.com/s/oavl78hmo26chzk/transactions.png?raw=1" alt="transactions">
+                        </div>
+                        <div class="Flex-Div">
+                            <p>Transactions </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div><!-- end transactions -->
+
+        <!----------------------------------------->
+        <!-- Buttons -->
+        <div class="row columns tour-feedback center-h">
+            <div>
+                <button class="center-c">Take a Tour</button>
+            </div>
+            <div>
+                <button class="center-c">Give Feedback</button>
+            </div>
+        </div>
+
+
+    <!-- ==================================== -->
+
+    </div> <!-- left nav end -->
+
+    <!-- ==================================== -->
+    <!-- RIGHT BODY -->
+    <div id="right-body" class="medium-10 large-10 columns ">
+
+    <!--- HEADER ----->
+    <div class="expanded row columns top-bar Header_bg" >
+
+        <div id="home-menu" class="">
+
+            <div class="top-bar-left navbar">
+
+                <ul id="navlist" class="menu">
+
+                    <!-- Services -->
+                    <li class="menu-tabs dv serv">
+                        <a id="services" href="#" >
+                            <div>Services</div>
+                            <div class="arrow">
+                                <img class="" src="https://www.dropbox.com/s/bbyxdo4792ke7jm/down-button.png?raw=1" >
+                            </div>
+                        </a>
+
+                        <ul id="sub_navlist" class="">
+                            <li id="noticeboard" class="nb">
+                                <a href="index.html">
+                                    <div>Noticeboard</div>
+                                </a>
+                            </li>
+                            <li id="digital_marketing" class="dm">
+                                <a data-open="digitalModal">
+                                    <div>Digital Marketing</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-tabs dv">
+                        <a href="about-us.html" class="">
+                            <div>About us</div>
+                        </a>
+                    </li>
+                    <li class="menu-tabs dv">
+                        <a href="#">
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right in">
+                <ul class="menu">
+                    <!-- Visible when NOT logged in -->
+<!--
+                    <li class="menu-tabs sign-in">
+                        <a class="" data-open="logInModal">Have and account? Sign In</a>
+                    </li>
+-->
+
+                    <!-- Visible when logged in -->
+                    <li class="menu-tabs log-out">
+                        <a href="#" class="button-gr-otln">logout</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div> <!-- responsive menu -->
+
+    </div> <!-- top bar end -->
+
+    <!----------------------------------------------------->
+    <!-- PAGE 1 --->
+    <!----------------------------------------------------->
+    <div id="page1" class="expanded row columns">
+
+        <!--- BANNER -->
+        <div id="bphoto" class="Transactions expanded row columns bphoto"></div>
+
+        <!----------------------------------------------------->
+        <!--- The Table -->
+        <!-- title -->
+        <div id="transactions" class="transactions">
+            <div class="trans_cont center-c">
+                <ul class="tabs" data-tabs id="transaction-tabs">
+                    <li class="tabs-title is-active">
+                        <a href="#complete" aria-selected="true">My Orders</a>
+                    </li>
+                    <li class="tabs-title">
+                        <a href="#incomplete">Pending Payment</a>
+                    </li>
+                </ul>
+
+
+                <!-- content -->
+                <div class="tabs-content" data-tabs-content="transaction-tabs">
+
+                    <!-- Complete ads -->
+                    <div id="complete" class=" row columns ad-container center-h tabs-panel is-active" >
+
+                        <!--- Datatables -->
+                        <div id="complete_transactions-table_wrapper" class="dataTables_wrapper no-footer">
+                            <!---------------------------------->
+                            <!--- transactions-table --->
+                            <table id="complete_transactions-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="my-ads-info">
+
+                                <!--Table Header-->
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc ad_cols order_num_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                            ORDER NUMBER
+                                        </th>
+                                         <th class="sorting_asc ad_cols date_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                            DATE
+                                        </th>
+                                         <th class="sorting_asc ad_cols trans_amount_col" tabindex="0" aria-controls="complete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                            AMOUNT
+                                        </th>
+
+                                    </tr>
+                                </thead>
+
+                                <!--Table Body-->
+                                <tbody class="complete_transactions-table_body">
+
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td class="order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32432</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">YA0263749</td>
+                                        <td class="trans_amount_">Yaya Center</td>
+
+                                    </tr>
+
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32432</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">YA0263749</td>
+                                        <td class="trans_amount_">Yaya Center</td>
+
+                                    </tr>
+
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32432</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">YA0263749</td>
+                                        <td class="trans_amount_">Yaya Center</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div> <!-- transactions-table_wrapper end -->
+                    </div> <!-- complete end -->
+
+                    <!-- Incomplete ads -->
+                    <div class="tabs-panel" id="incomplete">
+                        <!--- Datatables -->
+                        <div id="incomplete_transactions-table_wrapper" class="dataTables_wrapper no-footer">
+                            <!---------------------------------->
+                            <!--- transactions-table --->
+                            <table id="incomplete_transactions-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="my-ads-info">
+
+                                <!--Table Header-->
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sorting_asc ad_cols order_num_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                            ORDER NUMBER
+                                        </th>
+                                         <th class="sorting_asc ad_cols date_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                            DATE
+                                        </th>
+                                         <th class="sorting_asc ad_cols trans_amount_col" tabindex="0" aria-controls="incomplete_transactions-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                            AMOUNT
+                                        </th>
+
+                                    </tr>
+                                </thead>
+
+                                <!--Table Body-->
+                                <tbody class="incomplete_transactions-table_body">
+
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td class="order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32432</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">YA0263749</td>
+                                        <td class="trans_amount_">15,000</td>
+
+                                    </tr>
+
+                                    <!-- row 2 -->
+                                    <tr>
+                                        <td class="order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32432</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">YA0263749</td>
+                                        <td class="trans_amount_">15,000</td>
+
+                                    </tr>
+
+                                    <!-- row 3 -->
+                                    <tr>
+                                        <td class="order-num_">
+                                            <div class="Flex">
+                                                <div class="Flex-Div">
+                                                    <input class="chck" type="checkbox">
+                                                </div>
+
+                                                <div class="Flex-Div">
+                                                    <p>#32432</p>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                        <td class="date_">YA0263749</td>
+                                        <td class="trans_amount_">15,000</td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div> <!-- transactions-table_wrapper end -->
+                    </div>
+                </div>
+            </div><!-- trans_cont end -->
+        </div> <!-- transactions end -->
+
+     </div><!-- page 1 end -->
+
+    <!-- ========================================================= -->
+
+    </div> <!-- right body end -->
+
+
+</div> <!-- Body end -->
+
+
+<!-- ========================================================= -->
+<!--- FOOTER ----->
+
+<div id="footer" class="expanded row columns dark-footer">
+    <div class="expanded row columns footer-content center-c">
+
+        <!-- social -->
+        <div class="social-flex">
+            <a href="#">
+                <div><img src="https://www.dropbox.com/s/hii04t7613y0p2a/logo-fb-white.png?raw=1" alt="fb-white"></div>
+            </a>
+            <a href="#">
+                <div><img src="https://www.dropbox.com/s/sjim2vv138514dl/logo-google-capital-white.png?raw=1" alt="google-white"></div>
+            </a>
+            <a href="#">
+                <div><img src="https://www.dropbox.com/s/hhn543j7ybj33c6/logo-twitter-white.png?raw=1" alt="twitter-white"></div>
+            </a>
+        </div>
+
+        <div class="adlink-info">
+            <p> Send Us Mail @ <span> wecare@adlink.co.ke</span></p>
+
+            <p class="find-us">Or Find Us @ </p>
+
+            <div class="row branch">
+                <!-- yaya -->
+
+                <div class="medium-2 columns"></div>
+                <div class="small-12 medium-4 columns yaya">
+                    <p><span class="und"> Yaya Centre Branch </span></p>
+                    <p><span> 1st Floor Yaya Centre,</span></p>
+                    <p><span> Argwins Kodhek RD, Nairobi</span></p>
+                    <p><span>+254 710 640694 </span></p>
+                </div>
+
+                <!-- sarit -->
+                <div class="small-12 medium-4 columns">
+                    <p><span class="und"> Sarit Centre Branch </span></p>
+                    <p><span> Ground Floor, Sarit Centre</span></p>
+                    <p><span>+254 20 528 4496 </span></p>
+                    <p><span>+254 728 464 418</span></p>
+                </div>
+                <div class="medium-2 columns"></div>
+            </div>
+        </div>
+
+        <div class="logo-grey">
+            <img src="https://www.dropbox.com/s/pq3pktmpkj6g5yf/logo-grey.png?raw=1" alt="logo-grey">
+        </div>
+
+        <div class="copy">
+            <p>2014 COPYRIGHT ADLINK LTD</p>
+        </div>
+    </div>
+
+
+</div> <!-- end footer -->
+<!-- ========================================================= -->
+</div> <!--- end wrapper -->
+
+<!---------------------------------------------------------------------->
+    <!--- Scripts ----->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
+
+    <!----------------------------------------->
+    <!-- main.js (for header etc) -->
+    <script type="text/javascript" src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
+<!--    <script type="text/javascript" src="main.js"></script>-->
+
+    <!----------------------------------------->
+    <!--Vegas-->
+    <script type="text/javascript"  src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
+    <script type="text/javascript"  src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
+
+    <!----------------------------------------->
+    <!--Datatables-->
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
+
+    <script type="text/javascript" src="https://www.dropbox.com/s/zov8blajqzh4yb7/datatables.js?raw=1"></script>
+<!---------------------------------------------------------------------->
+</body>
+</html>
