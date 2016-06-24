@@ -4,39 +4,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>MY ADS::Adlink</title>
 
+     <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/2eftb3ous07fmuc/normalize.css?raw=1">
-
     <link rel="stylesheet" href="https://www.dropbox.com/s/sulpatr3tx30u6l/vegas.min.css?raw=1">
 
-    <link rel="stylesheet" href="https://www.dropbox.com/s/wicimf8428hjp82/foundation-icons.css?raw=1" />
-
+    <!-- Icons -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.dropbox.com/s/axu55ju5dyfjdn0/foundation.min.css?raw=1">
 
+    <!-- modals -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
+<!--    <link rel="stylesheet" href="modals.css">-->
+
+    <!----------------------------------------->
     <!-- custom -styles -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
 
-<!--    <link rel="stylesheet" type="text/css" href="css/custom_styles.css">-->
-
-    <!-- app -->
-    <link rel="stylesheet" href="https://www.dropbox.com/s/4x030lpsakk2pzz/my-ads-app.css?raw=1">
-
-<!--    <link rel="stylesheet" href="my-ads-app.css">-->
-
     <!-- left-nav and header -->
-    <link rel="stylesheet" href="https://www.dropbox.com/s/zl0uxxuidjclicm/dashboard-left-nav-header.css?raw=1">
-
-<!--    <link rel="stylesheet" href="css/dashboard-left-nav-header.css">-->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/2xyg7elaij6jilw/dashboard-left-nav-trans.css?raw=1">
+<!--    <link rel="stylesheet" href="header.css">-->
+<!--    <link rel="stylesheet" href="dashboard-left-nav-trans.css">-->
 
     <!-- footer -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
-    <!----------------------------------------->
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- app -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/4x030lpsakk2pzz/my-ads-app.css?raw=1">
+<!--    <link rel="stylesheet" href="my-ads-app.css">-->
 
      <!-- Datatables -->
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
+
+    <!----------------------------------------->
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
 
@@ -56,8 +62,8 @@
         <!----------------------------------------->
         <!--- HEADER ----->
         <div class="row columns">
-            <div class="Logo_bg">
-                <a href="index.html"><img class="center-c" src="http://bit.ly/1U6Bhar" alt="adlink-logo-white"></a>
+            <div class="Logo_bg wht_">
+                <a href="index.html"><img class="center-c" src="https://www.dropbox.com/s/tajbxt5qoehwzf2/logo-white.png?raw=1" alt="logo-white"></a>
             </div>
         </div>
 
@@ -224,50 +230,75 @@
     <div id="right-body" class="medium-10 large-10 columns ">
 
     <!--- HEADER ----->
-    <div class="top-bar Header_bg">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-tabs">
-                    <a href="#">Noticeboard </a>
-                </li>
-                <li class="menu-tabs">
-                    <a href="#">Billboard </a>
-                </li>
-                <li class="menu-tabs">
-                    <a href="#">Magazine </a>
-                </li>
-            </ul>
-        </div>
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li class="menu-tabs">
-                    <div class="cntcts Flex">
-                        <div class="Flex-Div">
-                            <a href="profile-new.html">
-                            <img src="https://www.dropbox.com/s/aex965xb00jnul4/phone-grey.png?raw=1" alt="phone">
-                            </a>
-                        </div>
-                        <div class="Flex-Div">
-                            <p>CALL US</p>
-                        </div>
-                        <div class="Flex-Div">
-                            <p class="adlink-num">0726 818586</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-tabs log-out">
-                    <a href="#">logout</a>
-                </li>
-            </ul>
-        </div>
-    </div> <!--- header end -->
+    <div class="expanded row columns top-bar Header_bg" >
+
+        <div id="home-menu" class="">
+
+            <div class="top-bar-left navbar">
+
+                <ul id="navlist" class="menu">
+
+                    <!-- Services -->
+                    <li class="menu-tabs dv serv">
+                        <a id="services" href="#" >
+                            <div>Services</div>
+                            <div class="arrow">
+                                <img class="" src="https://www.dropbox.com/s/bbyxdo4792ke7jm/down-button.png?raw=1" >
+                            </div>
+                        </a>
+
+                        <ul id="sub_navlist" class="">
+                            <li id="noticeboard" class="nb">
+                                <a href="index.html">
+                                    <div>Noticeboard</div>
+                                </a>
+                            </li>
+                            <li id="digital_marketing" class="dm">
+                                <a data-open="digitalModal">
+                                    <div>Digital Marketing</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-tabs dv">
+                        <a href="about-us.html" class="">
+                            <div>About us</div>
+                        </a>
+                    </li>
+                    <li class="menu-tabs dv">
+                        <a href="#">
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right in">
+                <ul class="menu">
+                    <!-- Visible when NOT logged in -->
+<!--
+                    <li class="menu-tabs sign-in">
+                        <a class="" data-open="logInModal">Have and account? Sign In</a>
+                    </li>
+-->
+
+                    <!-- Visible when logged in -->
+                    <li class="menu-tabs log-out">
+                        <a href="#" class="button-gr-otln">logout</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div> <!-- responsive menu -->
+
+    </div> <!-- top bar end -->
 
     <!----------------------------------------------------->
     <!-- PAGE 1 --->
     <!----------------------------------------------------->
     <div id="page1" class="expanded row columns">
         <!--- banner -->
-        <div id="my-ads-banner" class="expanded row columns banner"></div>
+        <div id="my-ads-bphoto" class="expanded row columns bphoto"></div>
 
         <!--- the-ads -->
         <div class="expanded row columns the-ads">
@@ -277,7 +308,7 @@
 
                 <!------------------------------------->
                 <!-- step 1 --->
-                <div class="medium-4 columns">
+                <div class="small-12 medium-6 large-4 columns">
                     <div class="center-c ht-steps step1">
                         <!-- box title -->
                         <div class="ht-title">
@@ -309,7 +340,7 @@
 
                 <!------------------------------------->
                 <!-- step 2 --->
-                <div class="medium-4 columns">
+                <div class="small-12 medium-6 large-4 columns">
 
                     <div class="center-c ht-steps step2">
                         <!-- box title -->
@@ -358,7 +389,7 @@
 
                 <!------------------------------------->
                 <!-- step 3 --->
-                <div class="medium-4 columns">
+                <div class="small-12 medium-12 large-4 columns">
                     <div class="center-c ht-steps step3">
                         <!-- box title -->
                         <div class="ht-title">
@@ -413,9 +444,6 @@
 
         <div class="large-12 columns ad-container center-h">
 
-        <!--- Datatables -->
-        <div id="my-ads-table_wrapper" class="dataTables_wrapper no-footer">
-
             <!---------------------------------->
             <!-- top row -->
             <div class="row columns ads-top">
@@ -425,56 +453,6 @@
                     <p class="thin100 big center-v">My ADs</p>
                 </div>
 
-                <!-- drop filter -->
-<!--
-                <div class="medium-5 columns ads-drop-filter">
-                    <div class="dataTables_length drop-filter" id="">
-                        <label>
-
-                            <select name="my-ads-length" aria-controls="my-ads-table" class="" placeholder="All ADs">
-
-                                <option value="10">10</option>
-                                <option value="25">25</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-
-
-                                <option value="all_ads">All ADs</option>
-                                <option value="live_ads">Live ADs</option>
-                                <option value="expired_ads">Expired ADs</option>
-                                <option value="incomplete_ads">Incomplete ADs</option>
-
-                            </select>
-
-                        </label>
-                    </div>
-                </div>
--->
-
-                <!-- search -->
-<!--
-                <div class="medium-3 columns end s-ads">
-                    <div class="input-group ">
-
-                        <div id="" class="dataTables_filter ads-search">
-                            <label>
-                                <input type="search" class="" placeholder="" aria-controls="my-ads-table">
-                            </label>
-                        </div>
-
-                      <div class="input-group-button">
-                          <label for="my-ads-table_filter" class="button">
-                            <img src="https://www.dropbox.com/s/6slruhty48p9tyf/search-bg.png?raw=1">
-                            </label>
-
-                      </div>
-
-                    </div>
-                </div>
--->
-
-
-
             </div> <!-- ads top row end -->
 
             <!---------------------------------->
@@ -483,7 +461,27 @@
 
                 <div class="medium-2 columns select-space"></div>
 
+                <!-- Select tabs-->
+                <div class="medium-4 columns end Flex ad-status">
+                    <ul class="tabs" data-tabs id="status-tabs">
+                        <li class="tabs-title is-active">
+                          <a href="#all_" aria-selected="true" class="ads-select center-v">ALL ADS</a>
+                        </li>
+                        <li class="tabs-title">
+                          <a href="#live_" aria-selected="true" class="ads-select center-v">LIVE ADS</a>
+                        </li>
+                        <li class="tabs-title">
+                          <a href="#expired_" aria-selected="true" class="ads-select center-v">EXPIRED ADS</a>
+                        </li>
+                        <li class="tabs-title lst">
+                          <a href="#incomplete_" aria-selected="true" class="ads-select center-v ">INCOMPLETE ADS</a>
+                        </li>
+                    </ul>
+                </div>
+
+
                 <!-- Select -->
+<!--
                 <div class="medium-4 columns end Flex ad-status">
                     <div class="Flex-Div">
                         <a href="#">
@@ -510,169 +508,264 @@
                     </div>
 
                 </div>
+-->
 
             </div> <!-- ads bottom row end -->
 
-            <!---------------------------------->
-            <!-- bottom row -->
-            <!--- MY ADS TABLE --->
-            <table id="my-ads-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="my-ads-info">
 
-                <!--Table Header-->
-                <thead>
-                    <tr role="row">
-                        <th class="sorting_asc ad_cols ad_id_col" tabindex="0" aria-controls="my-ads-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
-                            Ad ID
-                        </th>
-                        <th class="sorting ad_cols book_ref_col" tabindex="0" aria-controls="my-ads-table" rowspan="1" colspan="1" aria-label="Booking Ref: activate to sort column ascending">
-                            Booking Ref
-                        </th>
-                        <th class="sorting ad_cols location_col" tabindex="0" aria-controls="my-ads-table" rowspan="1" colspan="1" aria-label="Location: activate to sort column ascending">
-                            Location
-                        </th>
-                        <th class="sorting ad_cols amount_col" tabindex="0" aria-controls="my-ads-table" rowspan="1" colspan="1" aria-label="Amount: activate to sort column ascending">
-                            Amount
-                        </th>
-                        <th class="sorting ad_cols duration_col" tabindex="0" aria-controls="my-ads-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
-                            Duration
-                        </th>
-                        <th class="sorting ad_cols status_col" tabindex="0" aria-controls="my-ads-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
-                            Status
-                        </th>
-                    </tr>
-                </thead>
+            <div class="tabs-content" data-tabs-content="status-tabs">
 
-                <!--Table Body-->
-                <tbody class="my_ads_table_body">
+                <!-- All ADS -->
+                <div class="tabs-panel is-active" id="all_">
 
-                    <!-- row 1 -->
-                    <tr>
-                        <td class="ad_id_">
-                            <div class="Flex">
-                                <div class="Flex-Div">
-                                    <input class="chck" type="checkbox">
-                                </div>
+                    <!--- All Ads -->
+                    <div id="all-table_wrapper" class="dataTables_wrapper no-footer">
+                        <table id="all-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="my-ads-info">
 
-                                <div class="Flex-Div">
-                                    <p>AD ID</p>
-                                </div>
+                            <!--Table Header-->
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc ad_cols ad_id_col" tabindex="0" aria-controls="all-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                        Ad ID
+                                    </th>
+                                    <th class="sorting ad_cols book_ref_col" tabindex="0" aria-controls="all-table" rowspan="1" colspan="1" aria-label="Booking Ref: activate to sort column ascending">
+                                        Booking Ref
+                                    </th>
+                                    <th class="sorting ad_cols location_col" tabindex="0" aria-controls="all-table" rowspan="1" colspan="1" aria-label="Location: activate to sort column ascending">
+                                        Location
+                                    </th>
+                                    <th class="sorting ad_cols amount_col" tabindex="0" aria-controls="all-table" rowspan="1" colspan="1" aria-label="Amount: activate to sort column ascending">
+                                        Amount
+                                    </th>
+                                    <th class="sorting ad_cols duration_col" tabindex="0" aria-controls="all-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
+                                        Duration
+                                    </th>
+                                    <th class="sorting ad_cols days_left_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                                        Days To Expiration
+                                    </th>
+                                    <th class="sorting ad_cols status_col" tabindex="0" aria-controls="all-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
 
-                            </div>
-                        </td>
-                        <td class="book_ref_">YA0263749</td>
-                        <td class="location_">Yaya Center</td>
-                        <td class="amount_">KES 700</td>
-                        <td class="duration_">1 week</td>
-                        <td class="status_">
-                            <div class="Flex">
-                                <div class="Flex-Div">
-                                    <p class="ad_stat">LIVE</p>
-                                </div>
+                            <!--Table Body-->
+                            <tbody class="all_table_body">
 
-                                <div class="Flex-Div">
-                                    <p class="ad_days_left">4 days left</p>
-                                </div>
-                                <div class="Flex-Div">
-                                    <p class="ad_renew">RENEW</p>
-                                </div>
+                                <!-- row 1 -->
+                                <tr>
+                                    <td class="ad_id_">
+                                        <div class="Flex">
+                                            <div class="Flex-Div">
+                                                <input class="chck" type="checkbox">
+                                            </div>
 
-                            </div>
-                        </td>
-                    </tr>
+                                            <div class="Flex-Div">
+                                                <p>AD ID</p>
+                                            </div>
 
-                    <!-- row 2 -->
-                    <tr>
-                        <td class="ad_id_">
-                            <div class="Flex">
-                                <div class="Flex-Div">
-                                    <input class="chck" type="checkbox">
-                                </div>
+                                        </div>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Yaya Center</td>
+                                    <td class="amount_">KES 700</td>
+                                    <td class="duration_">1 week</td>
+                                    <td class="days_left_">4</td>
+                                    <td class="status_">
+                                        <div class="Flex">
+                                            <div class="Flex-Div">
+                                                <p class="ad_stat">LIVE</p>
+                                            </div>
+                                            <div class="Flex-Div">
+                                                <p class="ad_renew">RENEW</p>
+                                            </div>
 
-                                <div class="Flex-Div">
-                                    <p>AD ID</p>
-                                </div>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            </div>
-                        </td>
-                        <td class="book_ref_">YA0263749</td>
-                        <td class="location_">Sarit Center</td>
-                        <td class="amount_">KES 700</td>
-                        <td class="duration_">1 week</td>
-                        <td class="status_">
-                            <div class="Flex">
-                                <div class="Flex-Div">
-                                    <p class="ad_stat">LIVE</p>
-                                </div>
+                                <!-- row 2 -->
+                                <tr>
+                                    <td class="ad_id_">
+                                        <div class="Flex">
+                                            <div class="Flex-Div">
+                                                <input class="chck" type="checkbox">
+                                            </div>
 
-                                <div class="Flex-Div">
-                                    <p class="ad_days_left">5 days left</p>
-                                </div>
-                                <div class="Flex-Div">
-                                    <p class="ad_renew">RENEW</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
+                                            <div class="Flex-Div">
+                                                <p>AD ID</p>
+                                            </div>
 
-                    <!-- row 3 -->
-                    <tr>
-                        <td class="ad_id_">
-                            <div class="Flex">
-                                <div class="Flex-Div">
-                                    <input class="chck" type="checkbox">
-                                </div>
+                                        </div>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Sarit Center</td>
+                                    <td class="amount_">KES 700</td>
+                                    <td class="duration_">1 week</td>
+                                    <td class="days_left_">5</td>
+                                    <td class="status_">
+                                        <div class="Flex">
+                                            <div class="Flex-Div">
+                                                <p class="ad_stat">LIVE</p>
+                                            </div>
+                                            <div class="Flex-Div">
+                                                <p class="ad_renew">RENEW</p>
+                                            </div>
 
-                                <div class="Flex-Div">
-                                    <p>AD ID</p>
-                                </div>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                            </div>
-                        </td>
-                        <td class="book_ref_">YA0263749</td>
-                        <td class="location_">Yaya Center</td>
-                        <td class="amount_">KES 600</td>
-                        <td class="duration_">1 week</td>
-                        <td class="status_">
-                            <div class="Flex">
-                                <div class="Flex-Div">
-                                    <p class="ad_stat">LIVE</p>
-                                </div>
+                                <!-- row 3 -->
+                                <tr>
+                                    <td class="ad_id_">
+                                        <div class="Flex">
+                                            <div class="Flex-Div">
+                                                <input class="chck" type="checkbox">
+                                            </div>
 
-                                <div class="Flex-Div">
-                                    <p class="ad_days_left">20 days left</p>
-                                </div>
-                                <div class="Flex-Div">
-                                    <p class="ad_renew">RENEW</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
+                                            <div class="Flex-Div">
+                                                <p>AD ID</p>
+                                            </div>
 
-                </tbody>
+                                        </div>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Yaya Center</td>
+                                    <td class="amount_">KES 600</td>
+                                    <td class="duration_">1 week</td>
+                                    <td class="days_left_">10</td>
+                                    <td class="status_">
+                                        <div class="Flex">
+                                            <div class="Flex-Div">
+                                                <p class="ad_stat">LIVE</p>
+                                            </div>
+                                            <div class="Flex-Div">
+                                                <p class="ad_renew">RENEW</p>
+                                            </div>
 
+                                        </div>
+                                    </td>
+                                </tr>
 
+                            </tbody>
 
+                        </table>
 
+                    </div> <!-- all-table_wrapper -->
+                </div> <!-- all_ end -->
+
+                <!------------------------------------------------------>
+                <!-- live-->
+                <div class="tabs-panel" id="live_">
+                    <!--- Live Ads -->
+                    <div id="live-table_wrapper" class="dataTables_wrapper no-footer">
+                        <table id="live-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="my-ads-info">
+
+                            <!--Table Header-->
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc ad_cols ad_id_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                        Ad ID
+                                    </th>
+                                    <th class="sorting ad_cols book_ref_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Booking Ref: activate to sort column ascending">
+                                        Booking Ref
+                                    </th>
+                                    <th class="sorting ad_cols location_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Location: activate to sort column ascending">
+                                        Location
+                                    </th>
+                                    <th class="sorting ad_cols amount_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Amount: activate to sort column ascending">
+                                        Amount
+                                    </th>
+                                    <th class="sorting ad_cols duration_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
+                                        Duration
+                                    </th>
+                                    <th class="sorting ad_cols days_left_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                                        Days To Expiration
+                                    </th>
 <!--
-                <tbody>
-                    <tr>
-                        <td>{{a.ad_id}}</td>
-                        <td>{{a.booking_ref}}</td>
-                        <td>{{a.location}}</td>
-                        <td>{{a.amount}}</td>
-
-                        <td>{{a.duration}}</td>
-                        <td>{{a.status}}</td>
-
-                        <td><img src="{{a.image}}">Image</a></td>
-                       <td><i class="fa fa-edit"><a href='/get/{{a.id}}'>View More</a> </i> &nbsp; <i class="glyphicon glyphicon-trash"></i>DELETE</td>
-                    </tr>
-                </tbody>
+                                    <th class="sorting ad_cols status_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                                        Renew
+                                    </th>
 -->
+                                </tr>
+                            </thead>
 
-            </table>
+                            <!--Table Body-->
+                            <tbody class="live_table_body">
 
-        </div> <!-- my-ads-table_wrapper -->
+                                <!-- row 1 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Yaya Center</td>
+                                    <td class="amount_">KES 700</td>
+                                    <td class="duration_">1 week</td>
+                                    <td class="days_left_ f-center">
+                                        <p class="days_left_num">4</p>
+                                        <p class="ad_days_left">days</p>
+                                        <p class="ad_renew">RENEW</p>
+                                    </td>
+                                </tr>
+
+                                <!-- row 2 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Sarit Center</td>
+                                    <td class="amount_">KES 700</td>
+                                    <td class="duration_">1 week</td>
+                                    <td class="days_left_ f-center">
+                                        <p class="days_left_num">4</p>
+                                        <p class="ad_days_left">days</p>
+                                        <p class="ad_renew">RENEW</p>
+                                    </td>
+
+                                </tr>
+
+                                <!-- row 3 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Yaya Center</td>
+                                    <td class="amount_">KES 600</td>
+                                    <td class="duration_">1 week</td>
+                                    <td class="days_left_ f-center">
+                                        <p class="days_left_num">4</p>
+                                        <p class="ad_days_left">days</p>
+                                        <p class="ad_renew">RENEW</p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div> <!-- all-table_wrapper -->
+                </div>
+
+                <!-- expired -->
+                <div class="tabs-panel" id="expired_">
+                    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                </div>
+
+                <!-- incomplete -->
+                <div class="tabs-panel" id="incomplete_">
+                    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                </div>
+            <!---------------------------------->
+
+        </div><!-- tabs-content end -->
+            <!---------------------------------->
 
         </div> <!-- large 12 ad-container end -->
 
@@ -727,21 +820,23 @@
 
 <!---------------------------------------------------------------------->
     <!--- Scripts ----->
-<!--    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>    -->
-    <script src="https://www.dropbox.com/s/4dbmwxhwcanrzjd/jquery.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/he2ds4nd4a41let/what-input.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/dskhrx47eu0afhl/foundation.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
 
+    <!----------------------------------------->
+    <!-- main.js (for header etc) -->
+    <script type="text/javascript" src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
+
+    <!----------------------------------------->
     <!--Vegas-->
-    <script src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
+    <script type="text/javascript"  src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
+    <script type="text/javascript"  src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
 
-    <script src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
-
+    <!----------------------------------------->
     <!--Datatables-->
     <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
 
-    <script type="text/javascript" src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/zov8blajqzh4yb7/datatables.js?raw=1"></script>
 
 
 <!---------------------------------------------------------------------->
