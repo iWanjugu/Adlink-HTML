@@ -479,37 +479,6 @@
                     </ul>
                 </div>
 
-
-                <!-- Select -->
-<!--
-                <div class="medium-4 columns end Flex ad-status">
-                    <div class="Flex-Div">
-                        <a href="#">
-                            <p class="ads-select center-v">ALL ADS</p>
-                        </a>
-                    </div>
-
-                    <div class="Flex-Div">
-                        <a href="#">
-                            <p class="ads-select center-v">LIVE ADS</p>
-                        </a>
-                    </div>
-
-                    <div class="Flex-Div">
-                        <a href="#">
-                            <p class="ads-select center-v">EXPIRED ADS</p>
-                        </a>
-                    </div>
-
-                    <div class="Flex-Div">
-                        <a href="#">
-                            <p class="ads-select center-v">INCOMPLETE ADS</p>
-                        </a>
-                    </div>
-
-                </div>
--->
-
             </div> <!-- ads bottom row end -->
 
 
@@ -554,97 +523,54 @@
 
                                 <!-- row 1 -->
                                 <tr>
-                                    <td class="ad_id_">
-                                        <div class="Flex">
-                                            <div class="Flex-Div">
-                                                <input class="chck" type="checkbox">
-                                            </div>
-
-                                            <div class="Flex-Div">
-                                                <p>AD ID</p>
-                                            </div>
-
-                                        </div>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
                                     </td>
                                     <td class="book_ref_">YA0263749</td>
                                     <td class="location_">Yaya Center</td>
                                     <td class="amount_">KES 700</td>
                                     <td class="duration_">1 week</td>
-                                    <td class="days_left_">4</td>
-                                    <td class="status_">
-                                        <div class="Flex">
-                                            <div class="Flex-Div">
-                                                <p class="ad_stat">LIVE</p>
-                                            </div>
-                                            <div class="Flex-Div">
-                                                <p class="ad_renew">RENEW</p>
-                                            </div>
+                                    <td class="days_left_">4
 
-                                        </div>
+                                    </td>
+                                    <td class="status_ f-center">
+                                        <p class="ad_stat">LIVE</p>
+                                        <a href="#" class="button ad_renew bttn5">RENEW</a>
                                     </td>
                                 </tr>
 
                                 <!-- row 2 -->
                                 <tr>
-                                    <td class="ad_id_">
-                                        <div class="Flex">
-                                            <div class="Flex-Div">
-                                                <input class="chck" type="checkbox">
-                                            </div>
-
-                                            <div class="Flex-Div">
-                                                <p>AD ID</p>
-                                            </div>
-
-                                        </div>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
                                     </td>
                                     <td class="book_ref_">YA0263749</td>
                                     <td class="location_">Sarit Center</td>
                                     <td class="amount_">KES 700</td>
                                     <td class="duration_">1 week</td>
                                     <td class="days_left_">5</td>
-                                    <td class="status_">
-                                        <div class="Flex">
-                                            <div class="Flex-Div">
-                                                <p class="ad_stat">LIVE</p>
-                                            </div>
-                                            <div class="Flex-Div">
-                                                <p class="ad_renew">RENEW</p>
-                                            </div>
-
-                                        </div>
+                                    <td class="status_ f-center">
+                                        <p class="ad_stat">LIVE</p>
+                                        <a href="#" class="button ad_renew bttn5">RENEW</a>
                                     </td>
                                 </tr>
 
                                 <!-- row 3 -->
                                 <tr>
-                                    <td class="ad_id_">
-                                        <div class="Flex">
-                                            <div class="Flex-Div">
-                                                <input class="chck" type="checkbox">
-                                            </div>
-
-                                            <div class="Flex-Div">
-                                                <p>AD ID</p>
-                                            </div>
-
-                                        </div>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
                                     </td>
                                     <td class="book_ref_">YA0263749</td>
                                     <td class="location_">Yaya Center</td>
                                     <td class="amount_">KES 600</td>
                                     <td class="duration_">1 week</td>
                                     <td class="days_left_">10</td>
-                                    <td class="status_">
-                                        <div class="Flex">
-                                            <div class="Flex-Div">
-                                                <p class="ad_stat">LIVE</p>
-                                            </div>
-                                            <div class="Flex-Div">
-                                                <p class="ad_renew">RENEW</p>
-                                            </div>
-
-                                        </div>
+                                    <td class="status_ f-center">
+                                        <p class="ad_stat">LIVE</p>
+                                        <a href="#" class="button ad_renew bttn5">RENEW</a>
                                     </td>
                                 </tr>
 
@@ -660,7 +586,7 @@
                 <div class="tabs-panel" id="live_">
                     <!--- Live Ads -->
                     <div id="live-table_wrapper" class="dataTables_wrapper no-footer">
-                        <table id="live-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="my-ads-info">
+                        <table id="live-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="live-info">
 
                             <!--Table Header-->
                             <thead>
@@ -680,14 +606,9 @@
                                     <th class="sorting ad_cols duration_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
                                         Duration
                                     </th>
-                                    <th class="sorting ad_cols days_left_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
+                                    <th class="sorting ad_cols days_left_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Days To Expiration: activate to sort column ascending">
                                         Days To Expiration
                                     </th>
-<!--
-                                    <th class="sorting ad_cols status_col" tabindex="0" aria-controls="live-table" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">
-                                        Renew
-                                    </th>
--->
                                 </tr>
                             </thead>
 
@@ -707,7 +628,7 @@
                                     <td class="days_left_ f-center">
                                         <p class="days_left_num">4</p>
                                         <p class="ad_days_left">days</p>
-                                        <p class="ad_renew">RENEW</p>
+                                        <a href="#" class="button ad_renew bttn5">RENEW</a>
                                     </td>
                                 </tr>
 
@@ -724,7 +645,7 @@
                                     <td class="days_left_ f-center">
                                         <p class="days_left_num">4</p>
                                         <p class="ad_days_left">days</p>
-                                        <p class="ad_renew">RENEW</p>
+                                        <a href="#" class="button ad_renew bttn5">RENEW</a>
                                     </td>
 
                                 </tr>
@@ -742,7 +663,7 @@
                                     <td class="days_left_ f-center">
                                         <p class="days_left_num">4</p>
                                         <p class="ad_days_left">days</p>
-                                        <p class="ad_renew">RENEW</p>
+                                        <a href="#" class="button ad_renew bttn5">RENEW</a>
                                     </td>
                                 </tr>
 
@@ -750,17 +671,175 @@
 
                         </table>
 
-                    </div> <!-- all-table_wrapper -->
+                    </div> <!-- live-table_wrapper -->
                 </div>
 
+                <!------------------------------------------------------>
                 <!-- expired -->
                 <div class="tabs-panel" id="expired_">
-                    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                    <!--- Expired Ads -->
+                    <div id="expired-table_wrapper" class="dataTables_wrapper no-footer">
+                        <table id="expired-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="expired-info">
+
+                            <!--Table Header-->
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc ad_cols ad_id_col" tabindex="0" aria-controls="expired-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                        Ad ID
+                                    </th>
+                                    <th class="sorting ad_cols book_ref_col" tabindex="0" aria-controls="expired-table" rowspan="1" colspan="1" aria-label="Booking Ref: activate to sort column ascending">
+                                        Booking Ref
+                                    </th>
+                                    <th class="sorting ad_cols location_col" tabindex="0" aria-controls="expired-table" rowspan="1" colspan="1" aria-label="Location: activate to sort column ascending">
+                                        Location
+                                    </th>
+                                    <th class="sorting ad_cols amount_col" tabindex="0" aria-controls="expired-table" rowspan="1" colspan="1" aria-label="Amount: activate to sort column ascending">
+                                        Amount
+                                    </th>
+                                    <th class="sorting ad_cols duration_col" tabindex="0" aria-controls="expired-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
+                                        Duration
+                                    </th>
+
+                                </tr>
+                            </thead>
+
+                            <!--Table Body-->
+                            <tbody class="expired_table_body">
+
+                                <!-- row 1 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Yaya Center</td>
+                                    <td class="amount_">KES 700</td>
+                                    <td class="duration_">1 week</td>
+
+                                </tr>
+
+                                <!-- row 2 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Sarit Center</td>
+                                    <td class="amount_">KES 700</td>
+                                    <td class="duration_">1 week</td>
+
+
+                                </tr>
+
+                                <!-- row 3 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Yaya Center</td>
+                                    <td class="amount_">KES 600</td>
+                                    <td class="duration_">1 week</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div> <!-- expired-table_wrapper -->
                 </div>
 
+                <!------------------------------------------------------>
                 <!-- incomplete -->
                 <div class="tabs-panel" id="incomplete_">
-                    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                    <!--- Incomplete Ads -->
+                    <div id="incomplete-table_wrapper" class="dataTables_wrapper no-footer">
+                        <table id="incomplete-table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="live-info">
+
+                            <!--Table Header-->
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc ad_cols ad_id_col" tabindex="0" aria-controls="incomplete-table" rowspan="1" colspan="1" aria-label="Ad ID: activate to sort column descending" aria-sort="ascending">
+                                        Ad ID
+                                    </th>
+                                    <th class="sorting ad_cols book_ref_col" tabindex="0" aria-controls="incomplete-table" rowspan="1" colspan="1" aria-label="Booking Ref: activate to sort column ascending">
+                                        Booking Ref
+                                    </th>
+                                    <th class="sorting ad_cols location_col" tabindex="0" aria-controls="incomplete-table" rowspan="1" colspan="1" aria-label="Location: activate to sort column ascending">
+                                        Location
+                                    </th>
+                                    <th class="sorting ad_cols amount_col" tabindex="0" aria-controls="incomplete-table" rowspan="1" colspan="1" aria-label="Amount: activate to sort column ascending">
+                                        Amount
+                                    </th>
+                                    <th class="sorting ad_cols duration_col" tabindex="0" aria-controls="incomplete-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
+                                        Duration
+                                    </th>
+
+                                </tr>
+                            </thead>
+
+                            <!--Table Body-->
+                            <tbody class="incomplete_table_body">
+
+                                <!-- row 1 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Yaya Center</td>
+                                    <td class="amount_">KES 700</td>
+                                    <td class="duration_ f-center">
+                                        <p class="dur_weeks_">1</p>
+                                        <p class="dur_">weeks</p>
+                                        <a href="#" class="button ad_renew bttn5">COMPLETE</a>
+                                    </td>
+
+                                </tr>
+
+                                <!-- row 2 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Sarit Center</td>
+                                    <td class="amount_">KES 700</td>
+                                    <td class="duration_ f-center">
+                                        <p class="dur_weeks_">1</p>
+                                        <p class="dur_">weeks</p>
+                                        <a href="#" class="button ad_renew bttn5">COMPLETE</a>
+                                    </td>
+
+                                </tr>
+
+                                <!-- row 3 -->
+                                <tr>
+                                    <td class="ad_id_ f-center">
+                                        <input class="chck" type="checkbox">
+                                        <p class="ad_ID">AD ID</p>
+                                    </td>
+                                    <td class="book_ref_">YA0263749</td>
+                                    <td class="location_">Yaya Center</td>
+                                    <td class="amount_">KES 600</td>
+                                    <td class="duration_ f-center">
+                                        <p class="dur_weeks_">1</p>
+                                        <p class="dur_">weeks</p>
+                                        <a href="#" class="button ad_renew bttn5">COMPLETE</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div> <!-- incomplete-table_wrapper -->
                 </div>
             <!---------------------------------->
 
