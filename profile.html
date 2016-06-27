@@ -4,40 +4,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>PROFILE::Adlink</title>
 
+   <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!----------------------------------------->
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/2eftb3ous07fmuc/normalize.css?raw=1">
-
     <link rel="stylesheet" href="https://www.dropbox.com/s/sulpatr3tx30u6l/vegas.min.css?raw=1">
 
-    <link rel="stylesheet" href="https://www.dropbox.com/s/wicimf8428hjp82/foundation-icons.css?raw=1" />
-
+    <!-- Icons -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.dropbox.com/s/axu55ju5dyfjdn0/foundation.min.css?raw=1">
+
+    <!-- modals -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
+<!--    <link rel="stylesheet" href="modals.css">-->
+
 
     <!-- custom -styles -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
 
-<!--    <link rel="stylesheet" type="text/css" href="css/custom_styles.css">-->
-
-    <!-- app -->
-    <link rel="stylesheet" href="https://www.dropbox.com/s/zn9gcc0ymhhc6fn/profile-page-new-app.css?raw=1">
-
-
-<!--    <link rel="stylesheet" href="profile-page-new-app.css">-->
 
     <!-- left-nav and header -->
-    <link rel="stylesheet" href="https://www.dropbox.com/s/zl0uxxuidjclicm/dashboard-left-nav-header.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
+<!--    <link rel="stylesheet" href="header.css">-->
 
-<!--    <link rel="stylesheet" href="../dashboard-left-nav-header.css">-->
 
     <!-- footer -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
-    <!----------------------------------------->
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-------------------------->
+    <!-- app -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/btwxa1qijh1jfbr/profile-app.css?raw=1">
+<!--    <link rel="stylesheet" href="profile-app.css">-->
 
-     <!-- Datatables -->
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
+    <!----------------------------------------->
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
 
@@ -47,239 +51,93 @@
 <div id="wrapper" class="expanded row columns">
 
 <!-- ========================================================= -->
-<!--- body ----->
-<div id="Body" class="expanded row columns">
+<!--- PAGE 1 --->
+<!-- ========================================================= -->
 
-     <!-- ==================================== -->
-    <!-- LEFT NAV -->
-    <div id="left-nav" class="medium-2 large-2 columns left-nav dark-nav">
+<div id="page1" class="page1">
 
-        <!----------------------------------------->
-        <!--- HEADER ----->
-        <div class="row columns">
-            <div class="Logo_bg">
-                <a href="index.html" class="center-c">
+    <!------------------------------------------------->
+    <!---------->
+    <!-- Header -->
+    <div class="expanded row columns top-bar resp Header_bg" >
 
-                </a>
-            </div>
-        </div>
+        <div id="home-menu" class="">
 
-        <!----------------------------------------->
-        <!--- Pic area ----->
-        <div class="row columns pic-area">
-            <div class="prof-pic center-h">
-                <div class="pic-round ">
-                    <img  src="https://www.dropbox.com/s/ec3o56n0bqenwdn/profile_image.png?raw=1">
-                </div>
-            </div>
+            <div class="top-bar-left navbar">
 
-            <div class="prof-descr">
-                <div class="Flex center-c">
-                    <div class="welcome Flex-Div"> Welcome </div>
-                    <div class="prof-name Flex-Div"> Jared </div>
-                </div>
-            </div>
+                <ul id="navlist" class="menu">
 
-            <div class="prof-descr">
-                <div class="Flex center-c">
-                    <div class="Flex-Div">
-                        <a class="edit-icon" href="profile.html">
-                            <img src="https://www.dropbox.com/s/e42mu8dau6uykgp/edit.png?raw=1" alt="edit-button">
+                    <!-- logo -->
+
+                    <li class="menu-tabs dv Logo_bg wht">
+                        <a href="#">
+                            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
                         </a>
-                    </div>
-                    <div class="Flex-Div">
-                        <p>EDIT</p>
-                    </div>
+                    </li>
 
-                </div>
+                    <!-- Services -->
+                    <li class="menu-tabs dv serv">
+                        <a id="services" href="#" >
+                            <div>Services</div>
+                            <div class="arrow">
+                                <img class="" src="https://www.dropbox.com/s/bbyxdo4792ke7jm/down-button.png?raw=1" >
+                            </div>
+                        </a>
+
+                        <ul id="sub_navlist" class="">
+                            <li id="noticeboard" class="nb">
+                                <a href="index.html">
+                                    <div>Noticeboard</div>
+                                </a>
+                            </li>
+                            <li id="digital_marketing" class="dm">
+                                <a data-open="digitalModal">
+                                    <div>Digital Marketing</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-tabs dv">
+                        <a href="about-us.html" class="">
+                            <div>About us</div>
+                        </a>
+                    </li>
+                    <li class="menu-tabs dv">
+                        <a href="#">
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                </ul>
             </div>
+            <div class="top-bar-right out">
+                <ul class="menu">
+                    <!-- Visible when NOT logged in -->
+<!--
+                    <li class="menu-tabs sign-in">
+                        <a class="" data-open="logInModal">Have and account? Sign In</a>
+                    </li>
+-->
 
-            <div class="post-advs">
-                <a class="button center-c" href="create-ad.html">Post AD</a>
+                    <!-- Visible when logged in -->
+                    <li class="menu-tabs log-out">
+                        <a href="#" class="button-gr-otln">logout</a>
+                    </li>
+
+                </ul>
             </div>
+        </div> <!-- responsive menu -->
 
-        </div> <!-- end pic-area -->
+    </div> <!-- top bar end -->
 
-
-
-        <!----------------------------------------->
-        <!-- Home-->
-        <div class="row columns nav-list home-area center-h">
-            <a href="customer-dashboard.html">
-                <div class="ttl">
-                    <div class="Flex center-c">
-                        <div class="Flex-Div">
-                            <img src="https://www.dropbox.com/s/6ju52h3br1ptx2i/home.png?raw=1" alt="home">
-                        </div>
-                        <div class="Flex-Div">
-                            <p>Home <span>(Dashboard)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div><!-- end home-area -->
-
-        <!----------------------------------------->
-        <!-- My Ads-->
-        <div class="row columns nav-list my-advs center-h">
-            <a href="my-ads.html">
-                <div class="ttl">
-                    <div class="Flex center-c">
-                        <div class="Flex-Div">
-                            <img src="https://www.dropbox.com/s/r4reo61y8mz6h0l/my-ads.png?raw=1" alt="my-advs">
-                        </div>
-                        <div class="Flex-Div">
-                            <p>My ADs</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
+    <!------------------------------------------------->
+    <!-- Banner -->
+    <div id="Profile_b-photo" class="Profile expanded row columns banner"></div>
 
 
-            <!---------------------------------------------
------------------------------------>
-            <div class="bdy">
-
-                <!-- Live ads -->
-                <a href="#">
-                    <div class="Flex">
-                        <div class="Flex-Div num">
-                            <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
-
-                            <p class="center-c">9</p>
-                        </div>
-
-                        <div class="Flex-Div txt">
-                            <p>Live ADs</p>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Expired ads -->
-                <a href="#">
-                    <div class="Flex">
-                        <div class="Flex-Div num">
-                            <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
-
-                            <p class="center-c">10</p>
-                        </div>
-
-                        <div class="Flex-Div txt">
-                            <p>Expired ADs</p>
-                        </div>
-                    </div>
-                </a>
-
-
-                <!-- Incomplate ads -->
-                <a href="#">
-                    <div class="Flex">
-                        <div class="Flex-Div num">
-                            <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
-
-                            <p class="center-c">11</p>
-                        </div>
-
-                        <div class="Flex-Div txt">
-                            <p>Incomplete ADs</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!---------------------------------------------
------------------------------------>
-
-        </div><!-- end my ads -->
-
-        <!----------------------------------------->
-        <!-- Transactions -->
-        <div class="row columns nav-list transactions center-h">
-            <a href="#">
-                <div class="ttl">
-                    <div class="Flex center-c">
-                        <div class="Flex-Div">
-                            <img src="https://www.dropbox.com/s/oavl78hmo26chzk/transactions.png?raw=1" alt="transactions">
-                        </div>
-                        <div class="Flex-Div">
-                            <p>Transactions </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div><!-- end transactions -->
-
-        <!----------------------------------------->
-        <!-- Buttons -->
-        <div class="row columns tour-feedback center-h">
-            <div>
-                <button class="center-c">Take a Tour</button>
-            </div>
-            <div>
-                <button class="center-c">Give Feedback</button>
-            </div>
-        </div>
-
-
-    <!-- ==================================== -->
-
-    </div> <!-- left nav end -->
-
-    <!-- ==================================== -->
-    <!-- RIGHT BODY -->
-    <div id="right-body" class="medium-10 large-10 columns ">
-
-    <!--- HEADER ----->
-    <div class="top-bar Header_bg">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-tabs">
-                    <a href="#">Noticeboard </a>
-                </li>
-                <li class="menu-tabs">
-                    <a href="#">Billboard </a>
-                </li>
-                <li class="menu-tabs">
-                    <a href="#">Magazine </a>
-                </li>
-            </ul>
-        </div>
-        <div class="top-bar-right">
-            <ul class="menu">
-                <li class="menu-tabs">
-                    <div class="cntcts Flex">
-                        <div class="Flex-Div">
-                            <a href="profile-new.html">
-                            <img src="https://www.dropbox.com/s/aex965xb00jnul4/phone-grey.png?raw=1" alt="phone">
-                            </a>
-                        </div>
-                        <div class="Flex-Div">
-                            <p>CALL US</p>
-                        </div>
-                        <div class="Flex-Div">
-                            <p class="adlink-num">0726 818586</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-tabs log-out">
-                    <a href="#">logout</a>
-                </li>
-            </ul>
-        </div>
-    </div> <!--- header end -->
-
-    <!----------------------------------------------------->
-    <!-- PAGE 1 --->
-    <!----------------------------------------------------->
-    <div id="page1" class="expanded row columns">
-        <!--- banner -->
-        <div id="a-banner" class="expanded row columns banner"></div>
-
-    </div><!-- page 1 end -->
-
-    <!----------------------------------------------------->
-    <!-- PAGE 2 --->
-    <!----------------------------------------------------->
-    <div id="page2" class="expanded row columns page2">
+    <!--- BOTTOM --->
+    <!-- ========================================================= -->
+    <div id="bottom_content" class="expanded row columns page2 f-center">
 
     <div id="profile" class="row columns">
 
@@ -287,264 +145,261 @@
         <div class="row columns profile-title">
             <div>
                 <p>edit profile</p>
-
             </div>
         </div>
 
-        <!----------------------------------->
-        <!-- top row -->
-        <!----------------------------------->
-        <div class="row top">
+        <!--- Edit details Form ------>
+        <div class="f-center">
+            <div class="row columns edit-c-details-form f-center">
+            <form>
 
-            <!-- right side -->
-            <div class="medium-12 columns top-right center-h">
+                <div class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
 
-                <!--- Edit details Form ------>
-                <div class="row columns edit-c-details-form">
-                <form>
+                    <!-- Change Password -->
+                    <div class="expanded row accordion-item" data-accordion-item>
+                        <!-- title -->
+                        <a href="#" class=" accordion-title small-12  ttl">
+                            Change Password
+                        </a>
 
-                    <div class="row">
-                        <div class="medium-12 ttl">
-                            <p>Personal Details</p>
-                        </div>
-                    </div>
+                        <!-- contents -->
+                        <div class="accordion-content" data-tab-content>
+                            <div class="row">
+                                <div class="medium-10 columns end">
+                                    <label>Old Password:
+                                        <input type="password" name="old_password" placeholder="old password">
+                                    </label>
+                                </div>
+                            </div>
 
-                    <!-- row 1-->
-                     <div class="row">
-                        <div class="medium-5 columns">
-                            <label>First Name:<input type="text" name="first_name" placeholder=" your first name"  >
-                            </label>
-                        </div>
+                            <div class="row">
+                                <div class="medium-10 columns end">
+                                    <label>New Password:
+                                        <input type="password" name="new_password" placeholder="new password">
+                                    </label>
+                                </div>
+                            </div>
 
-                         <div class="medium-2 columns"></div>
+                            <div class="row">
+                                <div class="medium-10 columns end">
+                                    <label>Retype New Password:
+                                        <input type="password" name="retype_new_password" placeholder="new password again">
+                                    </label>
+                                </div>
+                            </div>
 
-                        <div class="medium-5 columns">
-                            <label>Last Name:<input type="text" name="last_name" placeholder="your last name">
-                            </label>
-                        </div>
-                    </div>
+                        </div> <!-- accordion content end -->
+                    </div><!-- accordion item end -->
 
-                    <!-- row 2-->
-                    <div class="row">
-                        <div class="medium-5 columns">
-                            <label>User Name:<input type="text" name="username" placeholder="your username" >
-                            </label>
-                        </div>
-                        <div class="medium-2 columns"></div>
-                        <div class="medium-5 columns">
-                            <label>Password:<input type="password" name="password" placeholder="password">
-                            </label>
-                        </div>
-                    </div>
+                    <!-- Personal Information -->
+                    <div class="expanded row accordion-item" data-accordion-item>
+                        <!-- title -->
+                        <a href="#" class=" accordion-title small-12  ttl">
+                            Personal Details
+                        </a>
 
+                        <!-- contents -->
+                        <div class="accordion-content" data-tab-content>
+                            <!-- first name -->
+                            <div class="row">
+                                <div class="medium-9 columns end">
+                                    <label>First Name:<input type="text" name="first_name" placeholder="your first name"  >
+                                    </label>
+                                </div>
+                            </div>
 
-                    <!-- row 3-->
-                    <div class="row">
-                        <div class="medium-5 columns">
-                            <label>Email Address:<input type="text" name="email" placeholder="your@email.com">
-                            </label>
-                        </div>
+                            <!-- last name -->
+                            <div class="row">
+                                <div class="medium-9 columns end">
+                                    <label>Last Name:<input type="text" name="last_name" placeholder="your last name">
+                                    </label>
+                                </div>
+                            </div>
 
-                        <div class="medium-2 columns"></div>
+                            <!-- username -->
+                            <div class="row">
+                                <div class="medium-9 columns end">
+                                    <label>User Name:<input type="text" name="username" placeholder="your username" >
+                                    </label>
+                                </div>
+                            </div>
 
-                        <div class=" medium-5 columns">
-                            <label>Phone Number<input type="text" name="phone" placeholder="07** *** ***">
-                            </label>
-                        </div>
-                    </div>
+                            <!-- email address -->
+                            <div class="row">
+                                <div class="medium-9 columns end">
+                                    <label>Email Address:<input type="text" name="email" placeholder="your@email.com">
+                                    </label>
+                                </div>
+                            </div>
 
-                    <!-- row 4 -->
-                    <div class="row">
-                        <div class="medium-12 columns">
-                            <label>Company Name:<input type="text" name="company" placeholder="your company name">
-                            </label>
-                        </div>
-                    </div>
+                            <!-- pic -->
+                            <div class="row upload-image">
+                                <div class=" medium-5 columns end">
+                                     <label for="profile-pic" class="button">
+                                        Upload Picture
+                                    </label>
+                                        <input type="file" id="profile-pic" name="profile-pic" class="show-for-sr">
+                                </div>
+                            </div>
+                        </div> <!-- accordion content end -->
+                    </div><!-- accordion item end -->
 
-                    <!-- row 5 -->
-                    <div class="row">
-                        <div class="medium-5 columns">
-                            <label>Gender:
-                                <select name="gender" class="st-txt">
-                                    <option value="male" class="st-txt3">male</option>
-                                    <option value="female" class="st-txt3">female</option>
-                                </select>
-                            </label>
-                        </div>
+                    <!-- Other Information -->
+                    <div class="expanded row accordion-item" data-accordion-item>
+                        <!-- title -->
+                        <a href="#" class=" accordion-title small-12  ttl">
+                            Other Information
+                        </a>
 
-                        <div class="medium-2 columns"></div>
+                        <!-- contents -->
+                        <div class="accordion-content" data-tab-content>
+                            <!-- phone number -->
+                            <div class="row">
+                                <div class=" medium-5 columns end">
+                                    <label>Phone Number<input type="text" name="phone" placeholder="07** *** ***">
+                                    </label>
+                                </div>
+                            </div>
 
-                        <div class=" medium-5 columns">
-                            <label>Date of Birth<input type="text" name="dob" placeholder="yyyy-mm-dd">
-                            </label>
-                        </div>
-                    </div>
+                            <!-- row 4 -->
+                            <div class="row">
+                                <div class="medium-9 columns end">
+                                    <label>Company Name:<input type="text" name="company" placeholder="your company name">
+                                    </label>
+                                </div>
+                            </div>
 
-                    <!-- row 5 -->
-                    <div class="row">
-                        <div class="medium-5 columns">
-                            <label>Alternative Phone Number:<input type="text" name="alt_phone" placeholder="other number (07** *** ***)">
-                            </label>
-                        </div>
+                            <!-- row 5 -->
+                            <div class="row">
+                                <div class="medium-5 columns end">
+                                    <label>Gender:
+                                        <select name="gender" class="st-txt">
+                                            <option value="male" class="st-txt3">male</option>
+                                            <option value="female" class="st-txt3">female</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
 
-                        <div class="medium-2 columns"></div>
+                            <div class="row">
+                                <div class=" medium-8 columns end">
+                                    <label>Date of Birth<input type="text" name="dob" placeholder="yyyy-mm-dd">
+                                    </label>
+                                </div>
+                            </div>
 
-                        <div class="medium-5 columns">
-                            <label>Alternative Email Address:<input type="text" name="alt_email" placeholder=" other email (your@email.com)">
-                            </label>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- upload image -->
-                    <div class="row upload-image">
-                        <div class=" medium-5 columns end">
-<!--                        <input type="file" name="profile-pic" placeholder="upload profile pic">-->
-                            <label for="profile-pic" class="button">
-                                Upload Picture
-                            </label>
-                                <input type="file" id="profile-pic" name="profile-pic" class="show-for-sr">
-                        </div>
+                            <!-- row 5 -->
+                            <div class="row">
+                                <div class="medium-5 columns end">
+                                    <label>Alternative Phone Number:<input type="text" name="alt_phone" placeholder="other number (07** *** ***)">
+                                    </label>
+                                </div>
+                            </div>
 
-                    </div>
-
-
-                    <!---------------------------------------------->
-
-                    <div class="row">
-                        <div class="medium-12 ttl">
-                            <p>Representative's Details</p>
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <!-- row 6 -->
-                    <div class="row">
-                        <div class="medium-5 columns">
-                            <label>Name:<input type="text" name="rep_name" placeholder="Representative's Name">
-                            </label>
-                        </div>
-
-                        <div class="medium-2 columns"></div>
-
-                         <div class="medium-5 columns">
-                            <label>Phone Number<input type="text" name="rep_number" placeholder="Representative's Phone number">
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- row 7 -->
-                    <div class="row">
-                        <div class="medium-5 columns end">
-                            <label>Email Address:<input type="text" name="rep_email" placeholder="Representative's Email">
-                            </label>
-                        </div>
-                    </div>
-
-
-                    <!-- row 8-->
-                    <div class="row social ">
-                        <div class="medium-6 columns end social-flex center-v">
-                            <a href="#">
-                                <div><img src="https://www.dropbox.com/s/wte6e6sqr94my8n/logo-fb-grey.png?raw=1" alt="fb-grey"></div>
-                            </a>
-                            <a href="#">
-                                <div><img src="https://www.dropbox.com/s/89qou0ecyxxv78v/logo-google-capital-grey.png?raw=1" alt="google-grey"></div>
-                            </a>
-                            <a href="#">
-                                <div><img src="https://www.dropbox.com/s/1fjgqbv2ocspcas/logo-twitter-grey.png?raw=1" alt="twitter-grey"></div>
-                            </a>
-                            <a href="#">
-                                <div><img src="https://www.dropbox.com/s/k2gqa2ajxun8ahq/plus-grey.png?raw=1" alt="plus-grey"></div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="medium-12 columns save-changes">
-                            <label><input class="" type="submit" value="save profile changes" name="submit">
+                            <div class="row">
+                            <div class="medium-5 columns end">
+                                <label>Alternative Email Address:<input type="text" name="alt_email" placeholder=" other email (your@email.com)">
                                 </label>
+                            </div>
                         </div>
+                        </div> <!-- accordion content end -->
+                    </div><!-- accordion item end -->
+                </div> <!-- accordion end -->
+
+                <div class="row">
+                    <div class="medium-12 columns save-changes">
+                        <label>
+                            <input class="bttn4" type="submit" value="SAVE CHANGES" name="submit">
+                        </label>
                     </div>
-                </form>
-                </div> <!-- end edit-c-details-form -->
+                </div>
 
-            </div> <!-- end top-right -->
-
-        </div><!-- end top row -->
-
+            </form>
+            </div> <!-- end edit-c-details-form -->
+        </div>
     </div> <!-- end profile -->
 
-</div> <!-- end page 2 -->
+    </div> <!-- end bottom -->
 
     <!-- ========================================================= -->
-    </div> <!-- right body end -->
+</div> <!-- end page 1-->
 
+    <!-- ========================================================= -->
+    <!--- FOOTER ----->
+    <!-- ========================================================= -->
+    <footer id="footer" class="expanded row columns dark-footer">
+        <div class="expanded row columns footer-content center-c">
 
+            <!-- social -->
+            <div class="social-flex">
+                <a href="#">
+                    <div><img src="https://www.dropbox.com/s/hii04t7613y0p2a/logo-fb-white.png?raw=1" alt="fb-white"></div>
+                </a>
+                <a href="#">
+                    <div><img src="https://www.dropbox.com/s/sjim2vv138514dl/logo-google-capital-white.png?raw=1" alt="google-white"></div>
+                </a>
+                <a href="#">
+                    <div><img src="https://www.dropbox.com/s/hhn543j7ybj33c6/logo-twitter-white.png?raw=1" alt="twitter-white"></div>
+                </a>
+            </div>
 
-</div> <!-- Body end -->
+            <div class="adlink-info">
+                <p> Send Us Mail @ <span> wecare@adlink.co.ke</span></p>
 
+                <p class="find-us">Or Find Us @ </p>
 
-<!-- ========================================================= -->
-<!--- FOOTER ----->
+                <div class="row branch">
+                    <!-- yaya -->
 
-<div id="footer" class="expanded row columns dark-footer">
-    <div class="expanded row columns footer-content center-c">
+                    <div class="medium-2 columns"></div>
+                    <div class="small-12 medium-4 columns yaya">
+                        <p><span class="und"> Yaya Centre Branch </span></p>
+                        <p><span> 1st Floor Yaya Centre,</span></p>
+                        <p><span> Argwins Kodhek RD, Nairobi</span></p>
+                        <p><span>+254 710 640694 </span></p>
+                    </div>
 
-        <!-- social -->
-        <div class="social-flex">
-            <a href="#">
-                <div><img src="https://www.dropbox.com/s/hii04t7613y0p2a/logo-fb-white.png?raw=1" alt="fb-white"></div>
-            </a>
-            <a href="#">
-                <div><img src="https://www.dropbox.com/s/sjim2vv138514dl/logo-google-capital-white.png?raw=1" alt="google-white"></div>
-            </a>
-            <a href="#">
-                <div><img src="https://www.dropbox.com/s/hhn543j7ybj33c6/logo-twitter-white.png?raw=1" alt="twitter-white"></div>
-            </a>
+                    <!-- sarit -->
+                    <div class="small-12 medium-4 columns">
+                        <p><span class="und"> Sarit Centre Branch </span></p>
+                        <p><span> Ground Floor, Sarit Centre</span></p>
+                        <p><span>+254 20 528 4496 </span></p>
+                        <p><span>+254 728 464 418</span></p>
+                    </div>
+                    <div class="medium-2 columns"></div>
+                </div>
+            </div>
+
+            <div class="logo-grey">
+                <img src="https://www.dropbox.com/s/s329ft86hdk1p2o/adlink-logo-grey.png?raw=1" alt="adlink logo grey">
+            </div>
+
+            <div class="copy">
+                <p>2014 COPYRIGHT ADLINK LTD</p>
+            </div>
         </div>
 
-        <div class="adlink-info">
-            <p> Send Us Mail @ <span> wecare@adlink.co.ke</span></p>
-            <p>Or Find Us @ <span> 1st Floor Yaya Centre, Argwins Kodhek RD, Nairobi</span></p>
-        </div>
-
-        <div class="logo-grey">
-            <img src="https://www.dropbox.com/s/s329ft86hdk1p2o/adlink-logo-grey.png?raw=1" alt="adlink logo grey">
-        </div>
-
-        <div class="copy">
-            <p>2014 COPYRIGHT ADLINK LTD</p>
-        </div>
-    </div>
-
-
-</div> <!-- end footer -->
-<!-- ========================================================= -->
+    </footer> <!-- end footer -->
+    <!-- ========================================================= -->
 </div> <!--- end wrapper -->
 
 <!---------------------------------------------------------------------->
     <!--- Scripts ----->
-<!--    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>    -->
-    <script src="https://www.dropbox.com/s/4dbmwxhwcanrzjd/jquery.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/he2ds4nd4a41let/what-input.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/dskhrx47eu0afhl/foundation.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
 
-    <!--Vegas-->
-    <script src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
-
-<!--    <script src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>-->
-
-    <!--Datatables-->
-<!--
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.js"></script>
-
+    <!----------------------------------------->
+    <!-- main.js (for header etc) -->
     <script type="text/javascript" src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
--->
+<!--    <script type="text/javascript" src="main.js"></script>-->
 
+    <!----------------------------------------->
+    <!--Vegas-->
+    <script type="text/javascript"  src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
+    <script type="text/javascript"  src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
+
+    <!---- Sticky footer --->
+<!--    <script type="text/javascript"  src="sticky_footer.js"></script>-->
 
 <!---------------------------------------------------------------------->
 </body>
