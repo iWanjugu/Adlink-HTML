@@ -2,32 +2,41 @@
 <html lang=en>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>SIGN-UP::Adlink</title>
+    <title>SERVICES::Adlink</title>
 
-    <!--Stylesheets-->
-    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/2eftb3ous07fmuc/normalize.css?raw=1">
-
-    <link rel="stylesheet" href="https://www.dropbox.com/s/sulpatr3tx30u6l/vegas.min.css?raw=1">
-
-    <link rel="stylesheet" href="https://www.dropbox.com/s/wicimf8428hjp82/foundation-icons.css?raw=1" />
-
-    <link rel="stylesheet" href="https://www.dropbox.com/s/axu55ju5dyfjdn0/foundation.min.css?raw=1">
-
-    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
-
-    <!-- app -->
-    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
-<!--    https://www.dropbox.com/s/vwlpqqgh0g03690/services-app.css?dl=0-->
-
-    <link rel="stylesheet" href="services-app.css">
-
-    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
-
-    <!----------------------------------------->
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-     <!-- Scripts -->
+    <!----------------------------------------->
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/2eftb3ous07fmuc/normalize.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/sulpatr3tx30u6l/vegas.min.css?raw=1">
+
+    <!-- Icons -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/axu55ju5dyfjdn0/foundation.min.css?raw=1">
+
+    <!-- modals -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
+<!--    <link rel="stylesheet" href="modals.css">-->
+
+    <!-- custom -styles -->
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
+
+    <!-- header and footer -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
+    <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
+    <!--    <link rel="stylesheet" href="header.css">-->
+    <!--    <link rel="stylesheet" href="footer.css">-->
+
+    <!-- app -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/vwlpqqgh0g03690/services-app.css?raw=1">
+<!--    <link rel="stylesheet" href="services-app.css">-->
+
+   <!----------------------------------------->
+    <!-- Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
 
@@ -36,84 +45,21 @@
 <div id="wrapper" class="expanded row columns">
 
 <!-- ========================================================= -->
-<!--- PAGE 1 --->
+<!--MODALS-->
 <!-- ========================================================= -->
+<!-- Log In Modal -->
+<div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+    <div class="mod-cont form-container ">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
 
-<div id="page1" class="page1">
+                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
 
-    <!------------------------------------------------->
-    <!---------->
-    <!-- Header -->
-    <div class="expanded row columns top-bar Header_bg" >
+        </div>
 
-        <div id="home-menu" class="">
-
-            <div class="top-bar-left navbar">
-
-                <ul id="navlist" class="menu">
-
-                    <!-- logo -->
-
-                    <li class="menu-tabs dv Logo_bg">
-                        <a href="#">
-                            <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
-                        </a>
-                    </li>
-
-                    <!-- Services -->
-                    <li class="menu-tabs dv serv">
-                        <a href="#" >
-                            <div>Services</div>
-                        </a>
-
-                        <ul id="sub_navlist" class="">
-                            <li class="nb">
-                                <a href="index.html">
-                                    <div>Noticeboard</div>
-                                </a>
-                            </li>
-                            <li class="dm">
-                                <a href="#">
-                                    <div>Digital Marketing</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-tabs dv">
-                        <a href="#" class="">
-                            <div>About us</div>
-                        </a>
-                    </li>
-                    <li class="menu-tabs dv">
-                        <a href="#">
-                            <div>Blog</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="top-bar-right">
-                <ul class="menu">
-                    <!-- Visible when NOT logged in -->
-                    <li class="menu-tabs sign-in">
-                        <a href="#" class="" data-open="signInModal">Have and account? Sign In</a>
-                    </li>
-
-                    <!-- Visible when logged in -->
-                    <li class="menu-tabs log-out">
-                        <a href="#" class="button-gr-bg">logout</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div> <!-- responsive menu -->
-
-    </div> <!-- top bar end -->
-
-    <!-- Sign up Modal -->
-    <div id="signInModal" class="tiny reveal f-400 round-plain-no-margin"  data-reveal>
-      <form>
-          <!--title-->
+        <form>
+        <!--title-->
             <div class="form-ttl f-center">
                 <p class="thin100 st-txt4 bold">Have an account?</p>
             </div>
@@ -127,6 +73,8 @@
                         </label>
                     </div>
                 </div>
+
+                <!-- password -->
                 <div class="row">
                     <div class="small-12 columns">
                         <label><input type="text" placeholder="password">
@@ -134,38 +82,353 @@
                     </div>
                 </div>
 
+                <!-- Log In button -->
                 <div class="row">
-                        <div class="small-12 columns">
-                            <label><input type="submit" class="button" value="Log In">
-                            </label>
-                        </div>
+                    <div class="small-12 columns">
+                        <label><input type="submit" class="button" value="Log In">
+                        </label>
                     </div>
-          </div>
-
-          </form>
-
-          <!--other social-->
-            <div class="form-ttl f-center form-cntnt">
-                <p class="thin100 st-txt4 bold">New to Adlink?</p>
+                </div>
             </div>
 
-            <div class="f-hor form-cntnt">
-                <a href="sign-up.html" class="button sign">
-                    Sign up
-                </a>
-             </div>
+        </form>
+
+        <!--forgotten password-->
+        <div class="other">
+            <a href="#">
+                <p class="or2 su">Forgotten Password?</p>
+            </a>
+        </div>
+
+        <!--other social-->
+        <div class="other">
+            <div>
+                <p class="or">or sign up with</p>
+            </div>
+
+            <div class="social-sign f-hor">
+                <div >
+                    <a href="#" class="button ggl">
+                        <img src="https://www.dropbox.com/s/edwsn83awpvg9rl/logo-google-small-white-nc.png?raw=1" alt="google-logo">
+                        Google
+                    </a>
+                    <a href="#" class="button twt">
+                        <img src="https://www.dropbox.com/s/4cuihpj7rmfbb6t/logo-twitter-white-nc.png?raw=1" alt="logo-twitter-white-nc">
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Sign up prompt-->
+        <div class="form-ttl f-center form-cntnt new">
+            <p class="thin100 st-txt4 bold">New to Adlink?</p>
+        </div>
+
+        <div class="f-hor form-cntnt">
+            <a href="sign-up.html" class="button sign">
+                Sign up
+            </a>
+        </div>
         <button class="close-button" data-close aria-label="Close modal" type="button">
             <span aria-hidden="true">&times;</span>
         </button>
-
+    </div> <!-- end of form-container -->
     </div>
+</div> <!-- log in modal end -->
+
+<!------------------------------------------------->
+<!-- Rates Modal -->
+<div id="ratesModal" class="reveal round-plain-no-margin"  data-reveal>
+
+    <div class="f-center cont">
+    <div class="mod-cont rates-container">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+        </div>
+
+        <div class="ttl f-center">
+            <p class="thin300">NOTICEBOARD RATES</p>
+        </div>
+
+        <div class="row form-ttl">
+            <div class="small-4 columns">
+                <p class="st-txt4"> WEEKLY RATES</p>
+            </div>
+            <div class="small-8 columns">
+                <p class="st-txt4"></p>
+            </div>
+        </div>
+
+
+        <!-- Rates table -->
+        <table class="responsive">
+          <thead>
+            <tr>
+                <th class="loc">Location</th>
+                <th class="ad-sz a5">A5</th>
+                <th class="ad-sz a4">A4</th>
+                <th class="ad-sz a3">A3</th>
+                <th class="ad-sz a2">A2</th>
+                <th class="ad-sz a1">A1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="loc">Yaya Center</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">700</td>
+                <td class="ad-sz">1,400</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,600</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Village Market</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">700</td>
+                <td class="ad-sz">1,400</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Junction</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">600</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Sarit Center</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">4,400</td>
+            </tr>
+
+              <tr>
+                <td class="loc">TRM</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">4,400</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Karen Crossroads</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">3,800</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Galleria</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,400</td>
+                <td class="ad-sz">3,500</td>
+            </tr>
+
+              <tr>
+                <td class="loc">T-Mall</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">1,000</td>
+                <td class="ad-sz">2,000</td>
+                <td class="ad-sz">3,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Prestige</td>
+                <td class="ad-sz">400</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">1,000</td>
+                <td class="ad-sz">2,000</td>
+                <td class="ad-sz">3,000</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+        <!-- Print and delivery costs -->
+        <div class="row form-ttl printNdel">
+            <div class="small-8 columns">
+                <p class="st-txt4"> PRINT AND DELIVERY COSTS</p>
+            </div>
+            <div class="small-4 columns">
+                <p class="st-txt4"></p>
+            </div>
+        </div>
+
+        <table class="responsive ">
+          <thead>
+            <tr>
+                <th class="loc">Paper Type</th>
+                <th class="ad-sz a5">A5</th>
+                <th class="ad-sz a4">A4</th>
+                <th class="ad-sz a3">A3</th>
+                <th class="ad-sz a2">A2</th>
+                <th class="ad-sz a1">A1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="loc">Normal</td>
+                <td class="ad-sz">50</td>
+                <td class="ad-sz">100</td>
+                <td class="ad-sz">250</td>
+                <td class="ad-sz">800</td>
+                <td class="ad-sz">N/A</td>
+            </tr>
+
+            <tr>
+                <td class="loc">Gloss Paper</td>
+                <td class="ad-sz">100</td>
+                <td class="ad-sz">150</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <div class="row columns form-ttl">
+            <p class="st-txt4"> Delivery fee to each mall:
+                <span>Ksh 300</span>
+            </p>
+        </div>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+    </div>
+</div> <!-- Rates Modal End -->
+
+<!------------------------------------------------->
+<!-- Digital Marketting Modal -->
+<div id="digitalModal" class="pop reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+    <div class="mod-cont form-container ">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+        </div>
+
+        <!--title-->
+        <div class="form-ttl f-center">
+            <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon - Stay Tuned</p>
+        </div>
+
+        <!-- close button -->
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+        </button>
+
+    </div> <!-- end of form-container -->
+    </div>
+</div> <!-- digital modal end -->
+
+<!-- ========================================================= -->
+<!--- PAGE 1 --->
+<!-- ========================================================= -->
+
+<div id="page1" class="page1">
+
+    <!------------------------------------------------->
+    <!---------->
+    <!-- Header -->
+    <div class="expanded row columns top-bar resp Header_bg" >
+
+        <div id="home-menu" class="">
+
+            <div class="top-bar-left navbar">
+
+                <ul id="navlist" class="menu">
+
+                    <!-- logo -->
+
+                    <li class="menu-tabs dv Logo_bg wht">
+                        <a href="#">
+                            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+                        </a>
+                    </li>
+
+                    <!-- Services -->
+                    <li class="menu-tabs dv serv">
+                        <a id="services" href="services.html" >
+                            <div>Services</div>
+                            <div class="arrow">
+                                <img class="" src="https://www.dropbox.com/s/bbyxdo4792ke7jm/down-button.png?raw=1" >
+                            </div>
+                        </a>
+
+                        <ul id="sub_navlist" class="">
+                            <li id="noticeboard" class="nb">
+                                <a href="index.html">
+                                    <div>Noticeboard</div>
+                                </a>
+                            </li>
+                            <li id="digital_marketing" class="dm">
+                                <a data-open="digitalModal">
+                                    <div>Digital Marketing</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-tabs dv About">
+                        <a href="about-us.html" class="">
+                            <div>About us</div>
+                        </a>
+                    </li>
+                    <li class="menu-tabs dv Blog">
+                        <a href="#">
+                            <div>Blog</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right out">
+                <ul class="menu">
+                    <!-- Visible when NOT logged in -->
+                    <li class="menu-tabs sign-in">
+                        <a class="" data-open="logInModal">Have and account? Sign In</a>
+                    </li>
+
+                    <!-- Visible when logged in -->
+<!--
+                    <li class="menu-tabs log-out">
+                        <a href="#" class="button-gr-otln">logout</a>
+                    </li>
+-->
+
+                </ul>
+            </div>
+        </div> <!-- responsive menu -->
+
+    </div> <!-- top bar end -->
+
+
+
 
     <!------------------------------------------------->
     <!-- Banner -->
-    <div id="banner" class="expanded row columns bg-photo r1">
+    <div id="b-photo" class="expanded row columns bg-photo r1">
 
       <!--banner content -->
-        <div id="banner-content" class="expanded row columns white-overlay center-v">
+        <div id="b-content" class="expanded row columns white-overlay center-v">
             <p >We leverage on the power of both digital marketing and offline advertising to help your business grow in sales.</p>
         </div>
 
@@ -174,9 +437,59 @@
     <!------------------------------------------------->
     <!--Services -->
 
-    <div id="services" class="expanded row columns r2">
+    <div id="Services" class="expanded row columns r2 ">
+        <div class="expanded row f-center">
+            <div class="head f-center">
+                <div class="dash ">-</div>
+                <p class="bld">SERVICES</p>
+                <div class="dash">-</div>
+            </div>
+        </div>
 
+        <div class="expanded row f-center">
+        <div class="container ">
 
+            <!-- Noticeboards -->
+            <div class="small-12 medium-6 large-4 columns f-center">
+                <div class="n_container f-vert">
+                    <div class="pc f-center">
+                        <img src="https://www.dropbox.com/s/xfeh0e6uwm1u5q3/Yaya-Centre-Notice-Board-.jpg?raw=1" alt="img1">
+                    </div>
+                    <p class="st-txt">Noticeboard Advertisements</p>
+                    <p class="st-txt4 msg">Broadcast your message in over 9 major locations in Kenya.</p>
+                    <a href="index.html" class="button s-bttn n-bttn ">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Digital Marketing-->
+            <div class="small-12 medium-6 large-4 columns">
+                <div class="n_container f-vert">
+                    <div class="pc f-center">
+                        <img src="https://www.dropbox.com/s/92q9xl912mazmhi/digital.png?raw=1" alt="img1">
+                    </div>
+                    <p class="st-txt">Digital Marketing</p>
+                    <p class="st-txt4 msg">We help you come up with digital marketing strategy that would see you attract and convert the right customers.</p>
+                    <a href="#" class="button s-bttn d-bttn ">Coming Soon</a>
+                </div>
+
+            </div>
+            <div class="medium-3 columns inv"></div>
+            <!-- Maduka -->
+            <div class="small-12 medium-6 large-4 columns end">
+                <div class="n_container f-vert">
+                    <div class="pc f-center">
+                        <img src="https://www.dropbox.com/s/5vjoiszx0zstfvp/maduka.png?raw=1" alt="img1">
+                    </div>
+                    <p class="st-txt">Maduka Market Place</p>
+                    <p class="st-txt4 msg">Maduka offers a set of solutions for businesses in their retial sector that help them sell their products effectively both online and offline.</p>
+                    <a href="#" class="button s-bttn m-bttn ">Coming Soon</a>
+                </div>
+            </div>
+
+            <div class="medium-3 columns inv"></div>
+
+        </div>
+        </div>
     </div>
 
 </div> <!-- end page 1-->
@@ -223,16 +536,18 @@
 
 <!---------------------------------------------------------------------->
     <!--- Scripts ----->
-<!--    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>    -->
-    <script src="https://www.dropbox.com/s/4dbmwxhwcanrzjd/jquery.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/he2ds4nd4a41let/what-input.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/dskhrx47eu0afhl/foundation.min.js?raw=1"></script>
-    <script src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/s/8fkhbig79g8iu6q/app.js?raw=1"></script>
 
+    <!----------------------------------------->
+    <!-- main.js (for header etc) -->
+    <script type="text/javascript" src="https://www.dropbox.com/s/kt119dimuiv9c8j/main.js?raw=1"></script>
+<!--    <script type="text/javascript" src="main.js"></script>-->
+
+    <!----------------------------------------->
     <!--Vegas-->
-    <script src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
-
-    <script src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
+    <script type="text/javascript"  src="https://www.dropbox.com/s/8nipopwg0t8gkox/vegas.min.js?raw=1"></script>
+    <script type="text/javascript"  src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
 
 
 <!---------------------------------------------------------------------->
