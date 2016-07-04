@@ -16,9 +16,9 @@
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
 
     <!-- app -->
-<!--    <link rel="stylesheet" href="https://www.dropbox.com/s/qdbpepgwuht8psl/home-app.css?raw=1">-->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/qdbpepgwuht8psl/home-app.css?raw=1">
 
-    <link rel="stylesheet" href="home-app.css">
+<!--    <link rel="stylesheet" href="home-app.css">-->
 
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
@@ -59,8 +59,9 @@
 
                     <!--the tabs-->
                     <li class="mTabs">
-                        <ul class="tabs dropdown menu" data-tabs id="adlink-tabs" data-dropdown-menu>
-                            <li class="tabs-title is-active menu-tabs">
+                        <div id="adlink-tabs">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li class="menu-tabs">
                                 <a href="#services-tab" aria-selected="true" >
                                     <p class="center-c">Services</p>
                                 </a>
@@ -78,17 +79,18 @@
                                   </li>
                                 </ul>
                             </li>
-                            <li class="tabs-title menu-tabs">
+                            <li class="menu-tabs">
                                 <a href="#about-us-tab">
                                   <p class="center-c">About us</p>
                                 </a>
                             </li>
-                            <li class="tabs-title menu-tabs">
+                            <li class="menu-tabs">
                             <a href="#">
                                 <p class="center-c">Blog</p>
                             </a>
                             </li>
                         </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -112,6 +114,7 @@
 
     <!------------------------------------------------->
     <!-- Banner -->
+    <!------------------------------------------------->
     <!--the tabs contents-->
     <div id="banner" class="tabs-content expanded row columns" data-tabs-content="adlink-tabs">
 
