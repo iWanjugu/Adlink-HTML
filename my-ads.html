@@ -450,9 +450,9 @@
     <!----------------------------------------------------->
     <!-- PAGE 2 --->
     <!----------------------------------------------------->
-    <div id="page2" class="expanded row columns">
+    <div id="page2" class="expanded row columns f-center">
 
-        <div class="large-12 columns ad-container center-h">
+        <div class="large-12 columns ad-container">
 
             <!---------------------------------->
             <!-- top row -->
@@ -499,7 +499,7 @@
 
                     <!--- All Ads -->
                     <div id="all-table_wrapper" class="dataTables_wrapper no-footer">
-                        <table id="all-table" class="tdisplay dataTable no-footer responsive" cellspacing="0" role="grid" aria-describedby="my-ads-info">
+                        <table id="all-table" class="tdisplay dataTable no-footer responsive" cellspacing="0" role="grid" aria-describedby="all-ads-info">
 
                             <!--Table Header-->
                             <thead>
@@ -547,6 +547,16 @@
                                     <td class="status_ f-center">
                                         <p class="ad_stat">LIVE</p>
                                         <a href="#" class="button ad_renew bttn5">RENEW</a>
+
+<!--
+                                        <a href='{{ad.toggle_link}}'><p class="ad_stat">{{ ad.status }}</p></a>
+                                        {% if ad.status == 'Expired' %}
+                                        <a href="{{ad.edit_link}}" class="button ad_renew bttn5">RENEW</a>
+                                        {% else %}
+                                        <a href="#" class="button ad_renew bttn5">OK</a>
+                                        {% endif %}
+
+-->
                                     </td>
                                 </tr>
 

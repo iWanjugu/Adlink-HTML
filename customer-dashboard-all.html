@@ -2,7 +2,7 @@
 <html lang=en>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>BASE::Adlink</title>
+    <title>DASHBOARD::Adlink</title>
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -34,19 +34,27 @@
     <!-- footer -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/w3lp7ojgn0wl9v4/footer.css?raw=1">
 
+    <!-- app -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/4zp32emb43gnlaq/customer-dashboard-app.css?raw=1">
+
+<!--    <link rel="stylesheet" href="customer-dashboard-app.css">-->
+<!--    <link rel="stylesheet" href="header.css">-->
+
     <!----------------------------------------->
     <!-- Scripts -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 </head>
+
 <!---------------------------------------------------------------------->
 <body>
-
-<div id="wrapper" class="Noticeboard expanded row columns">
+<div id="wrapper" class="expanded row columns">
 
 <!-- ========================================================= -->
 <!--MODALS-->
 <!-- ========================================================= -->
+
 <!-- Log In Modal -->
 <div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
     <div class="cont f-center">
@@ -57,12 +65,12 @@
         </div>
 
         <form>
-        <!--title-->
+            <!--title-->
             <div class="form-ttl f-center">
                 <p class="thin100 st-txt4 bold">Have an account?</p>
             </div>
 
-          <!--content-->
+            <!--content-->
             <div class="row columns form-cntnt">
                 <!-- names -->
                 <div class="row">
@@ -375,7 +383,7 @@
             <div class="prof-descr">
                 <div class="Flex center-c">
                     <div class="Flex-Div">
-                        <a class="edit-icon" href="profile-new.html">
+                        <a href="profile-new.html" class="edit-icon">
                             <img src="https://www.dropbox.com/s/e42mu8dau6uykgp/edit.png?raw=1" alt="edit-button">
                         </a>
                     </div>
@@ -509,16 +517,14 @@
             </div>
         </div>
 
-
     <!-- ==================================== -->
 
     </div> <!-- left nav end -->
 
     <!-- ==================================== -->
     <!-- RIGHT BODY -->
-    <div id="right-body" class="medium-10 large-10 columns ">
+    <div id="right-body" class="small-12 medium-10 large-10 columns ">
 
-    <!--- HEADER ----->
     <div class="expanded row columns top-bar Header_bg" >
 
         <div id="home-menu" class="">
@@ -586,17 +592,364 @@
     <!-- PAGE 1 --->
     <!----------------------------------------------------->
     <div id="page1" class="expanded row columns">
-
-        <!--- BANNER -->
-        <div id="bphoto" class="expanded row columns bphoto"></div>
-
+        <!--- banner -->
+        <div id="c-bphoto" class="expanded row columns banner"></div>
 
 
-     </div><!-- page 1 end -->
+        <!--- how-to-place-ad -->
+        <div class="expanded row columns how-to-place-ad">
+            <!-- title -->
 
-    <!-- ========================================================= -->
+            <div class="expanded row columns how-to-title">
+                <p class="thin100">How to Place your AD on the noticeboard</p>
+            </div>
 
+            <!-- steps -->
+            <div class="row ht-place-ad">
+
+                <!------------------------------------->
+                <!-- step 1 --->
+                <div class="medium-4 columns">
+                    <div class="center-c ht-steps step1">
+                        <!-- box title -->
+                        <div class="ht-title">
+                            <div class="top">
+                                <div class="step-num-c center-c">
+                                    <img  src="https://www.dropbox.com/s/qmiltdnzogxds2z/number-circle-w.png?raw=1" >
+                                    <p class="center-c step-num thin100">1</p>
+                                </div>
+                            </div>
+
+                            <div class="bottom">
+                            <p class="thin100">Fill in your AD details</p>
+                            </div>
+                        </div>
+
+                        <!--box content -->
+                        <div class="ht-content">
+                            <div class="center-c ht-content-div">
+                                <div class="ad-details-img">
+                                    <img class="center-h" src="https://www.dropbox.com/s/bcpzefmt8j635wu/ad-details-green.png?raw=1" alt="fill-details">
+
+
+                                </div>
+                                <div>
+                                    <a href="create-ad.html" class="button">
+                                        <p class="center-c">Post Ad</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------------->
+                <!-- step 2 --->
+                <div class="medium-4 columns">
+                    <div class="center-c ht-steps step2">
+                        <!-- box title -->
+                        <div class="ht-title">
+                            <div class="top">
+                                <div class="step-num-c center-c">
+                                    <img  src="https://www.dropbox.com/s/qmiltdnzogxds2z/number-circle-w.png?raw=1" >
+                                    <p class="center-c step-num thin100">2</p>
+                                </div>
+                            </div>
+
+                            <div class="bottom">
+                            <p class="thin100">Select Location</p>
+                            </div>
+                        </div>
+
+                        <!--box content -->
+                        <div class="ht-content">
+                            <div class="center-c ht-content-div">
+                                <div class="row ad-details-img">
+                                    <div class="row">
+                                        <a href="#">
+                                            <div class="medium-6 columns location">
+                                                <p>YAYA CENTER</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="medium-6 columns location">
+                                                <p>VILLAGE MARKET</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <a href="#">
+                                            <div class="medium-6 columns location">
+                                                <p>SARIT CENTER</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="medium-6 columns location">
+                                                <p>THE JUNCTION</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+<!--
+                                <div class="plus-sign Flex">
+                                    <a href="#">
+                                        <div class="Flex-Div">
+                                            <img src="https://www.dropbox.com/s/qxxiawp64epj74g/plus-sign.png?raw=1" alt="plus">
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="Flex-Div">
+                                            <p>View All</p>
+                                        </div>
+                                    </a>
+                                </div>
+-->
+                                <div>
+                                    <a href="#" class="button" data-open="ratesModal">
+                                        <p class="center-c">View Rates</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!------------------------------------->
+                <!-- step 3 --->
+                <div class="medium-4 columns">
+                    <div class="center-c ht-steps step3">
+                        <!-- box title -->
+                        <div class="ht-title">
+                            <div class="top">
+                                <div class="step-num-c center-c">
+                                    <img  src="https://www.dropbox.com/s/qmiltdnzogxds2z/number-circle-w.png?raw=1" >
+                                    <p class="center-c step-num thin100">3</p>
+                                </div>
+                            </div>
+
+                            <div class="bottom">
+                            <p class="thin100">Track your AD status</p>
+                            </div>
+                        </div>
+
+                        <!--box content -->
+                        <div class="ht-content">
+                            <div class="center-c ht-content-div">
+                                <div class="ad-details-img">
+                                    <img class="center-h" src="https://www.dropbox.com/s/xzxgt1oowb2g9mr/track-icon.png?raw=1" alt="track status">
+                                </div>
+                                <div>
+                                    <a href="my-ads.html" class="button">
+                                        <p class="center-c">Track Ad</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!------------------------------------->
+
+            </div> <!-- ht place ad end -->
+
+
+        </div><!-- how to place ad end --->
+
+
+
+    </div> <!-- page 1 end -->
+
+    <!----------------------------------------------------->
+    <!-- PAGE 2 --->
+    <!----------------------------------------------------->
+    <div id="page2" class="expanded row columns">
+
+        <!----------------------------------------------------->
+        <!--- get free ad -->
+        <div class="expanded row columns get-free-ad">
+
+            <div class="get-free-ad-div center-c">
+                <div class="free-ad">
+                    <img src="https://www.dropbox.com/s/1vg70nkmeeoylgg/free-ad.png?raw=1" alt="free ad">
+                </div>
+
+                <div class="text1">
+                    <p class="thin300 ">Get Free AD Posting for one week at:</p>
+                </div>
+
+                <div class="buttons">
+                    <div class="Flex">
+                        <div class="Flex-Div">
+                            <button>yaya centre</button>
+                        </div>
+                        <div class="Flex-Div And"> & </div>
+                        <div class="Flex-Div">
+                            <button>sarit centre</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text2">
+                    <p>By Achieving the following</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div>
+                        <img class="progress-bar1 center-h" src="https://www.dropbox.com/s/f63vn46olx0f5tq/progress-bar1.png?raw=1" alt="progress bar1">
+                        <img class="progress-bar2 " src="https://www.dropbox.com/s/zdxxtrv7h5i5krs/progress-bar2.png?raw=1" alt="progress bar2">
+                    </div>
+                </div>
+
+                <div class="text3">
+                    <p class="thin100">20% Completion</p>
+                </div>
+
+            </div>  get-free-ad-div end
+
+        </div>  get-free-ad end
+
+        <!----------------------------------------------------->
+        <!-- The process --->
+        <div class="expanded row columns complete-steps">
+            <div class="expanded row cs-heading">
+                <div class="medium-2 columns"></div>
+                <div class="medium-6 columns">
+                    <p class="center-v">Accomplishment</p>
+                </div>
+                <div class="medium-4 columns">
+                    <p class="center-v">Status</p>
+                </div>
+            </div>
+
+            <!-- complete Profile --->
+            <div class="expanded row cs cs-complete-profile">
+
+                <div class="medium-2 columns"></div>
+                <div class="medium-6 columns">
+                    <div class="row">
+                        <div class="meduim-8 columns Flex center-v">
+                            <div class="Flex-Div pic">
+                                <img src="https://www.dropbox.com/s/nbeqkd7z0tbrnk8/profile-icon.png?raw=1" alt="pic">
+                            </div>
+                            <div class="Flex-Div txt">
+                                <p>Complete your Profile</p>
+                            </div>
+                        </div>
+                        <div class="meduim-4 columns btn">
+                            <a href="profile.html" class="button center-c">
+                                <p class="bld">Edit Profile</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medium-4 columns">
+                    <div class="row columns Flex">
+                            <div class="Flex-Div pic">
+                                <img src="https://www.dropbox.com/s/8i9orxboyba1t3t/complete-icon.png?raw=1" alt="pic">
+                            </div>
+                            <div class="Flex-Div txt2">
+                                <p>Complete</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+            <!-- Take tour of platform --->
+            <div class="expanded row cs cs-tour">
+
+                <div class="medium-2 columns"></div>
+                <div class="medium-6 columns">
+                    <div class="row">
+                        <div class="meduim-8 columns Flex center-v">
+                            <div class="Flex-Div pic">
+                                <img src="https://www.dropbox.com/s/zeyb10onkdneeth/tour-icon.png?raw=1" alt="tour-pic">
+                            </div>
+                            <div class="Flex-Div txt">
+                                <p>Take A Tour of the Platform</p>
+                            </div>
+                        </div>
+                        <div class="meduim-4 columns btn">
+                            <a href="#" class="button center-c">
+                                <p class="bld">Take My Tour</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medium-4 columns">
+                    <div class="row columns Flex">
+                            <div class="Flex-Div pic">
+                                <img src="https://www.dropbox.com/s/8i9orxboyba1t3t/complete-icon.png?raw=1" alt="pic">
+                            </div>
+                            <div class="Flex-Div txt2">
+                                <p>Complete</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Post first ad --->
+            <div class="expanded row cs cs-post-ad">
+
+                <div class="medium-2 columns"></div>
+                <div class="medium-6 columns">
+                    <div class="row">
+                        <div class="meduim-8 columns Flex center-v">
+                            <div class="Flex-Div pic">
+                                <img src="https://www.dropbox.com/s/uyb2jtprkomcg2e/post-ad-icon.png?raw=1" alt="pic">
+                            </div>
+                            <div class="Flex-Div txt">
+                                <p>Post your First AD</p>
+                            </div>
+                        </div>
+                        <div class="meduim-4 columns btn">
+                            <a href="create-ad.html" class="button center-c">
+                                <p class="bld">Post AD</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medium-4 columns">
+                    <div class="row columns Flex">
+                            <div class="Flex-Div pic">
+                                <img src="https://www.dropbox.com/s/h7vnks2v5vn7u2q/incomplete-icon.png?raw=1" alt="pic">
+                            </div>
+                            <div class="Flex-Div txt2 pending">
+                                <p>Pending</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+            <!--- claim ad --->
+            <div class="expanded row columns cs cs-claim-btn">
+                <div class="btn">
+                    <button class="center-c">Claim my Free AD</button>
+                </div>
+            </div>
+
+
+
+        </div> <!-- Complate Steps -->
+
+
+        <!----------------------------------------------------->
+    </div> <!-- page 2 end -->
+
+<!-- ========================================================= -->
     </div> <!-- right body end -->
+
 
 
 </div> <!-- Body end -->
@@ -623,33 +976,11 @@
 
         <div class="adlink-info">
             <p> Send Us Mail @ <span> wecare@adlink.co.ke</span></p>
-
-            <p class="find-us">Or Find Us @ </p>
-
-            <div class="row branch">
-                <!-- yaya -->
-
-                <div class="medium-2 columns"></div>
-                <div class="small-12 medium-4 columns yaya">
-                    <p><span class="und"> Yaya Centre Branch </span></p>
-                    <p><span> 1st Floor Yaya Centre,</span></p>
-                    <p><span> Argwins Kodhek RD, Nairobi</span></p>
-                    <p><span>+254 710 640694 </span></p>
-                </div>
-
-                <!-- sarit -->
-                <div class="small-12 medium-4 columns">
-                    <p><span class="und"> Sarit Centre Branch </span></p>
-                    <p><span> Ground Floor, Sarit Centre</span></p>
-                    <p><span>+254 20 528 4496 </span></p>
-                    <p><span>+254 728 464 418</span></p>
-                </div>
-                <div class="medium-2 columns"></div>
-            </div>
+            <p>Or Find Us @ <span> 1st Floor Yaya Centre, Argwins Kodhek RD, Nairobi</span></p>
         </div>
 
         <div class="logo-grey">
-            <img src="https://www.dropbox.com/s/pq3pktmpkj6g5yf/logo-grey.png?raw=1" alt="logo-grey">
+            <img src="https://www.dropbox.com/s/s329ft86hdk1p2o/adlink-logo-grey.png?raw=1" alt="adlink logo grey">
         </div>
 
         <div class="copy">

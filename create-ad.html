@@ -17,7 +17,6 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.dropbox.com/s/axu55ju5dyfjdn0/foundation.min.css?raw=1">
 
-
     <!----------------------------------------->
     <!-- custom -styles -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
@@ -28,7 +27,7 @@
 
     <!-- left-nav and header -->
     <link rel="stylesheet" href="https://www.dropbox.com/s/v87zk16t5rr1z8q/header.css?raw=1">
-    <link rel="stylesheet" href="https://www.dropbox.com/s/zl0uxxuidjclicm/dashboard-left-nav-header.css?raw=1">
+    <link rel="stylesheet" href="https://www.dropbox.com/s/2xyg7elaij6jilw/dashboard-left-nav-trans.css?raw=1">
 <!--    <link rel="stylesheet" href="header.css">-->
 <!--    <link rel="stylesheet" href="dashboard-left-nav-header.css">-->
 
@@ -303,9 +302,9 @@
         <div id="create-ad-bphoto" class="expanded row columns bphoto"></div>
 
         <!-- PLACE AD -->
-        <div id="place-ad" class="expanded row columns">
+        <div id="place-ad" class="expanded row columns f-center">
 
-        <div class="row columns pl-ad-container center-h">
+        <div class="row columns pl-ad-container">
 
             <!-- place ad title -->
             <div class="row columns pl-ad-title pl-row">
@@ -317,7 +316,7 @@
 
                 <!----------------------------------------------------->
                 <!--- LEFT PAGE --->
-                <div class="medium-6 columns pl-left">
+                <div class="small-12 medium-12 large-6 columns pl-left f-vert">
 
                     <!-- tabs -->
                     <!-- titles --->
@@ -345,7 +344,7 @@
                           <!--====================================================-->
                           <div class="tabs-panel is-active" id="pl-your-ad">
 
-                          <form id="place-ad" class="place-ad custom accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                          <form id="place-ad-form" class="place-ad custom accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
 
                             <!-------------------------------->
                             <!-- Step 0 - Contact Details  -->
@@ -428,22 +427,30 @@
                                 </a> <!--end row 1 -->
 
                                 <!--- row 2 -->
-                                <div class="row st-row2 accordion-content" data-tab-content>
-                                    <fieldset class="medium-4 column ad-pic-upload">
-                                        <label for="ad-pic-upload" class="button">
-                                            <img class="center-c" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="upload-abvert-pic"></label>
-                                            <input type="file" id="ad-pic-upload" class="show-for-sr">
-                                    </fieldset>
+                                <div class="row st-row2 accordion-content " data-tab-content>
+                                    <div class="medium-4 column pict f-center">
+                                        <fieldset class=" ad-pic-upload upload-image f-vert">
+                                            <p class="st-txt2">Select AD</p>
+                                            <br>
+                                            <label for="ad-pic-upload" class="button">
+                                                <img class="center-c" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="upload-abvert-pic">
+                                            </label>
+                                            <input type="file" id="ad-pic-upload" class="show-for-sr" name="image">
+                                        </fieldset>
+
+
+                                    </div>
+
 
                                     <div class="medium-8 column ad-details">
-                                            <label>
-                                                <input id="adTitle" class="st-txt2" type="text" placeholder="Title">
-                                            </label>
+                                        <label>
+                                            <input id="adTitle" class="st-txt2" type="text" placeholder="Title">
+                                        </label>
 
-                                            <label>
-                                                <textarea id="adDescr"  class="st-txt2" placeholder="Description"></textarea>
-                                            </label>
-                                        </div>
+                                        <label>
+                                            <textarea id="adDescr"  class="st-txt2" placeholder="Description"></textarea>
+                                        </label>
+                                    </div>
                                 </div> <!--- row 2 end -->
 
                               </div><!-- step 1 end -->
@@ -556,7 +563,7 @@
 
                                 <!--- row 2 -->
                                 <div id="printOptions" class="st-row2 accordion-content" data-tab-content>
-                                    <fieldset id="paperType" class="medium-6 column paper-type">
+                                    <fieldset id="paperType" class="medium-8 column paper-type">
                                         <legend class="st-txt">Paper type</legend>
                                         <input id="normal-print" type="radio" name="papertype">
                                             <label class="st-txt2" for="normal-print">
@@ -572,7 +579,7 @@
                                             <label class="st-txt2" for="laminate-print"><span>Laminate</span></label>
                                     </fieldset>
 
-                                    <div class="medium-2 column ad-cost">
+                                    <div class="row columns ad-cost">
                                         <div class="Flex-v top">
                                             <div class="Flex-Div">
                                                 <p id="paper-type-selected" class="st-txt paper-type-selected">
@@ -907,35 +914,22 @@
 
                 <!--====================================================-->
                 <!--- RIGHT PAGE --->
-                <div class="medium-6 columns pl-right">
+                <div class="small-12 medium-12 large-6 columns pl-right f-vert">
 
                     <!-- title -->
-                    <div class=" row columns r-title">
-                        <p class=""> Summary</p>
+                    <div class="row columns pl-ad-title r-title">
+                        <p class="center-h"> - SUMMARY - </p>
                     </div>
 
                     <!-- row 1 -->
-                    <div class=" row columns r-row2">
-                        <div class="medium-4 columns">
-                            <div class="Flex-v">
+                    <div class=" row columns r-row1">
 
-                                <!-- selected ad size -->
-                                <div class="Flex-Div">
-                                    <p class="st-txt5 sz"> POSTER</p>
-                                </div>
-
-                                <div id="summPic" class="Flex-Div pi">  <!-- summPic -->
-                                    <img class="center-c pc" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="preview">
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="medium-8 columns">
+                        <!-- ad details -->
+                        <div class="medium-4 columns md f-center">
 
                             <div class="Flex-v brd center-h">
                                 <div class="Flex-Div">
-                                    <p class="st-txt5 sz"> DETAILS </p>
+                                    <p class="st-txt5 sz"> AD DETAILS </p>
                                 </div>
                                 <div class="Flex-Div">
                                     <p id="summAdTitle" class="st-txt6 sz"> -- Ad Title -- </p>
@@ -944,18 +938,14 @@
                                     <p id="summAdDescr" class="st-txt4"> -- Ad Description -- </p>
                                 </div>
                             </div>
-
                         </div>
-                    </div> <!--- row 1 end -->
 
-                    <!-- row 2 -->
-                    <div class=" row columns r-row1">
-                        <div class="medium-4 columns">
+                        <!-- select size -->
+                         <div class="medium-4 columns fst f-center">
                             <div class="Flex-v">
-
                                 <!-- selected ad size -->
                                 <div class="Flex-Div">
-                                    <p class="st-txt5 sz"> SIZE</p>
+                                    <p class="st-txt5 sz"> AD SIZE</p>
                                 </div>
 
                                 <div class="Flex-Div">
@@ -969,9 +959,51 @@
                                 -->
 
                             </div>
-
                         </div>
-                        <div class="medium-8 columns">
+
+                        <div class="medium-4 columns nd f-center">
+                            <div>
+                                <div class="Flex-v brd center-h">
+                                    <div class="Flex-Div">
+                                        <p class="st-txt5 sz"> PRINT OPTIONS </p>
+                                    </div>
+                                    <div class="Flex-Div">
+                                        <p id="summPaperType" class="st-txt2"> --- </p>
+                                    </div>
+                                    <div class="Flex-Div">
+                                        <p id="summLam"class="st-txt2"> --- </p>
+                                    </div>
+                                </div>
+
+                                <div class="Flex-v btm center-h">
+                                    <div class="Flex-Div">
+                                        <p class="st-txt5"> TOTAL </p>
+                                    </div>
+                                    <div class="Flex-Div">
+                                        <p id="summPrintTotal" class="st-txt4 pt2"> 0 </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--- row 1 end -->
+
+                    <!-- row 2 -->
+<!--
+                    <div class=" row columns r-row2">
+                        <div class="medium-4 columns">
+                            <div class="Flex-v">
+                                 selected ad size
+                                <div class="Flex-Div">
+                                    <p class="st-txt5 sz"> POSTER</p>
+                                </div>
+
+                                <div id="summPic" class="Flex-Div pi">   summPic
+                                    <img class="center-c pc" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="preview">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="medium-4 columns">
 
                             <div class="Flex-v brd center-h">
                                 <div class="Flex-Div">
@@ -995,7 +1027,8 @@
 
                             </div>
                         </div>
-                    </div><!--- row 2 end -->
+                    </div> - row 2 end
+-->
 
 
                     <!-- row 3 edit button -->
