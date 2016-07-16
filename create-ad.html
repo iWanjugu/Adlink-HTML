@@ -17,7 +17,9 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.dropbox.com/s/axu55ju5dyfjdn0/foundation.min.css?raw=1">
 
-    <!----------------------------------------->
+    <!-- modals -->
+    <link rel="stylesheet" href="https://www.dropbox.com/s/f1wkqzn6b16xxy5/modals.css?raw=1">
+
     <!-- custom -styles -->
     <link rel="stylesheet" type="text/css" href="https://www.dropbox.com/s/174s13ibfmshxgs/custom_styles.css?raw=1">
 
@@ -51,12 +53,341 @@
 
 <div id="wrapper" class="expanded row columns">
 
+<!-- ==================================== -->
+<!-- MODALS -->
+<!-- ==================================== -->
+<div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+    <div class="mod-cont form-container ">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+        </div>
+
+        <form>
+        <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">Have an account?</p>
+            </div>
+
+          <!--content-->
+            <div class="row columns form-cntnt">
+                <!-- names -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="username or email" name="username">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- password -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="password" placeholder="password" name="password">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Log In button -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="submit" class="button" value="Log In">
+                        </label>
+                    </div>
+                </div>
+          </div>
+
+        </form>
+
+        <!--forgotten password-->
+        <div class="other">
+            <a href="#">
+                <p class="or2 su">Forgotten Password?</p>
+            </a>
+        </div>
+
+        <!--other social-->
+<!--
+        <div class="other">
+            <div>
+                <p class="or">or log in with</p>
+            </div>
+
+            <div class="social-sign f-hor">
+                <div >
+                    <a href="#" class="button ggl">
+                        <img src="https://www.dropbox.com/s/edwsn83awpvg9rl/logo-google-small-white-nc.png?raw=1" alt="google-logo">
+                        Google
+                    </a>
+                    <a href="#" class="button twt">
+                        <img src="https://www.dropbox.com/s/4cuihpj7rmfbb6t/logo-twitter-white-nc.png?raw=1" alt="logo-twitter-white-nc">
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+-->
+
+        <!--Sign up prompt-->
+        <div class="form-ttl f-center form-cntnt new">
+            <p class="thin100 st-txt4 bold">New to Adlink?</p>
+        </div>
+
+        <div class="f-hor form-cntnt">
+            <a href="sign-up.html" class="button sign">
+                Sign up
+            </a>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> <!-- end of form-container -->
+    </div>
+</div> <!-- log in modal end -->
+
+<!------------------------------------------------->
+<!-- Rates Modal -->
+<div id="ratesModal" class="reveal round-plain-no-margin"  data-reveal>
+
+    <div class="f-center cont">
+    <div class="mod-cont rates-container">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+        </div>
+
+        <div class="ttl f-center">
+            <p class="thin300">NOTICEBOARD RATES</p>
+        </div>
+
+        <div class="row form-ttl">
+            <div class="small-4 columns">
+                <p class="st-txt4"> WEEKLY RATES</p>
+            </div>
+            <div class="small-8 columns">
+                <p class="st-txt4"></p>
+            </div>
+        </div>
+
+
+        <!-- Rates table -->
+        <table class="responsive">
+          <thead>
+            <tr>
+                <th class="loc">Location</th>
+                <th class="ad-sz a5">A5</th>
+                <th class="ad-sz a4">A4</th>
+                <th class="ad-sz a3">A3</th>
+                <th class="ad-sz a2">A2</th>
+                <th class="ad-sz a1">A1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="loc">Yaya Center</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">700</td>
+                <td class="ad-sz">1,400</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,600</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Village Market</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">700</td>
+                <td class="ad-sz">1,400</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Junction</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">600</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Sarit Center</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">4,400</td>
+            </tr>
+
+              <tr>
+                <td class="loc">TRM</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">4,400</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Karen Crossroads</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">3,800</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Galleria</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,400</td>
+                <td class="ad-sz">3,500</td>
+            </tr>
+
+              <tr>
+                <td class="loc">T-Mall</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">1,000</td>
+                <td class="ad-sz">2,000</td>
+                <td class="ad-sz">3,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Prestige</td>
+                <td class="ad-sz">400</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">1,000</td>
+                <td class="ad-sz">2,000</td>
+                <td class="ad-sz">3,000</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+        <!-- Print and delivery costs -->
+        <div class="row form-ttl printNdel">
+            <div class="small-8 columns">
+                <p class="st-txt4"> PRINT AND DELIVERY COSTS</p>
+            </div>
+            <div class="small-4 columns">
+                <p class="st-txt4"></p>
+            </div>
+        </div>
+
+        <table class="responsive ">
+          <thead>
+            <tr>
+                <th class="loc">Paper Type</th>
+                <th class="ad-sz a5">A5</th>
+                <th class="ad-sz a4">A4</th>
+                <th class="ad-sz a3">A3</th>
+                <th class="ad-sz a2">A2</th>
+                <th class="ad-sz a1">A1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="loc">Normal</td>
+                <td class="ad-sz">50</td>
+                <td class="ad-sz">100</td>
+                <td class="ad-sz">250</td>
+                <td class="ad-sz">800</td>
+                <td class="ad-sz">N/A</td>
+            </tr>
+
+            <tr>
+                <td class="loc">Gloss Paper</td>
+                <td class="ad-sz">100</td>
+                <td class="ad-sz">150</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <div class="row columns form-ttl">
+            <p class="st-txt4"> Delivery fee to each mall:
+                <span>Ksh 300</span>
+            </p>
+        </div>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+    </div>
+</div> <!-- Rates Modal End -->
+
+<!------------------------------------------------->
+<!-- Digital Marketting Modal -->
+<div id="digitalModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
+
+            <!--title-->
+            <div class="form-ttl f-center ">
+                <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon
+                    <br>
+                    <br>
+                    Stay Tuned!
+                </p>
+            </div>
+
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div> <!-- end of form-container -->
+    </div>
+</div> <!-- digital modal end -->
+
+<!------------------------------------------------->
+<!-- Blog Modal -->
+<div id="blogModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
+
+            <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">ADLink Blog Coming Soon
+                    <br>
+                    <br>
+                    Keep your ears peeled!
+                </p>
+            </div>
+
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div> <!-- end of form-container -->
+    </div>
+</div> <!-- blog modal end -->
+
+
  <!-- ========================================================= -->
 <!--- body ----->
 <div id="Body" class="expanded row columns">
 
-     <!-- ==================================== -->
+    <!-- ==================================== -->
     <!-- LEFT NAV -->
+    <!-- ==================================== -->
     <div id="left-nav" class="medium-2 large-2 columns left-nav dark-nav">
 
         <!----------------------------------------->
@@ -86,7 +417,7 @@
             <div class="prof-descr">
                 <div class="Flex center-c">
                     <div class="Flex-Div">
-                        <a class="edit-icon" href="profile-new.html">
+                        <a class="edit-icon" href="profile.html">
                             <img src="https://www.dropbox.com/s/e42mu8dau6uykgp/edit.png?raw=1" alt="edit-button">
                         </a>
                     </div>
@@ -142,7 +473,7 @@
             <div class="bdy">
 
                 <!-- Live ads -->
-                <a href="#">
+                <a href="my-ads.html">
                     <div class="Flex">
                         <div class="Flex-Div num">
                             <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
@@ -157,7 +488,7 @@
                 </a>
 
                 <!-- Expired ads -->
-                <a href="#">
+                <a href="my-ads.html">
                     <div class="Flex">
                         <div class="Flex-Div num">
                             <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
@@ -173,7 +504,7 @@
 
 
                 <!-- Incomplate ads -->
-                <a href="#">
+                <a href="my-ads.html">
                     <div class="Flex">
                         <div class="Flex-Div num">
                             <img class="center-c" src="https://www.dropbox.com/s/w058hl752afht0f/number-circle-green.png?raw=1" alt="live ads">
@@ -195,7 +526,7 @@
         <!----------------------------------------->
         <!-- Transactions -->
         <div class="row columns nav-list transactions center-h">
-            <a href="#">
+            <a href="transactions.html">
                 <div class="ttl">
                     <div class="Flex center-c">
                         <div class="Flex-Div">
@@ -230,7 +561,7 @@
     <div id="right-body" class="medium-10 large-10 columns ">
 
     <!--- HEADER ----->
-    <div class="expanded row columns top-bar Header_bg" >
+    <div class="expanded row columns top-bar Header_bg resp" >
 
         <div id="home-menu" class="">
 
@@ -267,7 +598,7 @@
                         </a>
                     </li>
                     <li class="menu-tabs dv">
-                        <a href="#">
+                        <a data-open="blogModal">
                             <div>Blog</div>
                         </a>
                     </li>
@@ -421,35 +752,36 @@
                                             </div>
                                         </div>
                                         <div class="Flex-Div descr step-instr">
-                                            <p class="step-instr-txt">upload poster image</p>
+                                            <p class="step-instr-txt">upload poster image and details</p>
                                         </div>
                                     </div>
                                 </a> <!--end row 1 -->
 
                                 <!--- row 2 -->
                                 <div class="row st-row2 accordion-content " data-tab-content>
-                                    <div class="medium-4 column pict f-center">
-                                        <fieldset class=" ad-pic-upload upload-image f-vert">
-                                            <p class="st-txt2">Select AD</p>
-                                            <br>
+
+                                    <div class="row column pict">
+                                        <fieldset class="ad-pic-upload upload-image f-vert">
+
                                             <label for="ad-pic-upload" class="button">
-                                                <img class="center-c" src="https://www.dropbox.com/s/6jjz6bkqs5cds7j/camera-icon.png?raw=1" alt="upload-abvert-pic">
+                                                Choose File
                                             </label>
-                                            <input type="file" id="ad-pic-upload" class="show-for-sr" name="image">
+                                            <input type="file" id="ad-pic-upload" class="show-for-sr" name="image"><br>
+                                            <canvas id="imageCanvas"></canvas>
                                         </fieldset>
-
-
                                     </div>
 
 
-                                    <div class="medium-8 column ad-details">
-                                        <label>
-                                            <input id="adTitle" class="st-txt2" type="text" placeholder="Title">
-                                        </label>
+                                    <div class="row column ad-details">
+                                        <div>
+                                            <label>
+                                                <input id="adTitle" class="st-txt2" type="text" placeholder="Title">
+                                            </label>
 
-                                        <label>
-                                            <textarea id="adDescr"  class="st-txt2" placeholder="Description"></textarea>
-                                        </label>
+                                            <label>
+                                                <textarea id="adDescr"  class="st-txt2" placeholder="Description"></textarea>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div> <!--- row 2 end -->
 
@@ -526,15 +858,15 @@
 
                                     <fieldset id="adSizeSelect" class="step-instr ads-size">
                                         <legend class="step-instr-txt"></legend>
-                                        <input id="a5" type="radio" name="size">
+                                        <input id="a5" type="radio" name="size" value="a5">
                                             <label class="st-txt" for="a5"><span>A5</span></label>
-                                        <input id="a4" type="radio" name="size">
+                                        <input id="a4" type="radio" name="size" value="a4">
                                             <label class="st-txt" for="a4"><span>A4</span></label>
-                                        <input id="a3" type="radio" name="size">
+                                        <input id="a3" type="radio" name="size" value="a3">
                                             <label class="st-txt" for="a3"><span>A3</span></label>
-                                        <input id="a2" type="radio" name="size">
+                                        <input id="a2" type="radio" name="size" value="a2">
                                             <label class="st-txt" for="a2"><span>A2</span></label>
-                                        <input id="a1" type="radio" name="size">
+                                        <input id="a1" type="radio" name="size" value="a1">
                                             <label class="st-txt" for="a1"><span>A1</span></label>
                                     </fieldset>
                                 </div>
@@ -563,7 +895,8 @@
 
                                 <!--- row 2 -->
                                 <div id="printOptions" class="st-row2 accordion-content" data-tab-content>
-                                    <fieldset id="paperType" class="medium-8 column paper-type">
+
+                                    <fieldset id="paperType" class="medium-6 column paper-type">
                                         <legend class="st-txt">Paper type</legend>
                                         <input id="normal-print" type="radio" name="papertype">
                                             <label class="st-txt2" for="normal-print">
@@ -572,48 +905,40 @@
                                             <label class="st-txt2" for="gloss-print"><span>Gloss</span></label>
                                     </fieldset>
 
-                                    <fieldset id="lamType" class="medium-4 column extra">
+                                    <fieldset id="lamType" class="medium-3 column extra">
                                         <legend class="st-txt ex-txt">
                                             Extra Options</legend>
                                         <input id="laminate-print" type="checkbox" name="lamination" value="500">
                                             <label class="st-txt2" for="laminate-print"><span>Laminate</span></label>
                                     </fieldset>
 
-                                    <div class="row columns ad-cost">
-                                        <div class="Flex-v top">
-                                            <div class="Flex-Div">
-                                                <p id="paper-type-selected" class="st-txt paper-type-selected">
-                                                    --select paper type--
-                                                </p>
-                                            </div>
-                                            <div class="Flex-Div">
-                                                <p id="paper-type-cost" class="st-txt3 paper-type-cost">
-                                                    0
-                                                </p>
-                                            </div>
-                                            <div class="Flex-Div">
-                                                <p id="lamination-selected" class="st-txt extra-selected">
-                                                    Lamination
-                                                </p>
-                                            </div>
-                                            <div class="Flex-Div">
-                                                <p id="lamination-cost" class="st-txt3 extra-cost" value="">
-                                                    0
-                                                </p>
-                                            </div>
+                                    <div class="medium-3 columns ad-cost f-center">
+                                        <div class="top f-vert">
+                                            <p id="paper-type-selected" class="st-txt paper-type-selected">
+                                                --select paper type--
+                                            </p>
 
-                                        </div>
+                                            <p id="paper-type-cost" class="st-txt3 paper-type-cost">
+                                                0
+                                            </p>
 
-                                        <div class="Flex-v bottom">
-                                            <div class="Flex-Div"><p class="st-txt">TOTAL</p></div>
-                                            <div class="Flex-Div">
-                                                <p id="total_paper_cost" class="st-txt4 total-selected-cost">
-                                                    0
-                                                </p>
-                                            </div>
+                                            <p id="lamination-selected" class="st-txt extra-selected">
+                                                Lamination
+                                            </p>
 
-                                        </div>
+                                            <p id="lamination-cost" class="st-txt3 extra-cost" value="">
+                                                0
+                                            </p>
+
+                                            <p class="st-txt">TOTAL</p>
+                                            <p id="total_paper_cost" class="st-txt4 total-selected-cost">
+                                                0
+                                            </p>
+                                       </div>
                                     </div>
+
+
+
 
                                 </div> <!--- row 2 end -->
                               </div><!-- step 4 end --->
@@ -667,10 +992,6 @@
 
                                                     <th class="ad_cols duration_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Duration: activate to sort column ascending">
                                                         DURATION
-<!--                                                        <a id="btnCalc" class="st-txt2 button">
-                                                        CALCULATE DURATION</a>
--->
-
                                                     </th>
 
                                                     <th class="ad_cols qty_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Qty: activate to sort column ascending">
@@ -680,9 +1001,6 @@
                                                     <th class="ad_cols tot_col" tabindex="0" aria-controls="create-ad-table" rowspan="1" colspan="1" aria-label="Total: activate to sort column ascending">
                                                         TOTAL
                                                     </th>
-
-
-
                                                 </tr>
                                             </thead>
 
@@ -808,7 +1126,7 @@
 
 
                                 <!-- location and date table -->
-                                <table id="payment_table" class="tdisplay dataTable no-footer" cellspacing="0" width="100%" role="grid" aria-describedby="payment-info">
+                                <table id="payment_table" class="tdisplay dataTable no-footer responsive" cellspacing="0" width="100%" role="grid" aria-describedby="payment-info">
 
                                     <!--Table Header-->
                                     <thead>
@@ -1139,6 +1457,10 @@
     <script type="text/javascript"  src="https://www.dropbox.com/s/andmpkk60wovuup/vegas-scripts.js?raw=1"></script>
 
 
+    <!----------------------------------------->
+    <!-- Datatables -->
+<!--    <script type="text/javascript" src="https://www.dropbox.com/s/zov8blajqzh4yb7/datatables.js?raw=1"></script>-->
+
 
     <!----------------------------------------->
     <!-- Datepicker -->
@@ -1148,12 +1470,15 @@
     <script type="text/javascript" src="https://www.dropbox.com/s/nw698lct65gc9x0/datepicker-duration2.js?raw=1"></script>
 <!--    <script type="text/javascript" src="datepicker-setter.js"></script>-->
 <!--    <script type="text/javascript" src="datepicker-duration2.js"></script>-->
+
     <!----------------------------------------->
     <!-- SelectScripts-->
     <script type="text/javascript" src="https://www.dropbox.com/s/9bj7jz8ifkf4qvn/select2.js?raw=1"></script>
 <!--    <script type="text/javascript" src="select2.js"></script>-->
 
-
+     <!----------------------------------------->
+    <!-- Pic Preview-->
+    <script type="text/javascript" src="https://www.dropbox.com/s/qrkpvnq1xrhi3ig/pic-preview.js?raw=1"></script>
 
 
 <!---------------------------------------------------------------------->

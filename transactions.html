@@ -54,6 +54,7 @@
 <!-- ========================================================= -->
 <!--MODALS-->
 <!-- ========================================================= -->
+
 <!-- Log In Modal -->
 <div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
     <div class="cont f-center">
@@ -63,7 +64,9 @@
             <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
         </div>
 
-        <form>
+        <form id="login_form">
+
+        <input type='hidden' name='form-name' value='form 1' />
         <!--title-->
             <div class="form-ttl f-center">
                 <p class="thin100 st-txt4 bold">Have an account?</p>
@@ -74,7 +77,7 @@
                 <!-- names -->
                 <div class="row">
                     <div class="small-12 columns">
-                        <label><input type="text" placeholder="username or email">
+                        <label><input type="text" placeholder="username or email" name="username">
                         </label>
                     </div>
                 </div>
@@ -82,7 +85,7 @@
                 <!-- password -->
                 <div class="row">
                     <div class="small-12 columns">
-                        <label><input type="text" placeholder="password">
+                        <label><input type="password" placeholder="password" name="password">
                         </label>
                     </div>
                 </div>
@@ -94,19 +97,49 @@
                         </label>
                     </div>
                 </div>
-
-                <!--forgotten password-->
-                <div class="other">
-                    <a href="#">
-                        <p class="or2 su">Forgotten Password?</p>
-                    </a>
-                </div>
           </div>
 
         </form>
 
+        <!--forgotten password-->
+        <div class="other">
+            <a href="#">
+                <p class="or2 su">Forgotten Password?</p>
+            </a>
+        </div>
+
         <!--other social-->
-        <div class="form-ttl f-center form-cntnt">
+<!--
+        <div class="other">
+            <div>
+                <p class="or">or log in with</p>
+            </div>
+
+            <div class="social-sign f-hor">
+                <div >
+                    <a href="#" class="button ggl">
+                        <img src="https://www.dropbox.com/s/edwsn83awpvg9rl/logo-google-small-white-nc.png?raw=1" alt="google-logo">
+                        Google
+                    </a>
+                    <a href="#" class="button twt">
+                        <img src="https://www.dropbox.com/s/4cuihpj7rmfbb6t/logo-twitter-white-nc.png?raw=1" alt="logo-twitter-white-nc">
+                        Twitter
+                    </a>
+                </div>
+            </div>
+                    <li class="menu-tabs dv">
+                        <a href="about-us.html" class="">
+                            <div>About us</div>
+                        </a>
+                    </li>
+                    <li class="menu-tabs dv">
+                        <a href="#">
+                            <div>Blog</div>
+        </div>
+-->
+
+        <!--Sign up prompt-->
+        <div class="form-ttl f-center form-cntnt new">
             <p class="thin100 st-txt4 bold">New to Adlink?</p>
         </div>
 
@@ -130,7 +163,7 @@
     <div class="mod-cont rates-container">
         <!--logo-->
         <div class="logo f-center form-cntnt ">
-            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
         </div>
 
         <div class="ttl f-center">
@@ -152,11 +185,11 @@
           <thead>
             <tr>
                 <th class="loc">Location</th>
-                <th class="ad-sz">A5</th>
-                <th class="ad-sz">A4</th>
-                <th class="ad-sz">A3</th>
-                <th class="ad-sz">A2</th>
-                <th class="ad-sz">A1</th>
+                <th class="ad-sz a5">A5</th>
+                <th class="ad-sz a4">A4</th>
+                <th class="ad-sz a3">A3</th>
+                <th class="ad-sz a2">A2</th>
+                <th class="ad-sz a1">A1</th>
             </tr>
           </thead>
           <tbody>
@@ -183,8 +216,8 @@
                 <td class="ad-sz">350</td>
                 <td class="ad-sz">600</td>
                 <td class="ad-sz">1,100</td>
-                <td class="ad-sz">2,200</td>
-                <td class="ad-sz">3,800</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,000</td>
             </tr>
 
               <tr>
@@ -193,8 +226,54 @@
                 <td class="ad-sz">550</td>
                 <td class="ad-sz">1,100</td>
                 <td class="ad-sz">2,200</td>
+                <td class="ad-sz">4,400</td>
+            </tr>
+
+              <tr>
+                <td class="loc">TRM</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">4,400</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Karen Crossroads</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
                 <td class="ad-sz">3,800</td>
             </tr>
+
+              <tr>
+                <td class="loc">Galleria</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,400</td>
+                <td class="ad-sz">3,500</td>
+            </tr>
+
+              <tr>
+                <td class="loc">T-Mall</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">1,000</td>
+                <td class="ad-sz">2,000</td>
+                <td class="ad-sz">3,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Prestige</td>
+                <td class="ad-sz">400</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">1,000</td>
+                <td class="ad-sz">2,000</td>
+                <td class="ad-sz">3,000</td>
+            </tr>
+
 
           </tbody>
         </table>
@@ -213,11 +292,11 @@
           <thead>
             <tr>
                 <th class="loc">Paper Type</th>
-                <th class="ad-sz">A5</th>
-                <th class="ad-sz">A4</th>
-                <th class="ad-sz">A3</th>
-                <th class="ad-sz">A2</th>
-                <th class="ad-sz">A1</th>
+                <th class="ad-sz a5">A5</th>
+                <th class="ad-sz a4">A4</th>
+                <th class="ad-sz a3">A3</th>
+                <th class="ad-sz a2">A2</th>
+                <th class="ad-sz a1">A1</th>
             </tr>
           </thead>
           <tbody>
@@ -257,34 +336,66 @@
 
 <!------------------------------------------------->
 <!-- Digital Marketting Modal -->
-<div id="digitalModal" class="pop reveal round-plain-no-margin"  data-reveal>
+<div id="digitalModal" class="reveal round-plain-no-margin"  data-reveal>
     <div class="cont f-center">
-    <div class="mod-cont form-container ">
-        <!--logo-->
-        <div class="logo f-center form-cntnt ">
-            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
-        </div>
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
 
-        <!--title-->
-        <div class="form-ttl f-center">
-            <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon - Stay Tuned</p>
-        </div>
+            <!--title-->
+            <div class="form-ttl f-center ">
+                <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon
+                    <br>
+                    <br>
+                    Stay Tuned!
+                </p>
+            </div>
 
-        <!-- close button -->
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-        </button>
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
 
-    </div> <!-- end of form-container -->
+        </div> <!-- end of form-container -->
     </div>
 </div> <!-- digital modal end -->
+
+<!------------------------------------------------->
+<!-- Blog Modal -->
+<div id="blogModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
+
+            <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">ADLink Blog Coming Soon
+                    <br>
+                    <br>
+                    Keep your ears peeled!
+                </p>
+            </div>
+
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div> <!-- end of form-container -->
+    </div>
+</div> <!-- blog modal end -->
+
 
 
  <!-- ========================================================= -->
 <!--- body ----->
 <div id="Body" class="expanded row columns">
 
-     <!-- ==================================== -->
     <!-- LEFT NAV -->
     <div id="left-nav" class="medium-2 large-2 columns left-nav dark-nav">
 
@@ -315,7 +426,7 @@
             <div class="prof-descr">
                 <div class="Flex center-c">
                     <div class="Flex-Div">
-                        <a class="edit-icon" href="profile-new.html">
+                        <a class="edit-icon" href="profile.html">
                             <img src="https://www.dropbox.com/s/e42mu8dau6uykgp/edit.png?raw=1" alt="edit-button">
                         </a>
                     </div>
@@ -366,8 +477,7 @@
             </a>
 
 
-            <!---------------------------------------------
------------------------------------>
+            <!---------------------------------------->
             <div class="bdy">
 
                 <!-- Live ads -->
@@ -458,69 +568,69 @@
     <!-- RIGHT BODY -->
     <div id="right-body" class="medium-10 large-10 columns ">
 
-    <!--- HEADER ----->
-    <div class="expanded row columns top-bar Header_bg" >
+        <!--- HEADER ----->
+        <div class="expanded row columns top-bar Header_bg resp" >
 
-        <div id="home-menu" class="">
+            <div id="home-menu" class="">
 
-            <div class="top-bar-left navbar">
+                <div class="top-bar-left navbar">
 
-                <ul id="navlist" class="menu">
+                    <ul id="navlist" class="menu">
 
-                    <!-- Services -->
-                    <li class="menu-tabs dv serv">
-                        <a id="services" href="#" >
-                            <div>Services</div>
-                            <div class="arrow">
-                                <img class="" src="https://www.dropbox.com/s/bbyxdo4792ke7jm/down-button.png?raw=1" >
-                            </div>
-                        </a>
+                        <!-- Services -->
+                        <li class="menu-tabs dv serv">
+                            <a id="services" href="services.html" >
+                                <div>Services</div>
+                                <div class="arrow">
+                                    <img class="" src="https://www.dropbox.com/s/bbyxdo4792ke7jm/down-button.png?raw=1" >
+                                </div>
+                            </a>
 
-                        <ul id="sub_navlist" class="">
-                            <li id="noticeboard" class="nb">
-                                <a href="index.html">
-                                    <div>Noticeboard</div>
-                                </a>
-                            </li>
-                            <li id="digital_marketing" class="dm">
-                                <a data-open="digitalModal">
-                                    <div>Digital Marketing</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                            <ul id="sub_navlist" class="">
+                                <li id="noticeboard" class="nb">
+                                    <a href="index.html">
+                                        <div>Noticeboard</div>
+                                    </a>
+                                </li>
+                                <li id="digital_marketing" class="dm">
+                                    <a data-open="digitalModal">
+                                        <div>Digital Marketing</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li class="menu-tabs dv">
-                        <a href="about-us.html" class="">
-                            <div>About us</div>
-                        </a>
-                    </li>
-                    <li class="menu-tabs dv">
-                        <a href="#">
-                            <div>Blog</div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="top-bar-right in">
-                <ul class="menu">
-                    <!-- Visible when NOT logged in -->
-<!--
-                    <li class="menu-tabs sign-in">
-                        <a class="" data-open="logInModal">Have and account? Sign In</a>
-                    </li>
--->
+                        <li class="menu-tabs dv">
+                            <a href="about-us.html" class="">
+                                <div>About us</div>
+                            </a>
+                        </li>
+                        <li class="menu-tabs dv">
+                            <a data-open="blogModal">
+                                <div>Blog</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-bar-right in">
+                    <ul class="menu">
+                        <!-- Visible when NOT logged in -->
+    <!--
+                        <li class="menu-tabs sign-in">
+                            <a class="" data-open="logInModal">Have and account? Sign In</a>
+                        </li>
+    -->
 
-                    <!-- Visible when logged in -->
-                    <li class="menu-tabs log-out">
-                        <a href="#" class="button-gr-otln">logout</a>
-                    </li>
+                        <!-- Visible when logged in -->
+                        <li class="menu-tabs log-out">
+                            <a href="#" class="button-gr-otln">logout</a>
+                        </li>
 
-                </ul>
-            </div>
-        </div> <!-- responsive menu -->
+                    </ul>
+                </div>
+            </div> <!-- responsive menu -->
 
-    </div> <!-- top bar end -->
+        </div> <!-- top bar end -->
 
     <!----------------------------------------------------->
     <!-- PAGE 1 --->
@@ -856,7 +966,7 @@
                                                     <p>KES 15,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -884,7 +994,7 @@
                                                     <p>KES 10,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -913,7 +1023,7 @@
                                                     <p>KES 117,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -942,7 +1052,7 @@
                                                     <p>KES 15,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -970,7 +1080,7 @@
                                                     <p>KES 10,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -999,7 +1109,7 @@
                                                     <p>KES 117,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -1028,7 +1138,7 @@
                                                     <p>KES 15,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -1056,7 +1166,7 @@
                                                     <p>KES 10,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -1112,7 +1222,7 @@
                                                     <p>KES 15,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -1140,7 +1250,7 @@
                                                     <p>KES 10,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>
@@ -1169,7 +1279,7 @@
                                                     <p>KES 117,000</p>
                                                 </div>
                                                 <div class="Flex-Div comp">
-                                                    <a href="#">Complete Transaction</a>
+                                                    <a href="#" class="button bttn5">Complete</a>
                                                 </div>
 
                                             </div>

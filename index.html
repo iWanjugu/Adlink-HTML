@@ -48,7 +48,8 @@
 <!--MODALS-->
 <!-- ========================================================= -->
 
-<!-- Log In Modal -->
+<!--------------------------------------------------->
+<!--- logInModal ----->
 <div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
     <div class="cont f-center">
     <div class="mod-cont form-container ">
@@ -58,17 +59,17 @@
         </div>
 
         <form>
-        <!--title-->
+            <!--title-->
             <div class="form-ttl f-center">
                 <p class="thin100 st-txt4 bold">Have an account?</p>
             </div>
 
-          <!--content-->
+            <!--content-->
             <div class="row columns form-cntnt">
                 <!-- names -->
                 <div class="row">
                     <div class="small-12 columns">
-                        <label><input type="text" placeholder="username or email">
+                        <label><input type="text" placeholder="username or email" name="username">
                         </label>
                     </div>
                 </div>
@@ -76,7 +77,7 @@
                 <!-- password -->
                 <div class="row">
                     <div class="small-12 columns">
-                        <label><input type="text" placeholder="password">
+                        <label><input type="password" placeholder="password" name="password">
                         </label>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
                         </label>
                     </div>
                 </div>
-            </div>
+          </div>
 
         </form>
 
@@ -100,6 +101,7 @@
         </div>
 
         <!--other social-->
+<!--
         <div class="other">
             <div>
                 <p class="or">or log in with</p>
@@ -118,6 +120,7 @@
                 </div>
             </div>
         </div>
+-->
 
         <!--Sign up prompt-->
         <div class="form-ttl f-center form-cntnt new">
@@ -315,6 +318,63 @@
     </div>
 </div> <!-- Rates Modal End -->
 
+<!------------------------------------------------->
+<!-- Digital Marketting Modal -->
+<div id="digitalModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
+
+            <!--title-->
+            <div class="form-ttl f-center ">
+                <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon
+                    <br>
+                    <br>
+                    Stay Tuned!
+                </p>
+            </div>
+
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div> <!-- end of form-container -->
+    </div>
+</div> <!-- digital modal end -->
+
+<!------------------------------------------------->
+<!-- Blog Modal -->
+<div id="blogModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
+
+            <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">ADLink Blog Coming Soon
+                    <br>
+                    <br>
+                    Keep your ears peeled!
+                </p>
+            </div>
+
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div> <!-- end of form-container -->
+    </div>
+</div> <!-- blog modal end -->
+
+
 <!-- ========================================================= -->
 <!--- PAGE 1 --->
 <!-- ========================================================= -->
@@ -333,7 +393,6 @@
                 <ul id="navlist" class="menu">
 
                     <!-- logo -->
-
                     <li class="menu-tabs dv Logo_bg wht">
                         <a href="#">
                             <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
@@ -369,7 +428,7 @@
                         </a>
                     </li>
                     <li class="menu-tabs dv">
-                        <a href="#">
+                        <a data-open="blogModal">
                             <div>Blog</div>
                         </a>
                     </li>
@@ -377,17 +436,18 @@
             </div>
             <div class="top-bar-right out">
                 <ul class="menu">
+
+                    <!-- Visible when logged in -->
+                    <li class="menu-tabs log-out">
+                        <a href="customer-dashboard.html" class="button-gr-otln">PROFILE</a>
+                    </li>
+
                     <!-- Visible when NOT logged in -->
                     <li class="menu-tabs sign-in">
                         <a class="" data-open="logInModal">Have and account? Sign In</a>
                     </li>
 
-                    <!-- Visible when logged in -->
-<!--
-                    <li class="menu-tabs log-out">
-                        <a href="#" class="button-gr-otln">logout</a>
-                    </li>
--->
+
 
                 </ul>
             </div>

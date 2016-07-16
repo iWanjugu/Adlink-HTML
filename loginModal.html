@@ -1,0 +1,327 @@
+<!------------------------------------------------->
+<!-- Log In Modal -->
+<div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+    <div class="mod-cont form-container ">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+        </div>
+
+        <form id="login_form" method='post' action="{% url 'sign_in' %}">
+        {% csrf_token %}
+        <input type='hidden' name='form-name' value='form 1' />
+        <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">Have an account?</p>
+            </div>
+
+          <!--content-->
+            <div class="row columns form-cntnt">
+                <!-- names -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="text" placeholder="username or email" name="username">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- password -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="password" placeholder="password" name="password">
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Log In button -->
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label><input type="submit" class="button" value="Log In">
+                        </label>
+                    </div>
+                </div>
+          </div>
+
+        </form>
+
+        <!--forgotten password-->
+        <div class="other">
+            <a href="{% url 'password_reset_recover' %}">
+                <p class="or2 su">Forgotten Password?</p>
+            </a>
+        </div>
+
+        <!--other social-->
+<!--
+        <div class="other">
+            <div>
+                <p class="or">or log in with</p>
+            </div>
+
+            <div class="social-sign f-hor">
+                <div >
+                    <a href="#" class="button ggl">
+                        <img src="https://www.dropbox.com/s/edwsn83awpvg9rl/logo-google-small-white-nc.png?raw=1" alt="google-logo">
+                        Google
+                    </a>
+                    <a href="#" class="button twt">
+                        <img src="https://www.dropbox.com/s/4cuihpj7rmfbb6t/logo-twitter-white-nc.png?raw=1" alt="logo-twitter-white-nc">
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+-->
+
+        <!--Sign up prompt-->
+        <div class="form-ttl f-center form-cntnt new">
+            <p class="thin100 st-txt4 bold">New to Adlink?</p>
+        </div>
+
+        <div class="f-hor form-cntnt">
+            <a href="/register" class="button sign">
+                Sign up
+            </a>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> <!-- end of form-container -->
+    </div>
+</div> <!-- log in modal end -->
+
+<!------------------------------------------------->
+<!-- Rates Modal -->
+<div id="ratesModal" class="reveal round-plain-no-margin"  data-reveal>
+
+    <div class="f-center cont">
+    <div class="mod-cont rates-container">
+        <!--logo-->
+        <div class="logo f-center form-cntnt ">
+                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
+        </div>
+
+        <div class="ttl f-center">
+            <p class="thin300">NOTICEBOARD RATES</p>
+        </div>
+
+        <div class="row form-ttl">
+            <div class="small-4 columns">
+                <p class="st-txt4"> WEEKLY RATES</p>
+            </div>
+            <div class="small-8 columns">
+                <p class="st-txt4"></p>
+            </div>
+        </div>
+
+
+        <!-- Rates table -->
+        <table class="responsive">
+          <thead>
+            <tr>
+                <th class="loc">Location</th>
+                <th class="ad-sz a5">A5</th>
+                <th class="ad-sz a4">A4</th>
+                <th class="ad-sz a3">A3</th>
+                <th class="ad-sz a2">A2</th>
+                <th class="ad-sz a1">A1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="loc">Yaya Center</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">700</td>
+                <td class="ad-sz">1,400</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,600</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Village Market</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">700</td>
+                <td class="ad-sz">1,400</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Junction</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">600</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,800</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Sarit Center</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">4,400</td>
+            </tr>
+
+              <tr>
+                <td class="loc">TRM</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">4,400</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Karen Crossroads</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,200</td>
+                <td class="ad-sz">3,800</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Galleria</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">550</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">2,400</td>
+                <td class="ad-sz">3,500</td>
+            </tr>
+
+              <tr>
+                <td class="loc">T-Mall</td>
+                <td class="ad-sz">300</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">1,000</td>
+                <td class="ad-sz">2,000</td>
+                <td class="ad-sz">3,000</td>
+            </tr>
+
+              <tr>
+                <td class="loc">Prestige</td>
+                <td class="ad-sz">400</td>
+                <td class="ad-sz">500</td>
+                <td class="ad-sz">1,000</td>
+                <td class="ad-sz">2,000</td>
+                <td class="ad-sz">3,000</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+
+        <!-- Print and delivery costs -->
+        <div class="row form-ttl printNdel">
+            <div class="small-8 columns">
+                <p class="st-txt4"> PRINT AND DELIVERY COSTS</p>
+            </div>
+            <div class="small-4 columns">
+                <p class="st-txt4"></p>
+            </div>
+        </div>
+
+        <table class="responsive ">
+          <thead>
+            <tr>
+                <th class="loc">Paper Type</th>
+                <th class="ad-sz a5">A5</th>
+                <th class="ad-sz a4">A4</th>
+                <th class="ad-sz a3">A3</th>
+                <th class="ad-sz a2">A2</th>
+                <th class="ad-sz a1">A1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="loc">Normal</td>
+                <td class="ad-sz">50</td>
+                <td class="ad-sz">100</td>
+                <td class="ad-sz">250</td>
+                <td class="ad-sz">800</td>
+                <td class="ad-sz">N/A</td>
+            </tr>
+
+            <tr>
+                <td class="loc">Gloss Paper</td>
+                <td class="ad-sz">100</td>
+                <td class="ad-sz">150</td>
+                <td class="ad-sz">350</td>
+                <td class="ad-sz">1,100</td>
+                <td class="ad-sz">5,000</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <div class="row columns form-ttl">
+            <p class="st-txt4"> Delivery fee to each mall:
+                <span>Ksh 300</span>
+            </p>
+        </div>
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+    </div>
+</div> <!-- Rates Modal End -->
+
+<!------------------------------------------------->
+<!-- Digital Marketting Modal -->
+<div id="digitalModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
+
+            <!--title-->
+            <div class="form-ttl f-center ">
+                <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon
+                    <br>
+                    <br>
+                    Stay Tuned!
+                </p>
+            </div>
+
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div> <!-- end of form-container -->
+    </div>
+</div> <!-- digital modal end -->
+
+<!------------------------------------------------->
+<!-- Blog Modal -->
+<div id="blogModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
+
+            <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">ADLink Blog Coming Soon
+                    <br>
+                    <br>
+                    Keep your ears peeled!
+                </p>
+            </div>
+
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div> <!-- end of form-container -->
+    </div>
+</div> <!-- blog modal end -->

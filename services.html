@@ -47,15 +47,14 @@
 <!-- ========================================================= -->
 <!--MODALS-->
 <!-- ========================================================= -->
+<!------------------------------------------------->
 <!-- Log In Modal -->
 <div id="logInModal" class="pop reveal round-plain-no-margin"  data-reveal>
     <div class="cont f-center">
     <div class="mod-cont form-container ">
         <!--logo-->
         <div class="logo f-center form-cntnt ">
-
-                <img class="" src="https://www.dropbox.com/s/jgvi6ptxv1azfun/adlink-logo.png?raw=1" alt="Adlink Logo">
-
+            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
         </div>
 
         <form>
@@ -69,7 +68,7 @@
                 <!-- names -->
                 <div class="row">
                     <div class="small-12 columns">
-                        <label><input type="text" placeholder="username or email">
+                        <label><input type="text" placeholder="username or email" name="username">
                         </label>
                     </div>
                 </div>
@@ -77,7 +76,7 @@
                 <!-- password -->
                 <div class="row">
                     <div class="small-12 columns">
-                        <label><input type="text" placeholder="password">
+                        <label><input type="password" placeholder="password" name="password">
                         </label>
                     </div>
                 </div>
@@ -89,7 +88,7 @@
                         </label>
                     </div>
                 </div>
-            </div>
+          </div>
 
         </form>
 
@@ -101,9 +100,10 @@
         </div>
 
         <!--other social-->
+<!--
         <div class="other">
             <div>
-                <p class="or">or sign up with</p>
+                <p class="or">or log in with</p>
             </div>
 
             <div class="social-sign f-hor">
@@ -119,6 +119,7 @@
                 </div>
             </div>
         </div>
+-->
 
         <!--Sign up prompt-->
         <div class="form-ttl f-center form-cntnt new">
@@ -126,7 +127,7 @@
         </div>
 
         <div class="f-hor form-cntnt">
-            <a href="sign-up.html" class="button sign">
+            <a href="/register" class="button sign">
                 Sign up
             </a>
         </div>
@@ -318,27 +319,59 @@
 
 <!------------------------------------------------->
 <!-- Digital Marketting Modal -->
-<div id="digitalModal" class="pop reveal round-plain-no-margin"  data-reveal>
+<div id="digitalModal" class="reveal round-plain-no-margin"  data-reveal>
     <div class="cont f-center">
-    <div class="mod-cont form-container ">
-        <!--logo-->
-        <div class="logo f-center form-cntnt ">
-            <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
-        </div>
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
 
-        <!--title-->
-        <div class="form-ttl f-center">
-            <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon - Stay Tuned</p>
-        </div>
+            <!--title-->
+            <div class="form-ttl f-center ">
+                <p class="thin100 st-txt4 bold">Digital Marketing Page Coming Soon
+                    <br>
+                    <br>
+                    Stay Tuned!
+                </p>
+            </div>
 
-        <!-- close button -->
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-        </button>
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
 
-    </div> <!-- end of form-container -->
+        </div> <!-- end of form-container -->
     </div>
 </div> <!-- digital modal end -->
+
+<!------------------------------------------------->
+<!-- Blog Modal -->
+<div id="blogModal" class="reveal round-plain-no-margin"  data-reveal>
+    <div class="cont f-center">
+        <div class="mod-cont form-container f-vert">
+            <!--logo-->
+            <div class="logo f-center form-cntnt">
+                <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
+            </div>
+
+            <!--title-->
+            <div class="form-ttl f-center">
+                <p class="thin100 st-txt4 bold">ADLink Blog Coming Soon
+                    <br>
+                    <br>
+                    Keep your ears peeled!
+                </p>
+            </div>
+
+            <!-- close button -->
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+
+        </div> <!-- end of form-container -->
+    </div>
+</div> <!-- blog modal end -->
 
 <!-- ========================================================= -->
 <!--- PAGE 1 --->
@@ -360,7 +393,7 @@
                     <!-- logo -->
 
                     <li class="menu-tabs dv Logo_bg wht">
-                        <a href="#">
+                        <a href="index.html">
                             <img class="" src="https://www.dropbox.com/s/85y51v80hnzjt8z/logo.png?raw=1" alt="Logo">
                         </a>
                     </li>
@@ -394,7 +427,7 @@
                         </a>
                     </li>
                     <li class="menu-tabs dv Blog">
-                        <a href="#">
+                        <a data-open="blogModal">
                             <div>Blog</div>
                         </a>
                     </li>
@@ -421,8 +454,6 @@
     </div> <!-- top bar end -->
 
 
-
-
     <!------------------------------------------------->
     <!-- Banner -->
     <div id="b-photo" class="expanded row columns bg-photo r1">
@@ -439,7 +470,7 @@
 
     <div id="Services" class="expanded row columns r2 ">
         <div class="expanded row f-center">
-            <div class="head f-center">
+            <div class="head st-txt8 f-center">
                 <div class="dash ">-</div>
                 <p class="bld">SERVICES</p>
                 <div class="dash">-</div>
@@ -497,7 +528,7 @@
 <!-- ========================================================= -->
 <!--- FOOTER ----->
 
-<div id="footer" class="expanded row columns lite-footer">
+<div id="footer" class="expanded row columns dark-footer">
     <div class="expanded row columns footer-content center-c">
 
         <!-- social -->
@@ -515,11 +546,33 @@
 
         <div class="adlink-info">
             <p> Send Us Mail @ <span> wecare@adlink.co.ke</span></p>
-            <p>Or Find Us @ <span> 1st Floor Yaya Centre, Argwins Kodhek RD, Nairobi</span></p>
+
+            <p class="find-us">Or Find Us @ </p>
+
+            <div class="row branch">
+                <!-- yaya -->
+
+                <div class="medium-2 columns"></div>
+                <div class="small-12 medium-4 columns yaya">
+                    <p><span class="und"> Yaya Centre Branch </span></p>
+                    <p><span> 1st Floor Yaya Centre,</span></p>
+                    <p><span> Argwins Kodhek RD, Nairobi</span></p>
+                    <p><span>+254 710 640694 </span></p>
+                </div>
+
+                <!-- sarit -->
+                <div class="small-12 medium-4 columns">
+                    <p><span class="und"> Sarit Centre Branch </span></p>
+                    <p><span> Ground Floor, Sarit Centre</span></p>
+                    <p><span>+254 20 528 4496 </span></p>
+                    <p><span>+254 728 464 418</span></p>
+                </div>
+                <div class="medium-2 columns"></div>
+            </div>
         </div>
 
         <div class="logo-grey">
-            <img src="https://www.dropbox.com/s/s329ft86hdk1p2o/adlink-logo-grey.png?raw=1" alt="adlink logo grey">
+            <img src="https://www.dropbox.com/s/pq3pktmpkj6g5yf/logo-grey.png?raw=1" alt="logo-grey">
         </div>
 
         <div class="copy">
@@ -529,8 +582,6 @@
 
 
 </div> <!-- end footer -->
-<!-- ========================================================= -->
-
 <!-- ========================================================= -->
 </div> <!--- end wrapper -->
 
